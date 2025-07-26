@@ -46,10 +46,12 @@ export function ActivitySelector({ onActivitySelect }: ActivitySelectorProps) {
   };
 
   return (
-    <div className="p-4">
-      <h3 className="text-gray-900 mb-3">活动选择</h3>
+    <div className="p-4" data-oid=".svt5va">
+      <h3 className="text-gray-900 mb-3" data-oid="up:_yf3">
+        活动选择
+      </h3>
 
-      <div className="space-y-2">
+      <div className="space-y-2" data-oid="ot3x2yg">
         {activities.map((activity) => (
           <Card
             key={activity.id}
@@ -59,21 +61,33 @@ export function ActivitySelector({ onActivitySelect }: ActivitySelectorProps) {
                 : ""
             }`}
             onClick={() => handleActivitySelect(activity)}
+            data-oid="dp4m0.p"
           >
-            <CardContent className="p-3">
-              <div className="flex items-center justify-between">
-                <div className="flex-1">
-                  <h4 className="text-sm text-gray-900">{activity.title}</h4>
-                  <div className="flex items-center space-x-2 mt-1">
-                    <span className="text-xs text-red-500">
+            <CardContent className="p-3" data-oid=".xweh_z">
+              <div
+                className="flex items-center justify-between"
+                data-oid="cmqn1y2"
+              >
+                <div className="flex-1" data-oid="te3go9z">
+                  <h4 className="text-sm text-gray-900" data-oid="rrr_bkw">
+                    {activity.title}
+                  </h4>
+                  <div
+                    className="flex items-center space-x-2 mt-1"
+                    data-oid="ewal9f8"
+                  >
+                    <span className="text-xs text-red-500" data-oid="9q6v5s0">
                       {activity.subtitle}
                     </span>
-                    <span className="text-xs text-gray-400">
+                    <span className="text-xs text-gray-400" data-oid="3_5w7zq">
                       {activity.participants}
                     </span>
                   </div>
                 </div>
-                <ChevronRight className="w-4 h-4 text-gray-400" />
+                <ChevronRight
+                  className="w-4 h-4 text-gray-400"
+                  data-oid="tqi4z9f"
+                />
               </div>
             </CardContent>
           </Card>

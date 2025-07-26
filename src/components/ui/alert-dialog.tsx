@@ -9,14 +9,24 @@ import { buttonVariants } from "./button";
 function AlertDialog({
   ...props
 }: React.ComponentProps<typeof AlertDialogPrimitive.Root>) {
-  return <AlertDialogPrimitive.Root data-slot="alert-dialog" {...props} />;
+  return (
+    <AlertDialogPrimitive.Root
+      data-slot="alert-dialog"
+      {...props}
+      data-oid="kweep50"
+    />
+  );
 }
 
 function AlertDialogTrigger({
   ...props
 }: React.ComponentProps<typeof AlertDialogPrimitive.Trigger>) {
   return (
-    <AlertDialogPrimitive.Trigger data-slot="alert-dialog-trigger" {...props} />
+    <AlertDialogPrimitive.Trigger
+      data-slot="alert-dialog-trigger"
+      {...props}
+      data-oid="kr2pmpf"
+    />
   );
 }
 
@@ -24,7 +34,11 @@ function AlertDialogPortal({
   ...props
 }: React.ComponentProps<typeof AlertDialogPrimitive.Portal>) {
   return (
-    <AlertDialogPrimitive.Portal data-slot="alert-dialog-portal" {...props} />
+    <AlertDialogPrimitive.Portal
+      data-slot="alert-dialog-portal"
+      {...props}
+      data-oid="h0a34x0"
+    />
   );
 }
 
@@ -40,6 +54,7 @@ function AlertDialogOverlay({
         className,
       )}
       {...props}
+      data-oid="3d-mys-"
     />
   );
 }
@@ -49,8 +64,8 @@ function AlertDialogContent({
   ...props
 }: React.ComponentProps<typeof AlertDialogPrimitive.Content>) {
   return (
-    <AlertDialogPortal>
-      <AlertDialogOverlay />
+    <AlertDialogPortal data-oid="qgpw1.o">
+      <AlertDialogOverlay data-oid="08vwnja" />
       <AlertDialogPrimitive.Content
         data-slot="alert-dialog-content"
         className={cn(
@@ -58,6 +73,7 @@ function AlertDialogContent({
           className,
         )}
         {...props}
+        data-oid="_jxze.z"
       />
     </AlertDialogPortal>
   );
@@ -72,6 +88,7 @@ function AlertDialogHeader({
       data-slot="alert-dialog-header"
       className={cn("flex flex-col gap-2 text-center sm:text-left", className)}
       {...props}
+      data-oid="o3.:ah0"
     />
   );
 }
@@ -88,6 +105,7 @@ function AlertDialogFooter({
         className,
       )}
       {...props}
+      data-oid="hkn18pj"
     />
   );
 }
@@ -101,6 +119,7 @@ function AlertDialogTitle({
       data-slot="alert-dialog-title"
       className={cn("text-lg font-semibold", className)}
       {...props}
+      data-oid="a37_e9s"
     />
   );
 }
@@ -114,6 +133,7 @@ function AlertDialogDescription({
       data-slot="alert-dialog-description"
       className={cn("text-muted-foreground text-sm", className)}
       {...props}
+      data-oid=":9cqyq:"
     />
   );
 }
@@ -126,6 +146,7 @@ function AlertDialogAction({
     <AlertDialogPrimitive.Action
       className={cn(buttonVariants(), className)}
       {...props}
+      data-oid="6qkm5uj"
     />
   );
 }
@@ -138,6 +159,7 @@ function AlertDialogCancel({
     <AlertDialogPrimitive.Cancel
       className={cn(buttonVariants({ variant: "outline" }), className)}
       {...props}
+      data-oid="cjq3qmh"
     />
   );
 }

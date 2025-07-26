@@ -27,32 +27,48 @@ export function ContentEditor({ onContentChange }: ContentEditorProps) {
   };
 
   return (
-    <div className="p-6 space-y-6">
+    <div className="p-6 space-y-6" data-oid="xhfkypt">
       {/* 标题输入区域 */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <label className="text-sm font-medium text-gray-700">笔记标题</label>
-          <div className="text-xs text-gray-400">{title.length}/20</div>
+      <div className="space-y-3" data-oid=".5hxnqb">
+        <div className="flex items-center justify-between" data-oid="pmmltqk">
+          <label
+            className="text-sm font-medium text-gray-700"
+            data-oid="t7-95oz"
+          >
+            笔记标题
+          </label>
+          <div className="text-xs text-gray-400" data-oid="3teyhiw">
+            {title.length}/20
+          </div>
         </div>
         <Input
           placeholder="请输入标题，会有更多的曝光～"
           value={title}
           onChange={handleTitleChange}
           className="text-lg font-medium border-none bg-gray-50 p-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 focus:outline-none focus:bg-gray-100 transition-colors"
+          data-oid="ejcd:_1"
         />
       </div>
 
       {/* 正文输入区域 */}
-      <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <label className="text-sm font-medium text-gray-700">正文内容</label>
-          <div className="text-xs text-gray-400">{content.length}/1000</div>
+      <div className="space-y-3" data-oid="irlqav9">
+        <div className="flex items-center justify-between" data-oid="juf1i8y">
+          <label
+            className="text-sm font-medium text-gray-700"
+            data-oid="f9cr0_1"
+          >
+            正文内容
+          </label>
+          <div className="text-xs text-gray-400" data-oid="ysv7.-t">
+            {content.length}/1000
+          </div>
         </div>
         <Textarea
           placeholder="输入正文内容，真实原创的笔记会获得更多曝光"
           value={content}
           onChange={handleContentChange}
           className="min-h-[200px] border-none bg-gray-50 p-4 text-gray-900 placeholder:text-gray-400 resize-none focus:ring-0 focus:outline-none focus:bg-gray-100 transition-colors leading-relaxed"
+          data-oid="o9dyx0g"
         />
       </div>
     </div>

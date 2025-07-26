@@ -91,24 +91,29 @@ export function DesktopPublishNote({
   };
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col" data-oid="t3cag8u">
       {/* 顶部操作栏 - 与侧栏标题对齐 */}
       <div
         className={`${sidebarCollapsed ? "p-2" : "p-6"} border-b border-gray-100 bg-white flex-shrink-0 transition-all duration-300`}
+        data-oid="l8cj8a-"
       >
-        <div className="flex items-center justify-between">
-          <div>
+        <div className="flex items-center justify-between" data-oid="2zz_s5-">
+          <div data-oid="8hwujan">
             <h1
               className={`${sidebarCollapsed ? "text-lg" : ""} font-bold text-gray-900`}
+              data-oid="_qa9vnr"
             >
               发布笔记
             </h1>
             {!sidebarCollapsed && (
-              <p className="text-xs text-gray-500">创作并分享你的精彩内容</p>
+              <p className="text-xs text-gray-500" data-oid="-6a:r56">
+                创作并分享你的精彩内容
+              </p>
             )}
           </div>
           <div
             className={`flex items-center ${sidebarCollapsed ? "space-x-1" : "space-x-3"}`}
+            data-oid="wn4:57h"
           >
             {sidebarCollapsed ? (
               <>
@@ -117,56 +122,72 @@ export function DesktopPublishNote({
                   size="sm"
                   onClick={handleSaveDraft}
                   className="px-2"
+                  data-oid="yb.l6x6"
                 >
-                  <Save className="w-4 h-4" />
+                  <Save className="w-4 h-4" data-oid="pbuy.kd" />
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handlePreview}
                   className="px-2"
+                  data-oid="95o5ehh"
                 >
-                  <Eye className="w-4 h-4" />
+                  <Eye className="w-4 h-4" data-oid="654qltp" />
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handleSchedulePublish}
                   className="px-2"
+                  data-oid=":2obo0_"
                 >
-                  <Clock className="w-4 h-4" />
+                  <Clock className="w-4 h-4" data-oid="guajh8s" />
                 </Button>
                 <Button
                   onClick={handlePublish}
                   className="bg-red-500 hover:bg-red-600 text-white px-2"
                   size="sm"
+                  data-oid="5rmi3g8"
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-4 h-4" data-oid="ur8:lra" />
                 </Button>
               </>
             ) : (
               <>
-                <Button variant="outline" size="sm" onClick={handleSaveDraft}>
-                  <Save className="w-4 h-4 mr-2" />
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleSaveDraft}
+                  data-oid="gt5jlp9"
+                >
+                  <Save className="w-4 h-4 mr-2" data-oid="u0.i4ii" />
                   保存草稿
                 </Button>
-                <Button variant="outline" size="sm" onClick={handlePreview}>
-                  <Eye className="w-4 h-4 mr-2" />
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handlePreview}
+                  data-oid="6y:.:6r"
+                >
+                  <Eye className="w-4 h-4 mr-2" data-oid="nm6ni9g" />
                   {isPreviewMode ? "编辑模式" : "预览模式"}
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handleSchedulePublish}
+                  data-oid="6.5yl3_"
                 >
-                  <Clock className="w-4 h-4 mr-2" />
+                  <Clock className="w-4 h-4 mr-2" data-oid="yp0:w:1" />
                   定时发布
                 </Button>
                 <Button
                   onClick={handlePublish}
                   className="bg-red-500 hover:bg-red-600 text-white"
+                  data-oid="62j__7i"
                 >
-                  <Send className="w-4 h-4 mr-2" />
+                  <Send className="w-4 h-4 mr-2" data-oid="jz3xh6w" />
                   立即发布
                 </Button>
               </>
@@ -176,21 +197,22 @@ export function DesktopPublishNote({
       </div>
 
       {/* 内容编辑区域 */}
-      <div className="flex-1 overflow-y-auto bg-gray-50">
+      <div className="flex-1 overflow-y-auto bg-gray-50" data-oid="y5isuz:">
         {isPreviewMode ? (
           /* 预览模式 */
-          <div className="max-w-2xl mx-auto p-6">
-            <Card>
-              <CardContent className="p-6">
+          <div className="max-w-2xl mx-auto p-6" data-oid="wdm_y0g">
+            <Card data-oid="rm1ufxt">
+              <CardContent className="p-6" data-oid="lje:tfa">
                 {postData.images.length > 0 && (
-                  <div className="mb-4">
-                    <div className="grid grid-cols-3 gap-2">
+                  <div className="mb-4" data-oid="a_624cr">
+                    <div className="grid grid-cols-3 gap-2" data-oid="3qik_sk">
                       {postData.images.slice(0, 9).map((image, index) => (
                         <img
                           key={index}
                           src={image}
                           alt={`预览图片 ${index + 1}`}
                           className="w-full aspect-square object-cover rounded-lg"
+                          data-oid="12wylhh"
                         />
                       ))}
                     </div>
@@ -198,21 +220,33 @@ export function DesktopPublishNote({
                 )}
 
                 {postData.title && (
-                  <h2 className="text-xl font-bold mb-4">{postData.title}</h2>
+                  <h2 className="text-xl font-bold mb-4" data-oid=":mm1ttk">
+                    {postData.title}
+                  </h2>
                 )}
 
                 {postData.content && (
-                  <div className="whitespace-pre-wrap text-gray-700 leading-relaxed mb-4">
+                  <div
+                    className="whitespace-pre-wrap text-gray-700 leading-relaxed mb-4"
+                    data-oid="efuepsa"
+                  >
                     {postData.content}
                   </div>
                 )}
 
-                <div className="flex items-center space-x-2 text-sm text-gray-500">
+                <div
+                  className="flex items-center space-x-2 text-sm text-gray-500"
+                  data-oid="-izcs9a"
+                >
                   {postData.location && (
-                    <Badge variant="outline">📍 {postData.location}</Badge>
+                    <Badge variant="outline" data-oid="c2azm6p">
+                      📍 {postData.location}
+                    </Badge>
                   )}
                   {postData.collection && (
-                    <Badge variant="outline">📁 {postData.collection}</Badge>
+                    <Badge variant="outline" data-oid="-gm-u26">
+                      📁 {postData.collection}
+                    </Badge>
                   )}
                 </div>
               </CardContent>
@@ -220,25 +254,35 @@ export function DesktopPublishNote({
           </div>
         ) : (
           /* 编辑模式 */
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+          <div
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6"
+            data-oid="m756o54"
+          >
             {/* 左栏 - 主要内容 (占2/3空间) */}
-            <div className="lg:col-span-2 space-y-6">
-              <Card>
-                <CardContent className="p-6">
-                  <ImageUploader onImagesChange={handleImagesChange} />
+            <div className="lg:col-span-2 space-y-6" data-oid="ap5eo0s">
+              <Card data-oid="7dogvxe">
+                <CardContent className="p-6" data-oid=":9_:_xn">
+                  <ImageUploader
+                    onImagesChange={handleImagesChange}
+                    data-oid="un:2a_k"
+                  />
                 </CardContent>
               </Card>
 
-              <Card>
-                <CardContent className="p-0">
-                  <ContentEditor onContentChange={handleContentChange} />
+              <Card data-oid="._h0_z9">
+                <CardContent className="p-0" data-oid="1v919by">
+                  <ContentEditor
+                    onContentChange={handleContentChange}
+                    data-oid="4_4u_vi"
+                  />
 
-                  <Separator className="mx-6" />
-                  <div className="p-6 pt-4">
+                  <Separator className="mx-6" data-oid="5omffdy" />
+                  <div className="p-6 pt-4" data-oid="::r7nit">
                     <QuickActions
                       onTopicClick={handleTopicClick}
                       onMentionClick={handleMentionClick}
                       onEmojiClick={handleEmojiClick}
+                      data-oid="eaxjse9"
                     />
                   </div>
                 </CardContent>
@@ -246,16 +290,17 @@ export function DesktopPublishNote({
             </div>
 
             {/* 右栏 - 设置选项 (占1/3空间) */}
-            <div className="lg:col-span-1">
-              <Card className="h-fit">
-                <CardHeader>
-                  <CardTitle>设置选项</CardTitle>
+            <div className="lg:col-span-1" data-oid="23p_a:f">
+              <Card className="h-fit" data-oid=".okp:c7">
+                <CardHeader data-oid="y86w687">
+                  <CardTitle data-oid="4q7c51x">设置选项</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent data-oid="tsqk-i.">
                   <AdvancedOptions
                     onLocationChange={handleLocationChange}
                     onCollectionChange={handleCollectionChange}
                     onTagsChange={handleTagsChange}
+                    data-oid="2gmcwrz"
                   />
                 </CardContent>
               </Card>

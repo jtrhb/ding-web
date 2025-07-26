@@ -9,25 +9,45 @@ import { cn } from "./utils";
 function Dialog({
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Root>) {
-  return <DialogPrimitive.Root data-slot="dialog" {...props} />;
+  return (
+    <DialogPrimitive.Root data-slot="dialog" {...props} data-oid="ovtaeb:" />
+  );
 }
 
 function DialogTrigger({
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Trigger>) {
-  return <DialogPrimitive.Trigger data-slot="dialog-trigger" {...props} />;
+  return (
+    <DialogPrimitive.Trigger
+      data-slot="dialog-trigger"
+      {...props}
+      data-oid="ac-_0zo"
+    />
+  );
 }
 
 function DialogPortal({
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Portal>) {
-  return <DialogPrimitive.Portal data-slot="dialog-portal" {...props} />;
+  return (
+    <DialogPrimitive.Portal
+      data-slot="dialog-portal"
+      {...props}
+      data-oid="4m_5tgd"
+    />
+  );
 }
 
 function DialogClose({
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Close>) {
-  return <DialogPrimitive.Close data-slot="dialog-close" {...props} />;
+  return (
+    <DialogPrimitive.Close
+      data-slot="dialog-close"
+      {...props}
+      data-oid="8uow08y"
+    />
+  );
 }
 
 function DialogOverlay({
@@ -42,6 +62,7 @@ function DialogOverlay({
         className,
       )}
       {...props}
+      data-oid="q73qvcj"
     />
   );
 }
@@ -52,8 +73,8 @@ function DialogContent({
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content>) {
   return (
-    <DialogPortal data-slot="dialog-portal">
-      <DialogOverlay />
+    <DialogPortal data-slot="dialog-portal" data-oid="fb.srl4">
+      <DialogOverlay data-oid="qzhfnru" />
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
@@ -61,11 +82,17 @@ function DialogContent({
           className,
         )}
         {...props}
+        data-oid="j-alt.k"
       >
         {children}
-        <DialogPrimitive.Close className="ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4">
-          <XIcon />
-          <span className="sr-only">Close</span>
+        <DialogPrimitive.Close
+          className="ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+          data-oid="fa1pggf"
+        >
+          <XIcon data-oid="h-dp.fx" />
+          <span className="sr-only" data-oid="lmfqkw1">
+            Close
+          </span>
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
     </DialogPortal>
@@ -78,6 +105,7 @@ function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="dialog-header"
       className={cn("flex flex-col gap-2 text-center sm:text-left", className)}
       {...props}
+      data-oid="re6t2nj"
     />
   );
 }
@@ -91,6 +119,7 @@ function DialogFooter({ className, ...props }: React.ComponentProps<"div">) {
         className,
       )}
       {...props}
+      data-oid="5j2v-hf"
     />
   );
 }
@@ -104,6 +133,7 @@ function DialogTitle({
       data-slot="dialog-title"
       className={cn("text-lg leading-none font-semibold", className)}
       {...props}
+      data-oid="9ahscjf"
     />
   );
 }
@@ -117,6 +147,7 @@ function DialogDescription({
       data-slot="dialog-description"
       className={cn("text-muted-foreground text-sm", className)}
       {...props}
+      data-oid="wb3.ue9"
     />
   );
 }
