@@ -276,7 +276,7 @@ export function DesktopPublishNote({
                     data-oid="4_4u_vi"
                   />
 
-                  <Separator className="mx-6" data-oid="5omffdy" />
+                  <Separator data-oid="5omffdy" />
                   <div className="p-6 pt-4" data-oid="::r7nit">
                     <QuickActions
                       onTopicClick={handleTopicClick}
