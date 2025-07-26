@@ -10,7 +10,7 @@ function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
       aria-label="breadcrumb"
       data-slot="breadcrumb"
       {...props}
-      data-oid="2jvny84"
+      data-oid="hvnd97l"
     />
   );
 }
@@ -24,7 +24,7 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
         className,
       )}
       {...props}
-      data-oid=".f.80ae"
+      data-oid="yszgu7:"
     />
   );
 }
@@ -35,7 +35,7 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
       data-slot="breadcrumb-item"
       className={cn("inline-flex items-center gap-1.5", className)}
       {...props}
-      data-oid=".miydco"
+      data-oid="mer-07t"
     />
   );
 }
@@ -52,7 +52,7 @@ function BreadcrumbLink({
       data-slot="breadcrumb-link"
       className={cn("hover:text-foreground transition-colors", className)}
       {...props}
-      data-oid="hiyvv7z"
+      data-oid="6fcwi4g"
     />
   );
 }
@@ -66,7 +66,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       aria-current="page"
       className={cn("text-foreground font-normal", className)}
       {...props}
-      data-oid="ks92cs0"
+      data-oid="nzgd2ql"
     />
   );
 }
@@ -83,9 +83,9 @@ function BreadcrumbSeparator({
       aria-hidden="true"
       className={cn("[&>svg]:size-3.5", className)}
       {...props}
-      data-oid="xj:tg6k"
+      data-oid="3a05wmt"
     >
-      {children ?? <ChevronRight data-oid="kr_exk5" />}
+      {children ?? <ChevronRight data-oid="bibgrnp" />}
     </li>
   );
 }
@@ -101,10 +101,10 @@ function BreadcrumbEllipsis({
       aria-hidden="true"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
-      data-oid="uv7s-ak"
+      data-oid="cidwz:d"
     >
-      <MoreHorizontal className="size-4" data-oid="2.:s_7n" />
-      <span className="sr-only" data-oid=".8q3:vk">
+      <MoreHorizontal className="size-4" data-oid="6q4c01s" />
+      <span className="sr-only" data-oid="hpb.mdv">
         More
       </span>
     </span>

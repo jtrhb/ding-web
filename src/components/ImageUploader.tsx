@@ -30,43 +30,43 @@ export function ImageUploader({ onImagesChange }: ImageUploaderProps) {
   };
 
   return (
-    <div className="p-4" data-oid="m_2214m">
+    <div className="p-4" data-oid="pm-o-t2">
       <div
         className="flex items-center justify-between mb-3"
-        data-oid="da486x9"
+        data-oid="it2_j3a"
       >
-        <div className="flex items-center space-x-2" data-oid="y8coxok">
-          <span className="text-gray-900" data-oid="97npz0w">
+        <div className="flex items-center space-x-2" data-oid=".xeqg8b">
+          <span className="text-gray-900" data-oid="5.a7468">
             图片编辑
           </span>
-          <span className="text-gray-400 text-sm" data-oid="3nqldcq">
+          <span className="text-gray-400 text-sm" data-oid="8fritv5">
             ({images.length}/9)
           </span>
-          <span className="text-gray-400 text-sm" data-oid="q6if6mi">
+          <span className="text-gray-400 text-sm" data-oid="l3lbv1.">
             支持拖拽排序
           </span>
         </div>
-        <span className="text-red-500 text-sm" data-oid="8_--bn-">
+        <span className="text-red-500 text-sm" data-oid="ftebasw">
           消费开销上传
         </span>
       </div>
 
-      <div className="flex space-x-3 overflow-x-auto pb-2" data-oid="oeztcgm">
+      <div className="flex space-x-3 overflow-x-auto pb-2" data-oid="g9alxci">
         {/* 添加图片按钮 */}
         <div
           className="flex-shrink-0 w-20 h-20 bg-gray-50 border border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors"
           onClick={handleAddImage}
-          data-oid="psphb6v"
+          data-oid="xquumv6"
         >
           {isUploading ? (
             <div
               className="w-5 h-5 border-2 border-gray-400 border-t-transparent rounded-full animate-spin"
-              data-oid="v8hr_21"
+              data-oid="pziczn0"
             />
           ) : (
             <>
-              <Plus className="w-5 h-5 text-gray-400 mb-1" data-oid="q335fr2" />
-              <span className="text-xs text-gray-400" data-oid="8x32eas">
+              <Plus className="w-5 h-5 text-gray-400 mb-1" data-oid="susbm5p" />
+              <span className="text-xs text-gray-400" data-oid="vq-21c7">
                 添加
               </span>
             </>
@@ -78,22 +78,22 @@ export function ImageUploader({ onImagesChange }: ImageUploaderProps) {
           <div
             key={index}
             className="relative flex-shrink-0"
-            data-oid="--.467q"
+            data-oid="kfv70z_"
           >
             <ImageWithFallback
               src={image}
               alt={`上传图片 ${index + 1}`}
               className="w-20 h-20 object-cover rounded-lg"
-              data-oid="mdxkz4j"
+              data-oid="-gvp6mf"
             />
 
             <Button
               onClick={() => handleRemoveImage(index)}
               className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 hover:bg-red-600 text-white rounded-full p-0 flex items-center justify-center"
               size="sm"
-              data-oid="dj:lppw"
+              data-oid="ciig.tl"
             >
-              <X className="w-3 h-3" data-oid="p7avsf2" />
+              <X className="w-3 h-3" data-oid="9rakd68" />
             </Button>
           </div>
         ))}

@@ -27,17 +27,17 @@ export function ContentEditor({ onContentChange }: ContentEditorProps) {
   };
 
   return (
-    <div className="p-6 space-y-6" data-oid="wpo-i71">
+    <div className="p-6 space-y-6" data-oid="2o-89u2">
       {/* 标题输入区域 */}
-      <div className="space-y-3" data-oid="zk5jxec">
-        <div className="flex items-center justify-between" data-oid="2o6x04s">
+      <div className="space-y-3" data-oid="z3k6m7h">
+        <div className="flex items-center justify-between" data-oid="j:2bvoh">
           <label
             className="text-sm font-medium text-gray-700"
-            data-oid="9oeuzo-"
+            data-oid="ma7smcb"
           >
             笔记标题
           </label>
-          <div className="text-xs text-gray-400" data-oid="4uuuorc">
+          <div className="text-xs text-gray-400" data-oid="9ftc8:_">
             {title.length}/20
           </div>
         </div>
@@ -46,20 +46,20 @@ export function ContentEditor({ onContentChange }: ContentEditorProps) {
           value={title}
           onChange={handleTitleChange}
           className="text-lg font-medium border-none bg-gray-50 p-4 text-gray-900 placeholder:text-gray-400 focus:ring-0 focus:outline-none focus:bg-gray-100 transition-colors"
-          data-oid="qgd3fte"
+          data-oid="lq_kh97"
         />
       </div>
 
       {/* 正文输入区域 */}
-      <div className="space-y-3" data-oid="px3t3hl">
-        <div className="flex items-center justify-between" data-oid="am_n98:">
+      <div className="space-y-3" data-oid="6cmbao.">
+        <div className="flex items-center justify-between" data-oid="m0v:5k2">
           <label
             className="text-sm font-medium text-gray-700"
-            data-oid="p9:bvbo"
+            data-oid="d-kok_4"
           >
             正文内容
           </label>
-          <div className="text-xs text-gray-400" data-oid=":fm6.01">
+          <div className="text-xs text-gray-400" data-oid="t7ifzss">
             {content.length}/1000
           </div>
         </div>
@@ -68,7 +68,7 @@ export function ContentEditor({ onContentChange }: ContentEditorProps) {
           value={content}
           onChange={handleContentChange}
           className="min-h-[200px] border-none bg-gray-50 p-4 text-gray-900 placeholder:text-gray-400 resize-none focus:ring-0 focus:outline-none focus:bg-gray-100 transition-colors leading-relaxed"
-          data-oid="e:ejnys"
+          data-oid="txw9pl."
         />
       </div>
     </div>

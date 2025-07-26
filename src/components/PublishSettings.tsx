@@ -25,45 +25,45 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
   const [allowShare, setAllowShare] = useState(true);
 
   return (
-    <div className="space-y-4" data-oid="mpe:e2u">
+    <div className="space-y-4" data-oid="m_i74nb">
       {/* 商业推广 */}
-      <Card data-oid="pog9fmm">
+      <Card data-oid="2e5.oty">
         <CardHeader
           className="pb-2 cursor-pointer"
           onClick={() => setIsCommercialExpanded(!isCommercialExpanded)}
-          data-oid="5tak0k9"
+          data-oid="p8d5pvb"
         >
           <CardTitle
             className="flex items-center justify-between text-base"
-            data-oid="9wdmrfy"
+            data-oid="i20an0e"
           >
-            <div className="flex items-center space-x-2" data-oid="lj03wf2">
-              <ShoppingCart className="w-4 h-4" data-oid="sy:ifty" />
-              <span data-oid="fkymtun">商业推广</span>
+            <div className="flex items-center space-x-2" data-oid="iba77y6">
+              <ShoppingCart className="w-4 h-4" data-oid="-jm06eq" />
+              <span data-oid="768kjg_">商业推广</span>
             </div>
             {isCommercialExpanded ? (
-              <ChevronUp className="w-4 h-4" data-oid="ht42y.p" />
+              <ChevronUp className="w-4 h-4" data-oid="0j9-mb:" />
             ) : (
-              <ChevronDown className="w-4 h-4" data-oid="sn3xwyz" />
+              <ChevronDown className="w-4 h-4" data-oid="5ss6gqu" />
             )}
           </CardTitle>
         </CardHeader>
 
         {isCommercialExpanded && (
-          <CardContent className="pt-0" data-oid="vr_kgkd">
-            <div className="space-y-3" data-oid="z_089:7">
+          <CardContent className="pt-0" data-oid="njdt.2.">
+            <div className="space-y-3" data-oid="ixxy8mh">
               <div
                 className="flex items-center justify-between"
-                data-oid="p-r5y.s"
+                data-oid="sx18my4"
               >
-                <span className="text-sm text-gray-600" data-oid="-ulycb:">
+                <span className="text-sm text-gray-600" data-oid="xw1xuy_">
                   选择我收到的商品
                 </span>
                 <Button
                   variant="outline"
                   size="sm"
                   className="text-red-500 border-red-200 hover:bg-red-50"
-                  data-oid="29gha0o"
+                  data-oid="ek9zw3n"
                 >
                   添加商品
                 </Button>
@@ -74,45 +74,45 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
       </Card>
 
       {/* 更多设置 */}
-      <Card data-oid="r6h3om-">
+      <Card data-oid="_u7ky7_">
         <CardHeader
           className="pb-2 cursor-pointer"
           onClick={() => setIsAdvancedExpanded(!isAdvancedExpanded)}
-          data-oid="cxrrurx"
+          data-oid="s7-2f3h"
         >
           <CardTitle
             className="flex items-center justify-between text-base"
-            data-oid="b808na7"
+            data-oid="mqgpd.i"
           >
-            <div className="flex items-center space-x-2" data-oid="s66on94">
-              <Globe className="w-4 h-4" data-oid="a4v14mw" />
-              <span data-oid="sijls7b">更多设置</span>
+            <div className="flex items-center space-x-2" data-oid="_:yn5ja">
+              <Globe className="w-4 h-4" data-oid="wfzsbag" />
+              <span data-oid="wexu--3">更多设置</span>
             </div>
             {isAdvancedExpanded ? (
-              <ChevronUp className="w-4 h-4" data-oid="s5jny4h" />
+              <ChevronUp className="w-4 h-4" data-oid="xt8xhfi" />
             ) : (
-              <ChevronDown className="w-4 h-4" data-oid="ufzfqik" />
+              <ChevronDown className="w-4 h-4" data-oid="_9xml9z" />
             )}
           </CardTitle>
         </CardHeader>
 
         {isAdvancedExpanded && (
-          <CardContent className="pt-0 space-y-4" data-oid="89nt3wl">
+          <CardContent className="pt-0 space-y-4" data-oid="m_rp.cx">
             {/* 首图同期 */}
             <div
               className="text-sm text-gray-600 pb-2 border-b"
-              data-oid="0sdwnsp"
+              data-oid="c.e4136"
             >
               <div
                 className="flex items-center justify-between mb-2"
-                data-oid="va7aar-"
+                data-oid="ymi4k7-"
               >
-                <span data-oid="zu:.xaq">首图同期</span>
-                <span className="text-red-500" data-oid="l4nxkq1">
+                <span data-oid="0yh5xe8">首图同期</span>
+                <span className="text-red-500" data-oid="-clf966">
                   去听明
                 </span>
               </div>
-              <p className="text-xs text-gray-400" data-oid="9j1ttg2">
+              <p className="text-xs text-gray-400" data-oid="7dpat0s">
                 开启后，你可以用语音模锦随行文描述，用户体验会更好
               </p>
             </div>
@@ -120,23 +120,23 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
             {/* 内容等级 */}
             <div
               className="flex items-center justify-between"
-              data-oid="ykadf9g"
+              data-oid="r3f6ato"
             >
-              <span className="text-sm text-gray-900" data-oid="_p12ed_">
+              <span className="text-sm text-gray-900" data-oid="mseu6_z">
                 内容受众群体
               </span>
-              <Select value="all" onValueChange={() => {}} data-oid="vcrm7wd">
-                <SelectTrigger className="w-20 h-8 text-sm" data-oid="3p6dvw2">
-                  <SelectValue data-oid="n.wuj8u" />
+              <Select value="all" onValueChange={() => {}} data-oid="4n_cph8">
+                <SelectTrigger className="w-20 h-8 text-sm" data-oid="biw4e2l">
+                  <SelectValue data-oid="wcty2bt" />
                 </SelectTrigger>
-                <SelectContent data-oid="imhd1pt">
-                  <SelectItem value="all" data-oid="h7.xy2y">
+                <SelectContent data-oid="vxj.q0k">
+                  <SelectItem value="all" data-oid="flv6r_4">
                     0
                   </SelectItem>
-                  <SelectItem value="teen" data-oid="4.2nr6i">
+                  <SelectItem value="teen" data-oid="xst_j-4">
                     13+
                   </SelectItem>
-                  <SelectItem value="adult" data-oid="251fmj4">
+                  <SelectItem value="adult" data-oid="qvt2-11">
                     18+
                   </SelectItem>
                 </SelectContent>
@@ -146,27 +146,27 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
             {/* 可见范围 */}
             <div
               className="flex items-center justify-between"
-              data-oid="lxls402"
+              data-oid="wa-bk9h"
             >
-              <span className="text-sm text-gray-900" data-oid="-68cwsu">
+              <span className="text-sm text-gray-900" data-oid="bxo1sfu">
                 可见范围
               </span>
               <Select
                 value={visibility}
                 onValueChange={setVisibility}
-                data-oid="1xpk-wq"
+                data-oid=":gzq83o"
               >
-                <SelectTrigger className="w-24 h-8 text-sm" data-oid=":bvw4y6">
-                  <SelectValue data-oid="8nek38h" />
+                <SelectTrigger className="w-24 h-8 text-sm" data-oid="4rke79s">
+                  <SelectValue data-oid="65vh925" />
                 </SelectTrigger>
-                <SelectContent data-oid="eap5uk:">
-                  <SelectItem value="public" data-oid="j-4r9e7">
+                <SelectContent data-oid="gp4hud0">
+                  <SelectItem value="public" data-oid="to53esz">
                     公开可见
                   </SelectItem>
-                  <SelectItem value="friends" data-oid=":7d0dfa">
+                  <SelectItem value="friends" data-oid="uj20njj">
                     仅好友可见
                   </SelectItem>
-                  <SelectItem value="private" data-oid="ae3f4yn">
+                  <SelectItem value="private" data-oid="8ey1lgd">
                     仅自己可见
                   </SelectItem>
                 </SelectContent>
@@ -176,36 +176,36 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
             {/* 允许评论 */}
             <div
               className="flex items-center justify-between"
-              data-oid="hrf218g"
+              data-oid="xj5p-5j"
             >
-              <span className="text-sm text-gray-900" data-oid="xgvk64n">
+              <span className="text-sm text-gray-900" data-oid="2a937yx">
                 允许评论
               </span>
               <Switch
                 checked={allowComment}
                 onCheckedChange={setAllowComment}
-                data-oid="hxo799p"
+                data-oid="lx3_cx."
               />
             </div>
 
             {/* 允许转发 */}
             <div
               className="flex items-center justify-between"
-              data-oid="j6o3r.r"
+              data-oid="fmt4iy."
             >
-              <span className="text-sm text-gray-900" data-oid="o2nbry.">
+              <span className="text-sm text-gray-900" data-oid=":53c:co">
                 允许转发分享
               </span>
               <Switch
                 checked={allowShare}
                 onCheckedChange={setAllowShare}
-                data-oid="t1gvd9p"
+                data-oid="9dn5n3p"
               />
             </div>
 
             {/* 发布时间 */}
-            <div className="flex items-center space-x-4" data-oid="8h4.jlp">
-              <div className="flex items-center space-x-2" data-oid="g3d4xkp">
+            <div className="flex items-center space-x-4" data-oid="offlc0t">
+              <div className="flex items-center space-x-2" data-oid="ehji046">
                 <input
                   type="radio"
                   id="now"
@@ -214,19 +214,19 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
                   checked={publishTime === "now"}
                   onChange={(e) => setPublishTime(e.target.value)}
                   className="w-4 h-4 text-red-500"
-                  data-oid="q0n1394"
+                  data-oid="gp_d.aw"
                 />
 
                 <label
                   htmlFor="now"
                   className="text-sm text-gray-900"
-                  data-oid="c:.g-4w"
+                  data-oid="ajfbh1t"
                 >
                   立即发布
                 </label>
               </div>
 
-              <div className="flex items-center space-x-2" data-oid="3joe2i9">
+              <div className="flex items-center space-x-2" data-oid="14h4l3l">
                 <input
                   type="radio"
                   id="scheduled"
@@ -235,13 +235,13 @@ export function PublishSettings({ onSettingsChange }: PublishSettingsProps) {
                   checked={publishTime === "scheduled"}
                   onChange={(e) => setPublishTime(e.target.value)}
                   className="w-4 h-4 text-red-500"
-                  data-oid="souxwk2"
+                  data-oid=".pbjfz2"
                 />
 
                 <label
                   htmlFor="scheduled"
                   className="text-sm text-gray-900"
-                  data-oid="txbmuxr"
+                  data-oid="77wba3f"
                 >
                   定时发布
                 </label>

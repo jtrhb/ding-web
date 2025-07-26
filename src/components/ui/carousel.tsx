@@ -117,7 +117,7 @@ function Carousel({
         canScrollPrev,
         canScrollNext,
       }}
-      data-oid="3aww.5k"
+      data-oid="l9nf:0z"
     >
       <div
         onKeyDownCapture={handleKeyDown}
@@ -126,7 +126,7 @@ function Carousel({
         aria-roledescription="carousel"
         data-slot="carousel"
         {...props}
-        data-oid="ufwxz28"
+        data-oid="blxfitb"
       >
         {children}
       </div>
@@ -142,7 +142,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
       ref={carouselRef}
       className="overflow-hidden"
       data-slot="carousel-content"
-      data-oid="25bkvih"
+      data-oid="s9cv4cx"
     >
       <div
         className={cn(
@@ -151,7 +151,7 @@ function CarouselContent({ className, ...props }: React.ComponentProps<"div">) {
           className,
         )}
         {...props}
-        data-oid="78924i4"
+        data-oid="5.y8uiy"
       />
     </div>
   );
@@ -171,7 +171,7 @@ function CarouselItem({ className, ...props }: React.ComponentProps<"div">) {
         className,
       )}
       {...props}
-      data-oid="mhau8rt"
+      data-oid="7b0:kmj"
     />
   );
 }
@@ -199,10 +199,10 @@ function CarouselPrevious({
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}
-      data-oid="ef8y1pn"
+      data-oid="73bmrc9"
     >
-      <ArrowLeft data-oid="s26ucax" />
-      <span className="sr-only" data-oid="gu7:e:.">
+      <ArrowLeft data-oid="4lzxiji" />
+      <span className="sr-only" data-oid="ssz6a1g">
         Previous slide
       </span>
     </Button>
@@ -232,10 +232,10 @@ function CarouselNext({
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
-      data-oid=":__n0sm"
+      data-oid="5hicw94"
     >
-      <ArrowRight data-oid="53u23c." />
-      <span className="sr-only" data-oid="4hdr7is">
+      <ArrowRight data-oid="3uo784e" />
+      <span className="sr-only" data-oid="n8ar5rt">
         Next slide
       </span>
     </Button>

@@ -15,7 +15,6 @@ function RadioGroup({
       data-slot="radio-group"
       className={cn("grid gap-3", className)}
       {...props}
-      data-oid="ruc8053"
     />
   );
 }
@@ -32,17 +31,12 @@ function RadioGroupItem({
         className,
       )}
       {...props}
-      data-oid="n:i44wm"
     >
       <RadioGroupPrimitive.Indicator
         data-slot="radio-group-indicator"
         className="relative flex items-center justify-center"
-        data-oid="kkdleb_"
       >
-        <CircleIcon
-          className="fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
-          data-oid="pwo:gx9"
-        />
+        <CircleIcon className="fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2" />
       </RadioGroupPrimitive.Indicator>
     </RadioGroupPrimitive.Item>
   );

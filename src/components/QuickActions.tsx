@@ -14,17 +14,17 @@ export function QuickActions({
   onEmojiClick,
 }: QuickActionsProps) {
   return (
-    <div className="px-4 pb-4" data-oid="ft316x0">
-      <div className="flex space-x-4" data-oid="5t.fg4i">
+    <div className="px-4 pb-4" data-oid="z5w9kiq">
+      <div className="flex space-x-4" data-oid="blb4e0t">
         <Button
           variant="ghost"
           size="sm"
           onClick={onTopicClick}
           className="flex items-center space-x-1 text-gray-600 hover:text-red-500 p-1"
-          data-oid="xxpl83u"
+          data-oid="bheo:p8"
         >
-          <Hash className="w-4 h-4" data-oid="g98.5oo" />
-          <span className="text-sm" data-oid="o4ezxwc">
+          <Hash className="w-4 h-4" data-oid="7llxt-m" />
+          <span className="text-sm" data-oid="7vazu37">
             话题
           </span>
         </Button>
@@ -34,10 +34,10 @@ export function QuickActions({
           size="sm"
           onClick={onMentionClick}
           className="flex items-center space-x-1 text-gray-600 hover:text-red-500 p-1"
-          data-oid="-xsrj8_"
+          data-oid="ypu:f-s"
         >
-          <AtSign className="w-4 h-4" data-oid="jj_:g0q" />
-          <span className="text-sm" data-oid="kv:isaa">
+          <AtSign className="w-4 h-4" data-oid="enue7n9" />
+          <span className="text-sm" data-oid="nai35-0">
             用户
           </span>
         </Button>
@@ -47,10 +47,10 @@ export function QuickActions({
           size="sm"
           onClick={onEmojiClick}
           className="flex items-center space-x-1 text-gray-600 hover:text-red-500 p-1"
-          data-oid="zggsulj"
+          data-oid="sxneu2q"
         >
-          <Smile className="w-4 h-4" data-oid="779-9nn" />
-          <span className="text-sm" data-oid="r83-5zw">
+          <Smile className="w-4 h-4" data-oid="jqsy3zd" />
+          <span className="text-sm" data-oid="z1xyl3o">
             表情
           </span>
         </Button>

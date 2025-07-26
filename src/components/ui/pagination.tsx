@@ -16,7 +16,7 @@ function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
       data-slot="pagination"
       className={cn("mx-auto flex w-full justify-center", className)}
       {...props}
-      data-oid="9gj-hfc"
+      data-oid="m7djiux"
     />
   );
 }
@@ -30,13 +30,13 @@ function PaginationContent({
       data-slot="pagination-content"
       className={cn("flex flex-row items-center gap-1", className)}
       {...props}
-      data-oid="7tw9k:u"
+      data-oid="hb3ugw:"
     />
   );
 }
 
 function PaginationItem({ ...props }: React.ComponentProps<"li">) {
-  return <li data-slot="pagination-item" {...props} data-oid="8rfndjz" />;
+  return <li data-slot="pagination-item" {...props} data-oid="guf6.v8" />;
 }
 
 type PaginationLinkProps = {
@@ -63,7 +63,7 @@ function PaginationLink({
         className,
       )}
       {...props}
-      data-oid="89-suc:"
+      data-oid="iy:sg6n"
     />
   );
 }
@@ -78,10 +78,10 @@ function PaginationPrevious({
       size="default"
       className={cn("gap-1 px-2.5 sm:pl-2.5", className)}
       {...props}
-      data-oid="x7.wbrw"
+      data-oid="vlb608k"
     >
-      <ChevronLeftIcon data-oid="npk5.f:" />
-      <span className="hidden sm:block" data-oid="h5t.g8l">
+      <ChevronLeftIcon data-oid="53t05n3" />
+      <span className="hidden sm:block" data-oid="6ddtqxx">
         Previous
       </span>
     </PaginationLink>
@@ -98,12 +98,12 @@ function PaginationNext({
       size="default"
       className={cn("gap-1 px-2.5 sm:pr-2.5", className)}
       {...props}
-      data-oid="u.i0bsk"
+      data-oid="c5gg1ym"
     >
-      <span className="hidden sm:block" data-oid="4s5hbvf">
+      <span className="hidden sm:block" data-oid="6ed3vfd">
         Next
       </span>
-      <ChevronRightIcon data-oid="8kt6umb" />
+      <ChevronRightIcon data-oid="3irt.o5" />
     </PaginationLink>
   );
 }
@@ -118,10 +118,10 @@ function PaginationEllipsis({
       data-slot="pagination-ellipsis"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
-      data-oid="qb2tek4"
+      data-oid="iuin2xa"
     >
-      <MoreHorizontalIcon className="size-4" data-oid="02sz5j5" />
-      <span className="sr-only" data-oid="2w4ym9b">
+      <MoreHorizontalIcon className="size-4" data-oid="nbesvyj" />
+      <span className="sr-only" data-oid="9ob8-g.">
         More pages
       </span>
     </span>
