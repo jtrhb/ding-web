@@ -5,14 +5,7 @@ import { ChevronRight, MoreHorizontal } from "lucide-react";
 import { cn } from "./utils";
 
 function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
-  return (
-    <nav
-      aria-label="breadcrumb"
-      data-slot="breadcrumb"
-      {...props}
-      data-oid="hvnd97l"
-    />
-  );
+  return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />;
 }
 
 function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
@@ -24,7 +17,6 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
         className,
       )}
       {...props}
-      data-oid="yszgu7:"
     />
   );
 }
@@ -35,7 +27,6 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
       data-slot="breadcrumb-item"
       className={cn("inline-flex items-center gap-1.5", className)}
       {...props}
-      data-oid="mer-07t"
     />
   );
 }
@@ -52,7 +43,6 @@ function BreadcrumbLink({
       data-slot="breadcrumb-link"
       className={cn("hover:text-foreground transition-colors", className)}
       {...props}
-      data-oid="6fcwi4g"
     />
   );
 }
@@ -66,7 +56,6 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       aria-current="page"
       className={cn("text-foreground font-normal", className)}
       {...props}
-      data-oid="nzgd2ql"
     />
   );
 }
@@ -83,9 +72,8 @@ function BreadcrumbSeparator({
       aria-hidden="true"
       className={cn("[&>svg]:size-3.5", className)}
       {...props}
-      data-oid="3a05wmt"
     >
-      {children ?? <ChevronRight data-oid="bibgrnp" />}
+      {children ?? <ChevronRight />}
     </li>
   );
 }
@@ -101,12 +89,9 @@ function BreadcrumbEllipsis({
       aria-hidden="true"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
-      data-oid="cidwz:d"
     >
-      <MoreHorizontal className="size-4" data-oid="6q4c01s" />
-      <span className="sr-only" data-oid="hpb.mdv">
-        More
-      </span>
+      <MoreHorizontal className="size-4" />
+      <span className="sr-only">More</span>
     </span>
   );
 }

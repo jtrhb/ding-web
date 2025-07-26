@@ -157,11 +157,7 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
     };
 
     const config = statusConfig[status as keyof typeof statusConfig];
-    return (
-      <Badge className={config.color} data-oid="k4kt21.">
-        {config.label}
-      </Badge>
-    );
+    return <Badge className={config.color}>{config.label}</Badge>;
   };
 
   const filteredNotes = mockNotes.filter((note) => {
@@ -186,126 +182,73 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
   };
 
   return (
-    <div className="h-full flex flex-col" data-oid="kgj0q1a">
+    <div className="h-full flex flex-col">
       {/* 页面头部 - 与侧栏标题对齐 */}
-      <div
-        className="p-6 border-b border-gray-100 bg-white flex-shrink-0"
-        data-oid="wfr4g-1"
-      >
-        <div
-          className="flex items-center justify-between mb-4"
-          data-oid="os63uru"
-        >
-          <div data-oid="b28qeaf">
-            <h1 className="text-2xl font-bold text-gray-900" data-oid="i9uqe3p">
-              笔记管理
-            </h1>
-            <p className="text-gray-500 mt-1" data-oid="vct_vzt">
-              管理你的所有笔记内容
-            </p>
+      <div className="p-6 border-b border-gray-100 bg-white flex-shrink-0">
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900">笔记管理</h1>
+            <p className="text-gray-500 mt-1">管理你的所有笔记内容</p>
           </div>
-          <Button
-            className="bg-red-500 hover:bg-red-600 text-white"
-            data-oid="q4opecw"
-          >
-            <PlusCircle className="w-4 h-4 mr-2" data-oid="zj7qlal" />
+          <Button className="bg-red-500 hover:bg-red-600 text-white">
+            <PlusCircle className="w-4 h-4 mr-2" />
             新建笔记
           </Button>
         </div>
 
         {/* 统计卡片 */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6"
-          data-oid="38eaup4"
-        >
-          <Card data-oid="9c7btbi">
-            <CardContent className="p-4" data-oid="qodji51">
-              <div className="flex items-center" data-oid="d7d45gc">
-                <div
-                  className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="oo05zc."
-                >
-                  <TrendingUp
-                    className="w-4 h-4 text-blue-600"
-                    data-oid="oyvw7ac"
-                  />
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                  <TrendingUp className="w-4 h-4 text-blue-600" />
                 </div>
-                <div data-oid="8olngi4">
-                  <p className="text-sm text-gray-600" data-oid="_4pi33n">
-                    总浏览量
-                  </p>
-                  <p className="text-xl font-bold" data-oid="b2lla9l">
-                    21.4K
-                  </p>
+                <div>
+                  <p className="text-sm text-gray-600">总浏览量</p>
+                  <p className="text-xl font-bold">21.4K</p>
                 </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card data-oid="ye7t6ts">
-            <CardContent className="p-4" data-oid="aumelu0">
-              <div className="flex items-center" data-oid="y17kupn">
-                <div
-                  className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="h28o9ic"
-                >
-                  <Heart className="w-4 h-4 text-red-600" data-oid="t52-l2w" />
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3">
+                  <Heart className="w-4 h-4 text-red-600" />
                 </div>
-                <div data-oid="dww-_ph">
-                  <p className="text-sm text-gray-600" data-oid="wn08tba">
-                    总点赞数
-                  </p>
-                  <p className="text-xl font-bold" data-oid="0ja3oy:">
-                    1.3K
-                  </p>
+                <div>
+                  <p className="text-sm text-gray-600">总点赞数</p>
+                  <p className="text-xl font-bold">1.3K</p>
                 </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card data-oid="n8ubzn5">
-            <CardContent className="p-4" data-oid="extk4qt">
-              <div className="flex items-center" data-oid="0x1fylv">
-                <div
-                  className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="5tsdppn"
-                >
-                  <MessageCircle
-                    className="w-4 h-4 text-green-600"
-                    data-oid="q.7rdsc"
-                  />
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
+                  <MessageCircle className="w-4 h-4 text-green-600" />
                 </div>
-                <div data-oid="o8kcyjs">
-                  <p className="text-sm text-gray-600" data-oid="0bnf3w1">
-                    总评论数
-                  </p>
-                  <p className="text-xl font-bold" data-oid=".m_5act">
-                    190
-                  </p>
+                <div>
+                  <p className="text-sm text-gray-600">总评论数</p>
+                  <p className="text-xl font-bold">190</p>
                 </div>
               </div>
             </CardContent>
           </Card>
 
-          <Card data-oid="8n5zaf0">
-            <CardContent className="p-4" data-oid="f2qck3:">
-              <div className="flex items-center" data-oid="-0owikv">
-                <div
-                  className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="ld1ifsf"
-                >
-                  <Share2
-                    className="w-4 h-4 text-purple-600"
-                    data-oid="0if0idy"
-                  />
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-center">
+                <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                  <Share2 className="w-4 h-4 text-purple-600" />
                 </div>
-                <div data-oid="jqnblj2">
-                  <p className="text-sm text-gray-600" data-oid="dzk8vlg">
-                    总分享数
-                  </p>
-                  <p className="text-xl font-bold" data-oid="xoh-wdp">
-                    68
-                  </p>
+                <div>
+                  <p className="text-sm text-gray-600">总分享数</p>
+                  <p className="text-xl font-bold">68</p>
                 </div>
               </div>
             </CardContent>
@@ -313,202 +256,151 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
         </div>
 
         {/* 搜索和筛选 */}
-        <div className="flex items-center space-x-4" data-oid="4k1pgh7">
-          <div className="flex-1 relative" data-oid="reup:_5">
-            <Search
-              className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
-              data-oid="jaa7rqi"
-            />
+        <div className="flex items-center space-x-4">
+          <div className="flex-1 relative">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
 
             <Input
               placeholder="搜索笔记标题或内容..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10"
-              data-oid="u_wbd:0"
             />
           </div>
 
-          <Select
-            value={statusFilter}
-            onValueChange={setStatusFilter}
-            data-oid="8onw4t9"
-          >
-            <SelectTrigger className="w-32" data-oid="4x3d2jb">
-              <SelectValue data-oid="4ts0vlf" />
+          <Select value={statusFilter} onValueChange={setStatusFilter}>
+            <SelectTrigger className="w-32">
+              <SelectValue />
             </SelectTrigger>
-            <SelectContent data-oid="ttgvxpm">
-              <SelectItem value="all" data-oid="7bsymjj">
-                全部状态
-              </SelectItem>
-              <SelectItem value="published" data-oid="te86fht">
-                已发布
-              </SelectItem>
-              <SelectItem value="draft" data-oid="3ghnaly">
-                草稿
-              </SelectItem>
-              <SelectItem value="scheduled" data-oid="2_-f9fq">
-                定时发布
-              </SelectItem>
-              <SelectItem value="reviewing" data-oid="a8jetoa">
-                审核中
-              </SelectItem>
+            <SelectContent>
+              <SelectItem value="all">全部状态</SelectItem>
+              <SelectItem value="published">已发布</SelectItem>
+              <SelectItem value="draft">草稿</SelectItem>
+              <SelectItem value="scheduled">定时发布</SelectItem>
+              <SelectItem value="reviewing">审核中</SelectItem>
             </SelectContent>
           </Select>
 
-          <Button variant="outline" data-oid=".zhk2i1">
-            <Filter className="w-4 h-4 mr-2" data-oid="g42:rq6" />
+          <Button variant="outline">
+            <Filter className="w-4 h-4 mr-2" />
             更多筛选
           </Button>
         </div>
       </div>
 
       {/* 内容区域 */}
-      <div className="flex-1 overflow-y-auto bg-gray-50 p-6" data-oid="gmj6ojo">
-        <Card data-oid="i5srd5b">
-          <Table data-oid="8wqxuem">
-            <TableHeader data-oid="z-bxsfb">
-              <TableRow data-oid="qxhvp8p">
-                <TableHead className="w-12" data-oid=":5dnbio">
+      <div className="flex-1 overflow-y-auto bg-gray-50 p-6">
+        <Card>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="w-12">
                   <input
                     type="checkbox"
                     className="w-4 h-4 rounded border-2 border-gray-300 bg-white checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-200 transition-colors"
-                    data-oid="tgp61c."
                   />
                 </TableHead>
-                <TableHead data-oid="z51vb6m">笔记</TableHead>
-                <TableHead data-oid="qb71hpy">状态</TableHead>
-                <TableHead data-oid="89u5p41">数据</TableHead>
-                <TableHead data-oid="j4x7zet">发布时间</TableHead>
-                <TableHead data-oid="1shw2gm">标签</TableHead>
-                <TableHead className="w-20" data-oid="ofvx6xq">
-                  操作
-                </TableHead>
+                <TableHead>笔记</TableHead>
+                <TableHead>状态</TableHead>
+                <TableHead>数据</TableHead>
+                <TableHead>发布时间</TableHead>
+                <TableHead>标签</TableHead>
+                <TableHead className="w-20">操作</TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody data-oid="u:y800_">
+            <TableBody>
               {filteredNotes.map((note) => (
-                <TableRow key={note.id} data-oid="pmhk3za">
-                  <TableCell data-oid="s_tnk4s">
+                <TableRow key={note.id}>
+                  <TableCell>
                     <input
                       type="checkbox"
                       className="w-4 h-4 rounded border-2 border-gray-300 bg-white checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-200 transition-colors text-[rgba(159,155,155,1)]"
-                      data-oid="7cjio:s"
                     />
                   </TableCell>
-                  <TableCell data-oid="azwlbh2">
-                    <div
-                      className="flex items-center space-x-3"
-                      data-oid="o1ky5l4"
-                    >
+                  <TableCell>
+                    <div className="flex items-center space-x-3">
                       <ImageWithFallback
                         src={note.cover}
                         alt={note.title}
                         className="w-12 h-12 rounded-lg object-cover"
-                        data-oid="dz8t4.g"
                       />
 
-                      <div className="min-w-0 flex-1" data-oid="y0fvrdw">
-                        <p
-                          className="font-medium text-gray-900 truncate"
-                          data-oid="7drmmcr"
-                        >
+                      <div className="min-w-0 flex-1">
+                        <p className="font-medium text-gray-900 truncate">
                           {note.title}
                         </p>
-                        <p
-                          className="text-sm text-gray-500 truncate"
-                          data-oid="l35v237"
-                        >
+                        <p className="text-sm text-gray-500 truncate">
                           {note.content}
                         </p>
                       </div>
                     </div>
                   </TableCell>
-                  <TableCell data-oid="v-uol5l">
-                    {getStatusBadge(note.status)}
-                  </TableCell>
-                  <TableCell data-oid="orkvjg.">
-                    <div className="text-sm" data-oid="s.t7qog">
-                      <div
-                        className="flex items-center space-x-3 text-gray-600"
-                        data-oid="vt.cfgc"
-                      >
-                        <span className="flex items-center" data-oid="xt9elfr">
-                          <Eye className="w-3 h-3 mr-1" data-oid="f871lzb" />
+                  <TableCell>{getStatusBadge(note.status)}</TableCell>
+                  <TableCell>
+                    <div className="text-sm">
+                      <div className="flex items-center space-x-3 text-gray-600">
+                        <span className="flex items-center">
+                          <Eye className="w-3 h-3 mr-1" />
                           {note.views.toLocaleString()}
                         </span>
-                        <span className="flex items-center" data-oid="i-ws9nl">
-                          <Heart className="w-3 h-3 mr-1" data-oid="xlux5.p" />
+                        <span className="flex items-center">
+                          <Heart className="w-3 h-3 mr-1" />
                           {note.likes}
                         </span>
-                        <span className="flex items-center" data-oid="t97riw:">
-                          <MessageCircle
-                            className="w-3 h-3 mr-1"
-                            data-oid="f:8g_f8"
-                          />
+                        <span className="flex items-center">
+                          <MessageCircle className="w-3 h-3 mr-1" />
 
                           {note.comments}
                         </span>
                       </div>
                     </div>
                   </TableCell>
-                  <TableCell data-oid="tthyquz">
-                    <div className="text-sm text-gray-600" data-oid="-8lp.nj">
+                  <TableCell>
+                    <div className="text-sm text-gray-600">
                       {note.publishTime || "-"}
                     </div>
                   </TableCell>
-                  <TableCell data-oid="g2lmqio">
-                    <div className="flex flex-wrap gap-1" data-oid="qkyxdjg">
+                  <TableCell>
+                    <div className="flex flex-wrap gap-1">
                       {note.tags.slice(0, 2).map((tag, index) => (
                         <Badge
                           key={index}
                           variant="outline"
                           className="text-xs"
-                          data-oid="rvbi8mp"
                         >
                           {tag}
                         </Badge>
                       ))}
                       {note.tags.length > 2 && (
-                        <Badge
-                          variant="outline"
-                          className="text-xs"
-                          data-oid="mxbpi:8"
-                        >
+                        <Badge variant="outline" className="text-xs">
                           +{note.tags.length - 2}
                         </Badge>
                       )}
                     </div>
                   </TableCell>
-                  <TableCell data-oid=":zjp.4r">
-                    <div
-                      className="flex items-center space-x-1"
-                      data-oid="tqfgx0h"
-                    >
+                  <TableCell>
+                    <div className="flex items-center space-x-1">
                       <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => handleView(note.id)}
-                        data-oid="bxzcq17"
                       >
-                        <Eye className="w-4 h-4" data-oid="79d70_m" />
+                        <Eye className="w-4 h-4" />
                       </Button>
                       <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => handleEdit(note.id)}
-                        data-oid="d240_0y"
                       >
-                        <Edit className="w-4 h-4" data-oid="6d0mf.y" />
+                        <Edit className="w-4 h-4" />
                       </Button>
                       <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => handleDelete(note.id)}
                         className="text-red-600 hover:text-red-700"
-                        data-oid="kchdxwa"
                       >
-                        <Trash2 className="w-4 h-4" data-oid="1bdie9w" />
+                        <Trash2 className="w-4 h-4" />
                       </Button>
                     </div>
                   </TableCell>

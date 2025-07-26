@@ -22,10 +22,9 @@ function NavigationMenu({
         className,
       )}
       {...props}
-      data-oid="pjjo94k"
     >
       {children}
-      {viewport && <NavigationMenuViewport data-oid="g3q:cyd" />}
+      {viewport && <NavigationMenuViewport />}
     </NavigationMenuPrimitive.Root>
   );
 }
@@ -42,7 +41,6 @@ function NavigationMenuList({
         className,
       )}
       {...props}
-      data-oid="mj25z:3"
     />
   );
 }
@@ -56,7 +54,6 @@ function NavigationMenuItem({
       data-slot="navigation-menu-item"
       className={cn("relative", className)}
       {...props}
-      data-oid="1cgt.02"
     />
   );
 }
@@ -75,13 +72,11 @@ function NavigationMenuTrigger({
       data-slot="navigation-menu-trigger"
       className={cn(navigationMenuTriggerStyle(), "group", className)}
       {...props}
-      data-oid="i:y48sc"
     >
       {children}{" "}
       <ChevronDownIcon
         className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"
-        data-oid="umo158w"
       />
     </NavigationMenuPrimitive.Trigger>
   );
@@ -100,7 +95,6 @@ function NavigationMenuContent({
         className,
       )}
       {...props}
-      data-oid=".0eh:-7"
     />
   );
 }
@@ -114,7 +108,6 @@ function NavigationMenuViewport({
       className={cn(
         "absolute top-full left-0 isolate z-50 flex justify-center",
       )}
-      data-oid="ojccb-t"
     >
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
@@ -123,7 +116,6 @@ function NavigationMenuViewport({
           className,
         )}
         {...props}
-        data-oid="z7kkhol"
       />
     </div>
   );
@@ -141,7 +133,6 @@ function NavigationMenuLink({
         className,
       )}
       {...props}
-      data-oid="nygulyq"
     />
   );
 }
@@ -158,12 +149,8 @@ function NavigationMenuIndicator({
         className,
       )}
       {...props}
-      data-oid="ryzpaat"
     >
-      <div
-        className="bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md"
-        data-oid="noiuw:."
-      />
+      <div className="bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md" />
     </NavigationMenuPrimitive.Indicator>
   );
 }

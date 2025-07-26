@@ -16,7 +16,6 @@ function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
       data-slot="pagination"
       className={cn("mx-auto flex w-full justify-center", className)}
       {...props}
-      data-oid="m7djiux"
     />
   );
 }
@@ -30,13 +29,12 @@ function PaginationContent({
       data-slot="pagination-content"
       className={cn("flex flex-row items-center gap-1", className)}
       {...props}
-      data-oid="hb3ugw:"
     />
   );
 }
 
 function PaginationItem({ ...props }: React.ComponentProps<"li">) {
-  return <li data-slot="pagination-item" {...props} data-oid="guf6.v8" />;
+  return <li data-slot="pagination-item" {...props} />;
 }
 
 type PaginationLinkProps = {
@@ -63,7 +61,6 @@ function PaginationLink({
         className,
       )}
       {...props}
-      data-oid="iy:sg6n"
     />
   );
 }
@@ -78,12 +75,9 @@ function PaginationPrevious({
       size="default"
       className={cn("gap-1 px-2.5 sm:pl-2.5", className)}
       {...props}
-      data-oid="vlb608k"
     >
-      <ChevronLeftIcon data-oid="53t05n3" />
-      <span className="hidden sm:block" data-oid="6ddtqxx">
-        Previous
-      </span>
+      <ChevronLeftIcon />
+      <span className="hidden sm:block">Previous</span>
     </PaginationLink>
   );
 }
@@ -98,12 +92,9 @@ function PaginationNext({
       size="default"
       className={cn("gap-1 px-2.5 sm:pr-2.5", className)}
       {...props}
-      data-oid="c5gg1ym"
     >
-      <span className="hidden sm:block" data-oid="6ed3vfd">
-        Next
-      </span>
-      <ChevronRightIcon data-oid="3irt.o5" />
+      <span className="hidden sm:block">Next</span>
+      <ChevronRightIcon />
     </PaginationLink>
   );
 }
@@ -118,12 +109,9 @@ function PaginationEllipsis({
       data-slot="pagination-ellipsis"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
-      data-oid="iuin2xa"
     >
-      <MoreHorizontalIcon className="size-4" data-oid="nbesvyj" />
-      <span className="sr-only" data-oid="9ob8-g.">
-        More pages
-      </span>
+      <MoreHorizontalIcon className="size-4" />
+      <span className="sr-only">More pages</span>
     </span>
   );
 }
