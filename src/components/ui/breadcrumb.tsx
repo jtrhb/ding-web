@@ -10,7 +10,7 @@ function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
       aria-label="breadcrumb"
       data-slot="breadcrumb"
       {...props}
-      data-oid="_mch0vw"
+      data-oid="uqhj5nd"
     />
   );
 }
@@ -24,7 +24,7 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
         className,
       )}
       {...props}
-      data-oid="08zpvqt"
+      data-oid="qcynefv"
     />
   );
 }
@@ -35,7 +35,7 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
       data-slot="breadcrumb-item"
       className={cn("inline-flex items-center gap-1.5", className)}
       {...props}
-      data-oid="gmdimxh"
+      data-oid="imqrt-q"
     />
   );
 }
@@ -52,7 +52,7 @@ function BreadcrumbLink({
       data-slot="breadcrumb-link"
       className={cn("hover:text-foreground transition-colors", className)}
       {...props}
-      data-oid="u7v.7m6"
+      data-oid="75uofo_"
     />
   );
 }
@@ -66,7 +66,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       aria-current="page"
       className={cn("text-foreground font-normal", className)}
       {...props}
-      data-oid="poauv:g"
+      data-oid="2r5gcij"
     />
   );
 }
@@ -83,9 +83,9 @@ function BreadcrumbSeparator({
       aria-hidden="true"
       className={cn("[&>svg]:size-3.5", className)}
       {...props}
-      data-oid="hmbxbl9"
+      data-oid="3g4wizk"
     >
-      {children ?? <ChevronRight data-oid="n9pyyr7" />}
+      {children ?? <ChevronRight data-oid="ui-y1_b" />}
     </li>
   );
 }
@@ -101,10 +101,10 @@ function BreadcrumbEllipsis({
       aria-hidden="true"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
-      data-oid="70:kisv"
+      data-oid="a1uwyz:"
     >
-      <MoreHorizontal className="size-4" data-oid="i51:nu:" />
-      <span className="sr-only" data-oid="eofzu5c">
+      <MoreHorizontal className="size-4" data-oid="lzdv-h4" />
+      <span className="sr-only" data-oid="kav475k">
         More
       </span>
     </span>

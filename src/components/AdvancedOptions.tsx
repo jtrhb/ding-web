@@ -37,34 +37,34 @@ export function AdvancedOptions({
   };
 
   return (
-    <div className="p-4 space-y-4" data-oid="je47thy">
+    <div className="p-4 space-y-4" data-oid="hs3s.i4">
       {/* 添加地点 */}
-      <div className="flex items-center justify-between" data-oid="_0vq-c0">
-        <div className="flex items-center space-x-2" data-oid="7idocut">
-          <MapPin className="w-4 h-4 text-gray-500" data-oid="tjnnudo" />
-          <span className="text-gray-900" data-oid="jwgiw7r">
+      <div className="flex items-center justify-between" data-oid="1tsz4mc">
+        <div className="flex items-center space-x-2" data-oid="bfnu9:l">
+          <MapPin className="w-4 h-4 text-gray-500" data-oid="q.o3v-:" />
+          <span className="text-gray-900" data-oid="3caz_2y">
             添加地点
           </span>
         </div>
         <Select
           value={location}
           onValueChange={handleLocationChange}
-          data-oid="9iblw61"
+          data-oid="99i0_9e"
         >
-          <SelectTrigger className="w-32 h-8 text-sm" data-oid="_hajf04">
-            <SelectValue placeholder="添加地点" data-oid="x_ccyil" />
+          <SelectTrigger className="w-32 h-8 text-sm" data-oid="7fi9gdr">
+            <SelectValue placeholder="添加地点" data-oid="ixi.fx4" />
           </SelectTrigger>
-          <SelectContent data-oid="svb_en4">
-            <SelectItem value="beijing" data-oid="s:3nsrf">
+          <SelectContent data-oid="yk..gne">
+            <SelectItem value="beijing" data-oid="5nlxq.l">
               北京
             </SelectItem>
-            <SelectItem value="shanghai" data-oid="g7g.8o_">
+            <SelectItem value="shanghai" data-oid="5.s.3ej">
               上海
             </SelectItem>
-            <SelectItem value="guangzhou" data-oid="acyayfi">
+            <SelectItem value="guangzhou" data-oid="yd4p662">
               广州
             </SelectItem>
-            <SelectItem value="shenzhen" data-oid="gxa92wh">
+            <SelectItem value="shenzhen" data-oid="7ajn6qq">
               深圳
             </SelectItem>
           </SelectContent>
@@ -72,32 +72,32 @@ export function AdvancedOptions({
       </div>
 
       {/* 添加合集 */}
-      <div className="flex items-center justify-between" data-oid="balppy_">
-        <div className="flex items-center space-x-2" data-oid="aattqkr">
-          <Bookmark className="w-4 h-4 text-gray-500" data-oid="kdrj45g" />
-          <span className="text-gray-900" data-oid="frvcg.g">
+      <div className="flex items-center justify-between" data-oid="x7ruojn">
+        <div className="flex items-center space-x-2" data-oid="mj5t5iu">
+          <Bookmark className="w-4 h-4 text-gray-500" data-oid="5tmfrai" />
+          <span className="text-gray-900" data-oid="_ldssa3">
             添加合集
           </span>
         </div>
         <Select
           value={collection}
           onValueChange={handleCollectionChange}
-          data-oid="gksulll"
+          data-oid="t120669"
         >
-          <SelectTrigger className="w-32 h-8 text-sm" data-oid="c4_3_ba">
-            <SelectValue placeholder="添加合集" data-oid="789g17:" />
+          <SelectTrigger className="w-32 h-8 text-sm" data-oid="hmkjaea">
+            <SelectValue placeholder="添加合集" data-oid="g3il.ei" />
           </SelectTrigger>
-          <SelectContent data-oid="c0v.ry.">
-            <SelectItem value="life" data-oid="lun3v13">
+          <SelectContent data-oid="kk1x:72">
+            <SelectItem value="life" data-oid="2763xrl">
               生活日记
             </SelectItem>
-            <SelectItem value="food" data-oid="a2cz9ez">
+            <SelectItem value="food" data-oid="4_a3vqg">
               美食探店
             </SelectItem>
-            <SelectItem value="travel" data-oid="v2cbfv4">
+            <SelectItem value="travel" data-oid="gafe_0z">
               旅行记录
             </SelectItem>
-            <SelectItem value="beauty" data-oid="17wb3ar">
+            <SelectItem value="beauty" data-oid="r4w-227">
               美妆护肤
             </SelectItem>
           </SelectContent>
@@ -105,29 +105,29 @@ export function AdvancedOptions({
       </div>
 
       {/* 关联好友 */}
-      <div className="flex items-center justify-between" data-oid="i1a_0mr">
-        <div className="flex items-center space-x-2" data-oid="mn8bp60">
-          <Users className="w-4 h-4 text-gray-500" data-oid="hi.s3ha" />
-          <span className="text-gray-900" data-oid="gjbe2g8">
+      <div className="flex items-center justify-between" data-oid="kemwq_r">
+        <div className="flex items-center space-x-2" data-oid="hzwjdpu">
+          <Users className="w-4 h-4 text-gray-500" data-oid="h1bfc.4" />
+          <span className="text-gray-900" data-oid="03ehw0y">
             关联好友
           </span>
         </div>
         <Select
           value={groupTime}
           onValueChange={setGroupTime}
-          data-oid="aym4uox"
+          data-oid="zmr.7vk"
         >
-          <SelectTrigger className="w-32 h-8 text-sm" data-oid="u5dr9ge">
-            <SelectValue placeholder="关联好友" data-oid="sq:u3me" />
+          <SelectTrigger className="w-32 h-8 text-sm" data-oid="8i97sot">
+            <SelectValue placeholder="关联好友" data-oid="t_bkur9" />
           </SelectTrigger>
-          <SelectContent data-oid="k_2_9ib">
-            <SelectItem value="recent" data-oid="iq7vzkj">
+          <SelectContent data-oid="pz49j1o">
+            <SelectItem value="recent" data-oid="5160iz_">
               最近联系
             </SelectItem>
-            <SelectItem value="frequent" data-oid="cflzbda">
+            <SelectItem value="frequent" data-oid="38r5_py">
               常联系
             </SelectItem>
-            <SelectItem value="all" data-oid="y0-6iew">
+            <SelectItem value="all" data-oid="u-jom64">
               所有好友
             </SelectItem>
           </SelectContent>
@@ -135,14 +135,14 @@ export function AdvancedOptions({
       </div>
 
       {/* 操作按钮 */}
-      <div className="flex space-x-4 pt-2" data-oid="k3i1f_8">
+      <div className="flex space-x-4 pt-2" data-oid="njj72gh">
         <Button
           variant="outline"
           size="sm"
           className="flex-1 border-red-200 text-red-500 hover:bg-red-50"
-          data-oid="wq8i:9t"
+          data-oid="um-4_wa"
         >
-          <Tag className="w-4 h-4 mr-2" data-oid="irpu8i1" />
+          <Tag className="w-4 h-4 mr-2" data-oid="k3aow19" />
           添加标记
         </Button>
 
@@ -150,9 +150,9 @@ export function AdvancedOptions({
           variant="outline"
           size="sm"
           className="flex-1 border-red-200 text-red-500 hover:bg-red-50"
-          data-oid="xbg1sp4"
+          data-oid="idrxa_m"
         >
-          <ShoppingBag className="w-4 h-4 mr-2" data-oid="_3547rr" />
+          <ShoppingBag className="w-4 h-4 mr-2" data-oid="vsf.m17" />
           关联商品
         </Button>
       </div>
@@ -160,17 +160,17 @@ export function AdvancedOptions({
       {/* 避免重复推荐 */}
       <div
         className="flex items-center justify-between pt-2 border-t border-gray-100"
-        data-oid="t-chht9"
+        data-oid="m46mw0q"
       >
-        <div className="flex items-center space-x-2" data-oid="yju6:le">
-          <span className="text-gray-900" data-oid="asvb:d7">
+        <div className="flex items-center space-x-2" data-oid="116a8i:">
+          <span className="text-gray-900" data-oid="pjl7rz1">
             为了避免重复推荐警告
           </span>
         </div>
         <Switch
           checked={avoidDuplicate}
           onCheckedChange={setAvoidDuplicate}
-          data-oid=":o-ejw6"
+          data-oid="ax05-z9"
         />
       </div>
     </div>

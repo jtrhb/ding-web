@@ -67,7 +67,7 @@ function Calendar({
           <ChevronLeft
             className={cn("size-4", className)}
             {...props}
-            data-oid="1pq85x6"
+            data-oid="t12ciij"
           />
         ),
 
@@ -78,12 +78,12 @@ function Calendar({
           <ChevronRight
             className={cn("size-4", className)}
             {...props}
-            data-oid="tcflc82"
+            data-oid="34n_tzw"
           />
         ),
       }}
       {...props}
-      data-oid="i:55:06"
+      data-oid="hwj-rl6"
     />
   );
 }

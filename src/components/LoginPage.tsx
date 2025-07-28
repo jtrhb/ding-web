@@ -18,7 +18,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
-  
+
   // 使用 Zustand store
   const { login } = useUserStore();
 
@@ -57,57 +57,57 @@ export function LoginPage({ onLogin }: LoginPageProps) {
   return (
     <div
       className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 flex items-center justify-center p-4"
-      data-oid="ehj8duz"
+      data-oid="vio58:4"
     >
-      <div className="w-full max-w-md" data-oid="ld7ly2x">
+      <div className="w-full max-w-md" data-oid="ruj:j7o">
         {/* Logo和品牌标识 */}
-        <div className="text-center mb-8" data-oid="kt-hp:h">
+        <div className="text-center mb-8" data-oid="pwe5vmb">
           <div
             className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4"
-            data-oid="sl_bdtv"
+            data-oid="26y.ljk"
           >
             <Heart
               className="w-8 h-8 text-white fill-current"
-              data-oid="umuvon7"
+              data-oid="mk_ejb3"
             />
           </div>
           <h1
             className="text-3xl font-bold text-gray-900 mb-2"
-            data-oid="fouip.1"
+            data-oid="_fnxrnl"
           >
             小红书创作工具
           </h1>
-          <p className="text-gray-600" data-oid="-9ap0q1">
+          <p className="text-gray-600" data-oid="ygj-blh">
             让创作更简单，让分享更精彩
           </p>
         </div>
 
         {/* 登录表单 */}
-        <Card className="shadow-lg border-0" data-oid="b51bf1c">
-          <CardHeader className="space-y-1 text-center" data-oid="3xmyq0l">
-            <CardTitle className="text-2xl" data-oid="j5u1bj:">
+        <Card className="shadow-lg border-0" data-oid="x6nsbki">
+          <CardHeader className="space-y-1 text-center" data-oid="ophz-hk">
+            <CardTitle className="text-2xl" data-oid="1xyxba1">
               欢迎回来
             </CardTitle>
-            <p className="text-gray-600" data-oid="3zqb0xc">
+            <p className="text-gray-600" data-oid="tojk3a2">
               请登录您的账户继续使用
             </p>
           </CardHeader>
-          <CardContent data-oid="lecueyn">
+          <CardContent data-oid="gnpi.ql">
             <form
               onSubmit={handleSubmit}
               className="space-y-4"
-              data-oid="6_tao4a"
+              data-oid="7c220f8"
             >
               {error && (
-                <Alert className="border-red-200 bg-red-50" data-oid="r76gu2q">
-                  <AlertDescription className="text-red-600" data-oid="_pwz2sc">
+                <Alert className="border-red-200 bg-red-50" data-oid="1yn:1lx">
+                  <AlertDescription className="text-red-600" data-oid="a7tz6vo">
                     {error}
                   </AlertDescription>
                 </Alert>
               )}
 
-              <div className="space-y-2" data-oid="xpsgwp-">
-                <Label htmlFor="username" data-oid="00590gq">
+              <div className="space-y-2" data-oid="lrcr21n">
+                <Label htmlFor="username" data-oid="ucg-i_s">
                   用户名
                 </Label>
                 <Input
@@ -118,15 +118,15 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   onChange={(e) => setUsername(e.target.value)}
                   className="h-12"
                   disabled={isLoading}
-                  data-oid="s:ft8v1"
+                  data-oid="4utm.sd"
                 />
               </div>
 
-              <div className="space-y-2" data-oid="e8kv9r6">
-                <Label htmlFor="password" data-oid="kl1yp1v">
+              <div className="space-y-2" data-oid="-2jfx4y">
+                <Label htmlFor="password" data-oid="fl-oyy3">
                   密码
                 </Label>
-                <div className="relative" data-oid="6dr-8pj">
+                <div className="relative" data-oid=":n1a4:i">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
@@ -135,7 +135,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                     onChange={(e) => setPassword(e.target.value)}
                     className="h-12 pr-10"
                     disabled={isLoading}
-                    data-oid="pk4_mkb"
+                    data-oid="6arptw6"
                   />
 
                   <button
@@ -143,12 +143,12 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                     onClick={() => setShowPassword(!showPassword)}
                     className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
                     disabled={isLoading}
-                    data-oid="mn_aiix"
+                    data-oid="cm3xxij"
                   >
                     {showPassword ? (
-                      <EyeOff className="w-4 h-4" data-oid="vm6w.ii" />
+                      <EyeOff className="w-4 h-4" data-oid="5-yutvf" />
                     ) : (
-                      <Eye className="w-4 h-4" data-oid="s-mgzp7" />
+                      <Eye className="w-4 h-4" data-oid="lwuw5:v" />
                     )}
                   </button>
                 </div>
@@ -156,19 +156,19 @@ export function LoginPage({ onLogin }: LoginPageProps) {
 
               <div
                 className="flex items-center justify-between"
-                data-oid="4foxn3y"
+                data-oid="t5f_0_x"
               >
                 <label
                   className="flex items-center space-x-2 text-sm"
-                  data-oid="q0:3-te"
+                  data-oid="b88r_9_"
                 >
                   <input
                     type="checkbox"
                     className="w-4 h-4 rounded border-2 border-gray-300 bg-white checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-200 transition-colors"
-                    data-oid="e-ux3:a"
+                    data-oid="cavfomf"
                   />
 
-                  <span className="text-gray-600" data-oid=".bw00_7">
+                  <span className="text-gray-600" data-oid="hfww7bt">
                     记住我
                   </span>
                 </label>
@@ -176,7 +176,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   type="button"
                   className="text-sm text-red-500 hover:text-red-600 transition-colors"
                   disabled={isLoading}
-                  data-oid=":c1c6k7"
+                  data-oid="x.5dkt:"
                 >
                   忘记密码？
                 </button>
@@ -186,18 +186,18 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                 type="submit"
                 className="w-full h-12 bg-red-500 hover:bg-red-600 text-white"
                 disabled={isLoading}
-                data-oid="fi145h3"
+                data-oid="_na_fki"
               >
                 {isLoading ? "登录中..." : "登录"}
               </Button>
             </form>
 
-            <div className="mt-6 text-center" data-oid="vky72dg">
-              <p className="text-sm text-gray-600" data-oid="-_o23th">
+            <div className="mt-6 text-center" data-oid="eub5qqo">
+              <p className="text-sm text-gray-600" data-oid=":7v4pss">
                 还没有账户？
                 <button
                   className="text-red-500 hover:text-red-600 transition-colors ml-1"
-                  data-oid="716i.qb"
+                  data-oid="zxzd0y2"
                 >
                   立即注册
                 </button>
@@ -205,27 +205,27 @@ export function LoginPage({ onLogin }: LoginPageProps) {
             </div>
 
             {/* 演示账户信息 */}
-            <div className="mt-6 p-4 bg-gray-50 rounded-lg" data-oid="_5.x:gm">
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg" data-oid=".b1r83f">
               <p
                 className="text-sm text-gray-600 text-center mb-2"
-                data-oid="_7mb7xc"
+                data-oid="zze7hqn"
               >
                 演示账户
               </p>
               <div
                 className="text-xs text-gray-500 space-y-1"
-                data-oid="ul9bppx"
+                data-oid="82v-5ic"
               >
-                <div data-oid="gknobu8">用户名: admin</div>
-                <div data-oid="b4x794m">密码: password</div>
+                <div data-oid="2mc7c2k">用户名: admin</div>
+                <div data-oid="ag-5g7b">密码: password</div>
               </div>
             </div>
           </CardContent>
         </Card>
 
         {/* 底部信息 */}
-        <div className="text-center mt-8" data-oid="oimlhg.">
-          <p className="text-xs text-gray-500" data-oid="xjq6ysj">
+        <div className="text-center mt-8" data-oid="bbmybvu">
+          <p className="text-xs text-gray-500" data-oid="ck41sp-">
             © 2025 小红书创作工具. 保留所有权利.
           </p>
         </div>

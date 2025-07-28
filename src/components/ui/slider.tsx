@@ -35,21 +35,21 @@ function Slider({
         className,
       )}
       {...props}
-      data-oid="mew1:4r"
+      data-oid="d1q0g97"
     >
       <SliderPrimitive.Track
         data-slot="slider-track"
         className={cn(
           "bg-muted relative grow overflow-hidden rounded-full data-[orientation=horizontal]:h-4 data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-1.5",
         )}
-        data-oid=".xcrver"
+        data-oid="xjcf7t:"
       >
         <SliderPrimitive.Range
           data-slot="slider-range"
           className={cn(
             "bg-primary absolute data-[orientation=horizontal]:h-full data-[orientation=vertical]:w-full",
           )}
-          data-oid="ma5hqu_"
+          data-oid=":9fq.lu"
         />
       </SliderPrimitive.Track>
       {Array.from({ length: _values.length }, (_, index) => (
@@ -57,7 +57,7 @@ function Slider({
           data-slot="slider-thumb"
           key={index}
           className="border-primary bg-background ring-ring/50 block size-4 shrink-0 rounded-full border shadow-sm transition-[color,box-shadow] hover:ring-4 focus-visible:ring-4 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50"
-          data-oid="n9:tg34"
+          data-oid="fu4l66x"
         />
       ))}
     </SliderPrimitive.Root>

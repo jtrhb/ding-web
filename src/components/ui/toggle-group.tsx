@@ -32,9 +32,9 @@ function ToggleGroup({
         className,
       )}
       {...props}
-      data-oid="u._tsr2"
+      data-oid="q4xr_6h"
     >
-      <ToggleGroupContext.Provider value={{ variant, size }} data-oid="ch97963">
+      <ToggleGroupContext.Provider value={{ variant, size }} data-oid="aame7bz">
         {children}
       </ToggleGroupContext.Provider>
     </ToggleGroupPrimitive.Root>
@@ -65,7 +65,7 @@ function ToggleGroupItem({
         className,
       )}
       {...props}
-      data-oid="dxf98f-"
+      data-oid="qwyj16l"
     >
       {children}
     </ToggleGroupPrimitive.Item>

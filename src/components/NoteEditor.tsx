@@ -64,66 +64,66 @@ export function NoteEditor({ onAIAssist }: NoteEditorProps) {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto p-6 space-y-6" data-oid="8:kw-kn">
-      <div className="flex items-center justify-between" data-oid="tk-yj6e">
-        <h1 className="text-2xl font-bold" data-oid="rz8k10i">
+    <div className="w-full max-w-4xl mx-auto p-6 space-y-6" data-oid="nouuia_">
+      <div className="flex items-center justify-between" data-oid="w26wpz9">
+        <h1 className="text-2xl font-bold" data-oid="_d_b_um">
           小红书笔记编辑器
         </h1>
         <Button
           onClick={exportNote}
           variant="outline"
           size="sm"
-          data-oid="pdgrqoa"
+          data-oid="9sbj-r3"
         >
-          <Download className="w-4 h-4 mr-2" data-oid="zkf1r_t" />
+          <Download className="w-4 h-4 mr-2" data-oid="8olzfod" />
           导出笔记
         </Button>
       </div>
 
-      <Tabs defaultValue="editor" className="w-full" data-oid="0gxxzs1">
-        <TabsList className="grid w-full grid-cols-2" data-oid="zcdx5pe">
-          <TabsTrigger value="editor" data-oid="9:qkk6n">
-            <FileText className="w-4 h-4 mr-2" data-oid="e6j-g.s" />
+      <Tabs defaultValue="editor" className="w-full" data-oid="7c0cp_a">
+        <TabsList className="grid w-full grid-cols-2" data-oid="nz9m.ah">
+          <TabsTrigger value="editor" data-oid="-f9ciiy">
+            <FileText className="w-4 h-4 mr-2" data-oid="zle4-m-" />
             编辑
           </TabsTrigger>
-          <TabsTrigger value="preview" data-oid="ichcrjb">
-            <Eye className="w-4 h-4 mr-2" data-oid="uzrr854" />
+          <TabsTrigger value="preview" data-oid="ozuyvpg">
+            <Eye className="w-4 h-4 mr-2" data-oid="vqdpmoh" />
             预览
           </TabsTrigger>
         </TabsList>
 
-        <TabsContent value="editor" className="space-y-6" data-oid="_eftlg2">
+        <TabsContent value="editor" className="space-y-6" data-oid="i6va-8f">
           {/* 标题部分 */}
-          <Card data-oid="l17m4us">
-            <CardHeader data-oid="gdaj8g.">
+          <Card data-oid="txjifab">
+            <CardHeader data-oid="uteyz16">
               <CardTitle
                 className="flex items-center justify-between"
-                data-oid="3yn9poz"
+                data-oid="cyprl9q"
               >
-                <span data-oid="kojhb1g">标题</span>
+                <span data-oid="0cxc7d5">标题</span>
                 <Button
                   onClick={() => onAIAssist("title")}
                   variant="outline"
                   size="sm"
-                  data-oid="sqpc..x"
+                  data-oid="l6el:qc"
                 >
-                  <Wand2 className="w-4 h-4 mr-2" data-oid="v43w93b" />
+                  <Wand2 className="w-4 h-4 mr-2" data-oid=":e442j:" />
                   AI生成标题
                 </Button>
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid="8d.yqu0">
+            <CardContent data-oid="s6vb6ig">
               <Input
                 placeholder="输入你的小红书笔记标题..."
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 className="text-lg"
-                data-oid="ro6u349"
+                data-oid="9248d7v"
               />
 
               <p
                 className="text-sm text-muted-foreground mt-2"
-                data-oid="3ods8::"
+                data-oid="c6njv6f"
               >
                 字数: {getCharCount(title)}/50
               </p>
@@ -131,89 +131,89 @@ export function NoteEditor({ onAIAssist }: NoteEditorProps) {
           </Card>
 
           {/* 正文部分 */}
-          <Card data-oid="2ah5xsv">
-            <CardHeader data-oid="tzyzksi">
+          <Card data-oid="ryojtrr">
+            <CardHeader data-oid="u32rl60">
               <CardTitle
                 className="flex items-center justify-between"
-                data-oid="2x_pj66"
+                data-oid="pgwl_uz"
               >
-                <span data-oid="yxnh426">正文内容</span>
+                <span data-oid="iiq46om">正文内容</span>
                 <Button
                   onClick={() => onAIAssist("content")}
                   variant="outline"
                   size="sm"
-                  data-oid="5.mjd7b"
+                  data-oid="so8oc89"
                 >
-                  <Sparkles className="w-4 h-4 mr-2" data-oid="1jncf7j" />
+                  <Sparkles className="w-4 h-4 mr-2" data-oid="ohqfh7o" />
                   AI优化内容
                 </Button>
               </CardTitle>
             </CardHeader>
-            <CardContent data-oid=":ls8qpk">
+            <CardContent data-oid="n_0fw04">
               <Textarea
                 placeholder="分享你的生活、心得、经验..."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 className="min-h-[300px] resize-none"
-                data-oid="mxc_eis"
+                data-oid="i147wax"
               />
 
               <div
                 className="flex justify-between text-sm text-muted-foreground mt-2"
-                data-oid=".xy6ik:"
+                data-oid="y5:0xi5"
               >
-                <span data-oid="yaqx8be">
+                <span data-oid=":o_:eua">
                   字数: {getCharCount(content)}/1000
                 </span>
-                <span data-oid="6y7f_.x">词数: {getWordCount(content)}</span>
+                <span data-oid="-ghqt07">词数: {getWordCount(content)}</span>
               </div>
             </CardContent>
           </Card>
 
           {/* 标签部分 */}
-          <Card data-oid="7n317t3">
-            <CardHeader data-oid="gb.rt1u">
+          <Card data-oid="ufwu7s8">
+            <CardHeader data-oid="l53rpmc">
               <CardTitle
                 className="flex items-center justify-between"
-                data-oid="0a6-i3k"
+                data-oid="_6owo8k"
               >
-                <span data-oid="ogqklkj">标签</span>
+                <span data-oid=".578bd-">标签</span>
                 <Button
                   onClick={() => onAIAssist("tags")}
                   variant="outline"
                   size="sm"
-                  data-oid="03sy0ql"
+                  data-oid="f6fxu2t"
                 >
-                  <Hash className="w-4 h-4 mr-2" data-oid="uxcpnm0" />
+                  <Hash className="w-4 h-4 mr-2" data-oid="3faa705" />
                   AI推荐标签
                 </Button>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4" data-oid="i9:5y.k">
-              <div className="flex space-x-2" data-oid="ar7wqmv">
+            <CardContent className="space-y-4" data-oid="g:en45:">
+              <div className="flex space-x-2" data-oid="frkcxp0">
                 <Input
                   placeholder="添加标签..."
                   value={currentTag}
                   onChange={(e) => setCurrentTag(e.target.value)}
                   onKeyPress={handleKeyPress}
                   className="flex-1"
-                  data-oid="i6kk:-9"
+                  data-oid="ifx6.7o"
                 />
 
-                <Button onClick={addTag} variant="outline" data-oid="vh76.s1">
+                <Button onClick={addTag} variant="outline" data-oid="rg.tqtc">
                   添加
                 </Button>
               </div>
 
               {tags.length > 0 && (
-                <div className="flex flex-wrap gap-2" data-oid="pvdl_m8">
+                <div className="flex flex-wrap gap-2" data-oid="ayvtw99">
                   {tags.map((tag, index) => (
                     <Badge
                       key={index}
                       variant="secondary"
                       className="cursor-pointer hover:bg-destructive hover:text-destructive-foreground"
                       onClick={() => removeTag(tag)}
-                      data-oid="z6y19la"
+                      data-oid="r0xss2j"
                     >
                       #{tag} ×
                     </Badge>
@@ -221,42 +221,42 @@ export function NoteEditor({ onAIAssist }: NoteEditorProps) {
                 </div>
               )}
 
-              <p className="text-sm text-muted-foreground" data-oid="2--yy-t">
+              <p className="text-sm text-muted-foreground" data-oid="w-f8d5h">
                 点击标签可以删除 • 已添加 {tags.length} 个标签
               </p>
             </CardContent>
           </Card>
         </TabsContent>
 
-        <TabsContent value="preview" data-oid="r595z4y">
-          <Card data-oid="yh5cm.w">
-            <CardHeader data-oid="4g9ag9g">
-              <CardTitle data-oid="zo1:d8v">预览效果</CardTitle>
+        <TabsContent value="preview" data-oid="6xafme:">
+          <Card data-oid="oycphuy">
+            <CardHeader data-oid="cwl3tn0">
+              <CardTitle data-oid="mklctls">预览效果</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4" data-oid="zti83_1">
+            <CardContent className="space-y-4" data-oid="ojpapiq">
               {title && (
-                <div data-oid="z1c1ycw">
-                  <h2 className="text-xl font-bold mb-2" data-oid="rd7l54-">
+                <div data-oid="h8avr_p">
+                  <h2 className="text-xl font-bold mb-2" data-oid="3mw3n_g">
                     {title}
                   </h2>
-                  <Separator data-oid="7ee0jrh" />
+                  <Separator data-oid="thxq_pr" />
                 </div>
               )}
 
               {content && (
                 <div
                   className="whitespace-pre-wrap leading-relaxed"
-                  data-oid="z3hfn74"
+                  data-oid="1dsnb7b"
                 >
                   {content}
                 </div>
               )}
 
               {tags.length > 0 && (
-                <div className="pt-4 border-t" data-oid="jgd2gc3">
-                  <div className="flex flex-wrap gap-2" data-oid="7zkxc3n">
+                <div className="pt-4 border-t" data-oid=".xuowb7">
+                  <div className="flex flex-wrap gap-2" data-oid="rez1.5v">
                     {tags.map((tag, index) => (
-                      <Badge key={index} variant="outline" data-oid="do0dpl7">
+                      <Badge key={index} variant="outline" data-oid="xfshxug">
                         #{tag}
                       </Badge>
                     ))}
@@ -267,7 +267,7 @@ export function NoteEditor({ onAIAssist }: NoteEditorProps) {
               {!title && !content && !tags.length && (
                 <p
                   className="text-muted-foreground text-center py-8"
-                  data-oid="42qpcn."
+                  data-oid="h9ukmxo"
                 >
                   在编辑器中输入内容后，这里会显示预览效果
                 </p>

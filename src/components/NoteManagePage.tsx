@@ -158,7 +158,7 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
 
     const config = statusConfig[status as keyof typeof statusConfig];
     return (
-      <Badge className={config.color} data-oid="890om3t">
+      <Badge className={config.color} data-oid="acn5hcq">
         {config.label}
       </Badge>
     );
@@ -186,29 +186,29 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
   };
 
   return (
-    <div className="h-full flex flex-col" data-oid="3axcyes">
+    <div className="h-full flex flex-col" data-oid="dd8lqoo">
       {/* 页面头部 - 与侧栏标题对齐 */}
       <div
         className="p-6 border-b border-gray-100 bg-white flex-shrink-0"
-        data-oid="f5vjqnr"
+        data-oid="tmlyq0y"
       >
         <div
           className="flex items-center justify-between mb-4"
-          data-oid="vtv7eim"
+          data-oid="d2dmm0c"
         >
-          <div data-oid="p3_zwb:">
-            <h1 className="text-2xl font-bold text-gray-900" data-oid="c.53:p:">
+          <div data-oid="mgq5xql">
+            <h1 className="text-2xl font-bold text-gray-900" data-oid="vwdxfw0">
               笔记管理
             </h1>
-            <p className="text-gray-500 mt-1" data-oid="zvi5g.c">
+            <p className="text-gray-500 mt-1" data-oid="la9tj8_">
               管理你的所有笔记内容
             </p>
           </div>
           <Button
             className="bg-red-500 hover:bg-red-600 text-white"
-            data-oid="az.3v37"
+            data-oid="ul6yj5j"
           >
-            <PlusCircle className="w-4 h-4 mr-2" data-oid="gvyizql" />
+            <PlusCircle className="w-4 h-4 mr-2" data-oid="duoo0_2" />
             新建笔记
           </Button>
         </div>
@@ -216,25 +216,25 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
         {/* 统计卡片 */}
         <div
           className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6"
-          data-oid="avyjq7b"
+          data-oid="3w40bmm"
         >
-          <Card data-oid=":njzg2u">
-            <CardContent className="p-4" data-oid="o_s-zne">
-              <div className="flex items-center" data-oid="krg_pom">
+          <Card data-oid="anz2ajr">
+            <CardContent className="p-4" data-oid="116jd.9">
+              <div className="flex items-center" data-oid="-_k7jm6">
                 <div
                   className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="ghi_7qj"
+                  data-oid="njtue_b"
                 >
                   <TrendingUp
                     className="w-4 h-4 text-blue-600"
-                    data-oid="9hnmoin"
+                    data-oid="y4g-0ij"
                   />
                 </div>
-                <div data-oid="wofkfb7">
-                  <p className="text-sm text-gray-600" data-oid="yn95uxu">
+                <div data-oid="9q3y0ib">
+                  <p className="text-sm text-gray-600" data-oid="h.3j5a1">
                     总浏览量
                   </p>
-                  <p className="text-xl font-bold" data-oid="bku90v.">
+                  <p className="text-xl font-bold" data-oid="1qmt377">
                     21.4K
                   </p>
                 </div>
@@ -242,20 +242,20 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
             </CardContent>
           </Card>
 
-          <Card data-oid="v_e55:y">
-            <CardContent className="p-4" data-oid="uzmkx_s">
-              <div className="flex items-center" data-oid=".9bc-_k">
+          <Card data-oid="w8s_4aa">
+            <CardContent className="p-4" data-oid="jvc2h73">
+              <div className="flex items-center" data-oid="m3-vuvd">
                 <div
                   className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="cs1cw55"
+                  data-oid="25l.byo"
                 >
-                  <Heart className="w-4 h-4 text-red-600" data-oid="ku3nxyg" />
+                  <Heart className="w-4 h-4 text-red-600" data-oid="qgly5q." />
                 </div>
-                <div data-oid="hwlg:_6">
-                  <p className="text-sm text-gray-600" data-oid="_bc.zhu">
+                <div data-oid="cnz_tew">
+                  <p className="text-sm text-gray-600" data-oid="9kuvyk8">
                     总点赞数
                   </p>
-                  <p className="text-xl font-bold" data-oid="t6:xj-2">
+                  <p className="text-xl font-bold" data-oid="ux:_ndv">
                     1.3K
                   </p>
                 </div>
@@ -263,23 +263,23 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
             </CardContent>
           </Card>
 
-          <Card data-oid="-b0h_t4">
-            <CardContent className="p-4" data-oid="gk8ksd2">
-              <div className="flex items-center" data-oid="m3jbfql">
+          <Card data-oid="qr7yn_g">
+            <CardContent className="p-4" data-oid="kldt6nh">
+              <div className="flex items-center" data-oid="4r4wn76">
                 <div
                   className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="jjrcjqr"
+                  data-oid=".4gsi6s"
                 >
                   <MessageCircle
                     className="w-4 h-4 text-green-600"
-                    data-oid="e3hu-2g"
+                    data-oid="3znlmq0"
                   />
                 </div>
-                <div data-oid="80-ngu3">
-                  <p className="text-sm text-gray-600" data-oid="t.r6r0a">
+                <div data-oid="kr5-jby">
+                  <p className="text-sm text-gray-600" data-oid="p.lqypz">
                     总评论数
                   </p>
-                  <p className="text-xl font-bold" data-oid="d1qwykm">
+                  <p className="text-xl font-bold" data-oid="qh6u7q7">
                     190
                   </p>
                 </div>
@@ -287,23 +287,23 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
             </CardContent>
           </Card>
 
-          <Card data-oid="7fuoq7.">
-            <CardContent className="p-4" data-oid=":6.qu-j">
-              <div className="flex items-center" data-oid="g_.mms.">
+          <Card data-oid="9y8xhc-">
+            <CardContent className="p-4" data-oid="_az.7os">
+              <div className="flex items-center" data-oid="-qh10bv">
                 <div
                   className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="2md-d:8"
+                  data-oid="a7x.1s6"
                 >
                   <Share2
                     className="w-4 h-4 text-purple-600"
-                    data-oid="f-z4-x2"
+                    data-oid="gvw-bbz"
                   />
                 </div>
-                <div data-oid="nh3i2ng">
-                  <p className="text-sm text-gray-600" data-oid="k:b3buq">
+                <div data-oid="sh7b4ra">
+                  <p className="text-sm text-gray-600" data-oid="1ag:oor">
                     总分享数
                   </p>
-                  <p className="text-xl font-bold" data-oid="wn6oslo">
+                  <p className="text-xl font-bold" data-oid="hshbqx-">
                     68
                   </p>
                 </div>
@@ -313,11 +313,11 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
         </div>
 
         {/* 搜索和筛选 */}
-        <div className="flex items-center space-x-4" data-oid="p2n_uw0">
-          <div className="flex-1 relative" data-oid="bl4nzf7">
+        <div className="flex items-center space-x-4" data-oid="r2owydl">
+          <div className="flex-1 relative" data-oid="wsv-u::">
             <Search
               className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
-              data-oid="htyznm:"
+              data-oid="jpw5iba"
             />
 
             <Input
@@ -325,126 +325,126 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="pl-10"
-              data-oid="uhexy-y"
+              data-oid="zta2sh0"
             />
           </div>
 
           <Select
             value={statusFilter}
             onValueChange={setStatusFilter}
-            data-oid="xc7nl0v"
+            data-oid="2ej.n.d"
           >
-            <SelectTrigger className="w-32" data-oid="rv6.0_f">
-              <SelectValue data-oid="f4z9euq" />
+            <SelectTrigger className="w-32" data-oid="epxfbc:">
+              <SelectValue data-oid="86zdr3-" />
             </SelectTrigger>
-            <SelectContent data-oid="8vz8rb:">
-              <SelectItem value="all" data-oid="b.3o1on">
+            <SelectContent data-oid="2:9l826">
+              <SelectItem value="all" data-oid="pslibys">
                 全部状态
               </SelectItem>
-              <SelectItem value="published" data-oid=".o3e_gj">
+              <SelectItem value="published" data-oid="a35p3cx">
                 已发布
               </SelectItem>
-              <SelectItem value="draft" data-oid="1c.u2:s">
+              <SelectItem value="draft" data-oid="ty4ngqe">
                 草稿
               </SelectItem>
-              <SelectItem value="scheduled" data-oid="ye6u8c8">
+              <SelectItem value="scheduled" data-oid="kpew.xz">
                 定时发布
               </SelectItem>
-              <SelectItem value="reviewing" data-oid="p6chggq">
+              <SelectItem value="reviewing" data-oid=".jv64p0">
                 审核中
               </SelectItem>
             </SelectContent>
           </Select>
 
-          <Button variant="outline" data-oid="pxcr7z6">
-            <Filter className="w-4 h-4 mr-2" data-oid="l8:p716" />
+          <Button variant="outline" data-oid="0xjfz0g">
+            <Filter className="w-4 h-4 mr-2" data-oid="crwyvg." />
             更多筛选
           </Button>
         </div>
       </div>
 
       {/* 内容区域 */}
-      <div className="flex-1 overflow-y-auto bg-gray-50 p-6" data-oid="8b:_7oi">
-        <Card data-oid="86h855o">
-          <Table data-oid="is:e9hx">
-            <TableHeader data-oid="k26w.22">
-              <TableRow data-oid="uwmvdyk">
-                <TableHead className="w-12" data-oid="yw9t2lp">
+      <div className="flex-1 overflow-y-auto bg-gray-50 p-6" data-oid="euxv0d.">
+        <Card data-oid="izpmn9q">
+          <Table data-oid="9wwso2p">
+            <TableHeader data-oid="gr_s.4q">
+              <TableRow data-oid="dgfsn1n">
+                <TableHead className="w-12" data-oid="1iu7utq">
                   <input
                     type="checkbox"
                     className="w-4 h-4 rounded border-2 border-gray-300 bg-white checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-200 transition-colors"
-                    data-oid="9j.pooz"
+                    data-oid="0u8uhup"
                   />
                 </TableHead>
-                <TableHead data-oid="rix-l6b">笔记</TableHead>
-                <TableHead data-oid="5ityq7m">状态</TableHead>
-                <TableHead data-oid="bbcd:4i">数据</TableHead>
-                <TableHead data-oid="3g4n.:4">发布时间</TableHead>
-                <TableHead data-oid="lgulb9n">标签</TableHead>
-                <TableHead className="w-20" data-oid="3nosjc9">
+                <TableHead data-oid="4x6m0c-">笔记</TableHead>
+                <TableHead data-oid="w3ahiw9">状态</TableHead>
+                <TableHead data-oid="7m6bd--">数据</TableHead>
+                <TableHead data-oid="p_x4.7h">发布时间</TableHead>
+                <TableHead data-oid="mnsr.qj">标签</TableHead>
+                <TableHead className="w-20" data-oid="ue1qn-f">
                   操作
                 </TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody data-oid="eiibf6c">
+            <TableBody data-oid="00_9jg9">
               {filteredNotes.map((note) => (
-                <TableRow key={note.id} data-oid="5hc1g7q">
-                  <TableCell data-oid="_wh.6l0">
+                <TableRow key={note.id} data-oid="o5k-y4i">
+                  <TableCell data-oid="tvvja50">
                     <input
                       type="checkbox"
                       className="w-4 h-4 rounded border-2 border-gray-300 bg-white checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-200 transition-colors text-[rgba(159,155,155,1)]"
-                      data-oid="2mo3_-m"
+                      data-oid=":-0u-ru"
                     />
                   </TableCell>
-                  <TableCell data-oid="ygiwj3w">
+                  <TableCell data-oid="6mol061">
                     <div
                       className="flex items-center space-x-3"
-                      data-oid="dkru.yz"
+                      data-oid="ibiky6r"
                     >
                       <ImageWithFallback
                         src={note.cover}
                         alt={note.title}
                         className="w-12 h-12 rounded-lg object-cover"
-                        data-oid="c8gywth"
+                        data-oid="feo1gde"
                       />
 
-                      <div className="min-w-0 flex-1" data-oid="i74y_wq">
+                      <div className="min-w-0 flex-1" data-oid="s6ldlo2">
                         <p
                           className="font-medium text-gray-900 truncate"
-                          data-oid="ufa:kml"
+                          data-oid="u60z7yo"
                         >
                           {note.title}
                         </p>
                         <p
                           className="text-sm text-gray-500 truncate"
-                          data-oid="e0x.cc2"
+                          data-oid="075w1d4"
                         >
                           {note.content}
                         </p>
                       </div>
                     </div>
                   </TableCell>
-                  <TableCell data-oid="xruha4o">
+                  <TableCell data-oid="f:ogx4-">
                     {getStatusBadge(note.status)}
                   </TableCell>
-                  <TableCell data-oid="av_t3ix">
-                    <div className="text-sm" data-oid="oec-4g4">
+                  <TableCell data-oid="f3ixlvx">
+                    <div className="text-sm" data-oid="_q_3q2t">
                       <div
                         className="flex items-center space-x-3 text-gray-600"
-                        data-oid="_zb49ks"
+                        data-oid="40_tmqz"
                       >
-                        <span className="flex items-center" data-oid="h-4tks3">
-                          <Eye className="w-3 h-3 mr-1" data-oid="yu8jjig" />
+                        <span className="flex items-center" data-oid="-6n41iv">
+                          <Eye className="w-3 h-3 mr-1" data-oid="qo0v9ko" />
                           {note.views.toLocaleString()}
                         </span>
-                        <span className="flex items-center" data-oid=":kyt8z.">
-                          <Heart className="w-3 h-3 mr-1" data-oid="eqyxtci" />
+                        <span className="flex items-center" data-oid="i_yg_pv">
+                          <Heart className="w-3 h-3 mr-1" data-oid="wvpmoja" />
                           {note.likes}
                         </span>
-                        <span className="flex items-center" data-oid="fqu8-cx">
+                        <span className="flex items-center" data-oid="i0:859s">
                           <MessageCircle
                             className="w-3 h-3 mr-1"
-                            data-oid="1cwh0b3"
+                            data-oid="prto-f9"
                           />
 
                           {note.comments}
@@ -452,19 +452,19 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
                       </div>
                     </div>
                   </TableCell>
-                  <TableCell data-oid="t.hp1kx">
-                    <div className="text-sm text-gray-600" data-oid="4-zcu2j">
+                  <TableCell data-oid="4-6.9ix">
+                    <div className="text-sm text-gray-600" data-oid="r5svcr9">
                       {note.publishTime || "-"}
                     </div>
                   </TableCell>
-                  <TableCell data-oid="r03frwu">
-                    <div className="flex flex-wrap gap-1" data-oid="8mbzwec">
+                  <TableCell data-oid="_.g07.n">
+                    <div className="flex flex-wrap gap-1" data-oid="w_x2cf5">
                       {note.tags.slice(0, 2).map((tag, index) => (
                         <Badge
                           key={index}
                           variant="outline"
                           className="text-xs"
-                          data-oid="9uzftrm"
+                          data-oid="6ktxjd:"
                         >
                           {tag}
                         </Badge>
@@ -473,42 +473,42 @@ export function NoteManagePage({ sidebarCollapsed }: NoteManagePageProps) {
                         <Badge
                           variant="outline"
                           className="text-xs"
-                          data-oid="ukx05yk"
+                          data-oid="h8fkchu"
                         >
                           +{note.tags.length - 2}
                         </Badge>
                       )}
                     </div>
                   </TableCell>
-                  <TableCell data-oid="1-x_mat">
+                  <TableCell data-oid="o768c7w">
                     <div
                       className="flex items-center space-x-1"
-                      data-oid="81yax-0"
+                      data-oid="9rizjb8"
                     >
                       <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => handleView(note.id)}
-                        data-oid="6pxv34q"
+                        data-oid="k1ak_9z"
                       >
-                        <Eye className="w-4 h-4" data-oid="hc88_29" />
+                        <Eye className="w-4 h-4" data-oid="bdoop6c" />
                       </Button>
                       <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => handleEdit(note.id)}
-                        data-oid="5o1_8xl"
+                        data-oid="als84g-"
                       >
-                        <Edit className="w-4 h-4" data-oid="p2_fn.-" />
+                        <Edit className="w-4 h-4" data-oid="nb0x8oz" />
                       </Button>
                       <Button
                         variant="ghost"
                         size="sm"
                         onClick={() => handleDelete(note.id)}
                         className="text-red-600 hover:text-red-700"
-                        data-oid="9c6cemg"
+                        data-oid="k1zm5jc"
                       >
-                        <Trash2 className="w-4 h-4" data-oid="ugdpz_e" />
+                        <Trash2 className="w-4 h-4" data-oid="9lf6a6x" />
                       </Button>
                     </div>
                   </TableCell>

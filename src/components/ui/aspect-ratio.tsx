@@ -9,7 +9,7 @@ function AspectRatio({
     <AspectRatioPrimitive.Root
       data-slot="aspect-ratio"
       {...props}
-      data-oid="7:m-7f1"
+      data-oid="e30fpur"
     />
   );
 }

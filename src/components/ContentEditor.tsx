@@ -27,24 +27,24 @@ export function ContentEditor({ onContentChange }: ContentEditorProps) {
   };
 
   return (
-    <div className="p-6 space-y-6" data-oid=":_8tonj">
+    <div className="p-6 space-y-6" data-oid="3z5g8g1">
       {/* 标题输入区域 */}
-      <div className="space-y-3" data-oid="eog5_1d">
-        <label className="text-sm font-medium text-gray-700" data-oid="ezj-y26">
+      <div className="space-y-3" data-oid="xytccyg">
+        <label className="text-sm font-medium text-gray-700" data-oid="xnjoea4">
           笔记标题
         </label>
-        <div className="relative" data-oid="e5o__.k">
+        <div className="relative" data-oid=":0kls58">
           <Input
             placeholder="请输入标题，会有更多的曝光～"
             value={title}
             onChange={handleTitleChange}
             className="text-lg font-medium border-none bg-gray-50 p-4 pr-16 text-gray-900 placeholder:text-gray-400 focus:ring-0 focus:outline-none focus:bg-gray-100 transition-colors"
-            data-oid="cyvwf7k"
+            data-oid="gt695c4"
           />
 
           <div
             className="absolute right-4 top-1/2 transform -translate-y-1/2 text-xs text-gray-400"
-            data-oid="07e6v4-"
+            data-oid=":qrzdf5"
           >
             {title.length}/20
           </div>
@@ -52,22 +52,22 @@ export function ContentEditor({ onContentChange }: ContentEditorProps) {
       </div>
 
       {/* 正文输入区域 */}
-      <div className="space-y-3" data-oid="0ycot-y">
-        <label className="text-sm font-medium text-gray-700" data-oid="fqc9yq8">
+      <div className="space-y-3" data-oid="7zv8rss">
+        <label className="text-sm font-medium text-gray-700" data-oid="la-pdji">
           正文内容
         </label>
-        <div className="relative" data-oid="4wo1t17">
+        <div className="relative" data-oid="3rhxvsi">
           <Textarea
             placeholder="输入正文内容，真实原创的笔记会获得更多曝光"
             value={content}
             onChange={handleContentChange}
             className="min-h-[200px] border-none bg-gray-50 p-4 pb-8 text-gray-900 placeholder:text-gray-400 resize-none focus:ring-0 focus:outline-none focus:bg-gray-100 transition-colors leading-relaxed"
-            data-oid="3jd5tz6"
+            data-oid="5cnb:mp"
           />
 
           <div
             className="absolute right-4 bottom-3 text-xs text-gray-400"
-            data-oid="l8337id"
+            data-oid="evw5ze2"
           >
             {content.length}/1000
           </div>

@@ -20,7 +20,7 @@ function InputOTP({
       )}
       className={cn("disabled:cursor-not-allowed", className)}
       {...props}
-      data-oid="m0ffx-m"
+      data-oid="-28i6qa"
     />
   );
 }
@@ -31,7 +31,7 @@ function InputOTPGroup({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="input-otp-group"
       className={cn("flex items-center gap-1", className)}
       {...props}
-      data-oid="wcvclne"
+      data-oid="yewxg-9"
     />
   );
 }
@@ -53,17 +53,17 @@ function InputOTPSlot({
         className,
       )}
       {...props}
-      data-oid="ndaxesl"
+      data-oid="q-dye_w"
     >
       {char}
       {hasFakeCaret && (
         <div
           className="pointer-events-none absolute inset-0 flex items-center justify-center"
-          data-oid=".2i.fcw"
+          data-oid="5llnvz-"
         >
           <div
             className="animate-caret-blink bg-foreground h-4 w-px duration-1000"
-            data-oid=":-_j.p8"
+            data-oid="8huyd9a"
           />
         </div>
       )}
@@ -77,9 +77,9 @@ function InputOTPSeparator({ ...props }: React.ComponentProps<"div">) {
       data-slot="input-otp-separator"
       role="separator"
       {...props}
-      data-oid="mkiwnhl"
+      data-oid="k-dn9ge"
     >
-      <MinusIcon data-oid="7h:kcmy" />
+      <MinusIcon data-oid="4h9xk0b" />
     </div>
   );
 }
