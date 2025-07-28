@@ -18,6 +18,7 @@ function ResizablePanelGroup({
         className,
       )}
       {...props}
+      data-oid="s5509qo"
     />
   );
 }
@@ -25,7 +26,13 @@ function ResizablePanelGroup({
 function ResizablePanel({
   ...props
 }: React.ComponentProps<typeof ResizablePrimitive.Panel>) {
-  return <ResizablePrimitive.Panel data-slot="resizable-panel" {...props} />;
+  return (
+    <ResizablePrimitive.Panel
+      data-slot="resizable-panel"
+      {...props}
+      data-oid="cqryrhe"
+    />
+  );
 }
 
 function ResizableHandle({
@@ -43,10 +50,14 @@ function ResizableHandle({
         className,
       )}
       {...props}
+      data-oid="ly._wu8"
     >
       {withHandle && (
-        <div className="bg-border z-10 flex h-4 w-3 items-center justify-center rounded-xs border">
-          <GripVerticalIcon className="size-2.5" />
+        <div
+          className="bg-border z-10 flex h-4 w-3 items-center justify-center rounded-xs border"
+          data-oid="zko.80m"
+        >
+          <GripVerticalIcon className="size-2.5" data-oid="wcgapk6" />
         </div>
       )}
     </ResizablePrimitive.PanelResizeHandle>

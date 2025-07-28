@@ -10,7 +10,7 @@ function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
       aria-label="breadcrumb"
       data-slot="breadcrumb"
       {...props}
-      data-oid="n92-8m2"
+      data-oid="_mch0vw"
     />
   );
 }
@@ -24,7 +24,7 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
         className,
       )}
       {...props}
-      data-oid="tb:qpkd"
+      data-oid="08zpvqt"
     />
   );
 }
@@ -35,7 +35,7 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
       data-slot="breadcrumb-item"
       className={cn("inline-flex items-center gap-1.5", className)}
       {...props}
-      data-oid="1.qnvom"
+      data-oid="gmdimxh"
     />
   );
 }
@@ -52,7 +52,7 @@ function BreadcrumbLink({
       data-slot="breadcrumb-link"
       className={cn("hover:text-foreground transition-colors", className)}
       {...props}
-      data-oid="sr2nodz"
+      data-oid="u7v.7m6"
     />
   );
 }
@@ -66,7 +66,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       aria-current="page"
       className={cn("text-foreground font-normal", className)}
       {...props}
-      data-oid="fpdq8t7"
+      data-oid="poauv:g"
     />
   );
 }
@@ -83,9 +83,9 @@ function BreadcrumbSeparator({
       aria-hidden="true"
       className={cn("[&>svg]:size-3.5", className)}
       {...props}
-      data-oid="eupc7wk"
+      data-oid="hmbxbl9"
     >
-      {children ?? <ChevronRight data-oid="qvkatxy" />}
+      {children ?? <ChevronRight data-oid="n9pyyr7" />}
     </li>
   );
 }
@@ -101,10 +101,10 @@ function BreadcrumbEllipsis({
       aria-hidden="true"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
-      data-oid="h8qi1lu"
+      data-oid="70:kisv"
     >
-      <MoreHorizontal className="size-4" data-oid="j7nnorx" />
-      <span className="sr-only" data-oid="4gum5z0">
+      <MoreHorizontal className="size-4" data-oid="i51:nu:" />
+      <span className="sr-only" data-oid="eofzu5c">
         More
       </span>
     </span>

@@ -18,6 +18,7 @@ const Toaster = ({ ...props }: ToasterProps) => {
         } as React.CSSProperties
       }
       {...props}
+      data-oid="0v-rh4i"
     />
   );
 };

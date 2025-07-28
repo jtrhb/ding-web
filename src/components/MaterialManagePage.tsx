@@ -130,15 +130,15 @@ export function MaterialManagePage({
     switch (type) {
       case "image":
         return (
-          <FileImage className="w-4 h-4 text-blue-600" data-oid="5mn2-vt" />
+          <FileImage className="w-4 h-4 text-blue-600" data-oid="vcx_ki6" />
         );
 
       case "video":
-        return <Video className="w-4 h-4 text-red-600" data-oid="n71-r-m" />;
+        return <Video className="w-4 h-4 text-red-600" data-oid="3vkztyz" />;
       case "document":
-        return <File className="w-4 h-4 text-green-600" data-oid="fpxlbxj" />;
+        return <File className="w-4 h-4 text-green-600" data-oid="ily5bgo" />;
       default:
-        return <File className="w-4 h-4 text-gray-600" data-oid="ei9cd3j" />;
+        return <File className="w-4 h-4 text-gray-600" data-oid="-5_e7-t" />;
     }
   };
 
@@ -151,7 +151,7 @@ export function MaterialManagePage({
 
     const config = typeConfig[type as keyof typeof typeConfig];
     return (
-      <Badge className={config.color} data-oid="pa7an:g">
+      <Badge className={config.color} data-oid="ew9hdf:">
         {config.label}
       </Badge>
     );
@@ -190,39 +190,39 @@ export function MaterialManagePage({
   };
 
   return (
-    <div className="h-full flex flex-col" data-oid="c1mldv:">
+    <div className="h-full flex flex-col" data-oid="fc:hge:">
       {/* 页面头部 - 与侧栏标题对齐 */}
       <div
         className="p-6 border-b border-gray-100 bg-white flex-shrink-0"
-        data-oid="ja8bqkh"
+        data-oid="0od-:f4"
       >
         <div
           className="flex items-center justify-between mb-4"
-          data-oid="yqy9x0j"
+          data-oid=".olfkxj"
         >
-          <div data-oid="at-3au7">
-            <h1 className="text-2xl font-bold text-gray-900" data-oid="y8wnl1.">
+          <div data-oid="p8ni:3w">
+            <h1 className="text-2xl font-bold text-gray-900" data-oid="tww4ioc">
               素材管理
             </h1>
-            <p className="text-gray-500 mt-1" data-oid="_n217mt">
+            <p className="text-gray-500 mt-1" data-oid=".pm3xix">
               管理你的图片、视频和文档素材
             </p>
           </div>
-          <div className="flex items-center space-x-3" data-oid="4sna8k0">
+          <div className="flex items-center space-x-3" data-oid="2jr:3gf">
             <Button
               variant="outline"
               onClick={handleCreateFolder}
-              data-oid=".ub09me"
+              data-oid="5mlx0av"
             >
-              <FolderPlus className="w-4 h-4 mr-2" data-oid="iju1zl1" />
+              <FolderPlus className="w-4 h-4 mr-2" data-oid=":c_wh00" />
               新建文件夹
             </Button>
             <Button
               className="bg-red-500 hover:bg-red-600 text-white"
               onClick={handleUpload}
-              data-oid="d13yxsg"
+              data-oid="rd.v:zi"
             >
-              <Upload className="w-4 h-4 mr-2" data-oid="-s0a_3h" />
+              <Upload className="w-4 h-4 mr-2" data-oid="r6dkdyp" />
               上传素材
             </Button>
           </div>
@@ -231,25 +231,25 @@ export function MaterialManagePage({
         {/* 统计信息 */}
         <div
           className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6"
-          data-oid="-f:.7._"
+          data-oid="du54wz."
         >
-          <Card data-oid="fwpzmhu">
-            <CardContent className="p-4" data-oid="-kkq_ha">
-              <div className="flex items-center" data-oid="q8g62ib">
+          <Card data-oid="6_78mq6">
+            <CardContent className="p-4" data-oid="01um73m">
+              <div className="flex items-center" data-oid="7yepzzz">
                 <div
                   className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="99uhp5p"
+                  data-oid="s0g3g:x"
                 >
                   <FileImage
                     className="w-4 h-4 text-blue-600"
-                    data-oid="1pcajry"
+                    data-oid="-t84_c7"
                   />
                 </div>
-                <div data-oid="0esjsze">
-                  <p className="text-sm text-gray-600" data-oid="6_7t59o">
+                <div data-oid="j06zvq1">
+                  <p className="text-sm text-gray-600" data-oid="-:8p-xx">
                     图片素材
                   </p>
-                  <p className="text-xl font-bold" data-oid="h5e2t.l">
+                  <p className="text-xl font-bold" data-oid="alprec3">
                     128
                   </p>
                 </div>
@@ -257,20 +257,20 @@ export function MaterialManagePage({
             </CardContent>
           </Card>
 
-          <Card data-oid="l4zi:.n">
-            <CardContent className="p-4" data-oid="4qmu23w">
-              <div className="flex items-center" data-oid="y8941.e">
+          <Card data-oid="2f9odf2">
+            <CardContent className="p-4" data-oid="qwt5ntm">
+              <div className="flex items-center" data-oid="mzbs3hn">
                 <div
                   className="w-8 h-8 bg-red-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="o.:dqoi"
+                  data-oid="fri9951"
                 >
-                  <Video className="w-4 h-4 text-red-600" data-oid="_3yj5rz" />
+                  <Video className="w-4 h-4 text-red-600" data-oid="bzifhf4" />
                 </div>
-                <div data-oid="w3fh-js">
-                  <p className="text-sm text-gray-600" data-oid="cv6sb5.">
+                <div data-oid="9g7arve">
+                  <p className="text-sm text-gray-600" data-oid="ogedjll">
                     视频素材
                   </p>
-                  <p className="text-xl font-bold" data-oid="0pq-hxf">
+                  <p className="text-xl font-bold" data-oid="fg1:fxz">
                     23
                   </p>
                 </div>
@@ -278,20 +278,20 @@ export function MaterialManagePage({
             </CardContent>
           </Card>
 
-          <Card data-oid="do8x9u2">
-            <CardContent className="p-4" data-oid="or4_oz7">
-              <div className="flex items-center" data-oid="3kw_oa9">
+          <Card data-oid="ri0s:b:">
+            <CardContent className="p-4" data-oid="wv2912m">
+              <div className="flex items-center" data-oid=".xx:9gn">
                 <div
                   className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="0p-p9ii"
+                  data-oid="p:nidyk"
                 >
-                  <File className="w-4 h-4 text-green-600" data-oid="1fuwk0f" />
+                  <File className="w-4 h-4 text-green-600" data-oid="d7nc946" />
                 </div>
-                <div data-oid="k-c2x_v">
-                  <p className="text-sm text-gray-600" data-oid="yer-t:a">
+                <div data-oid="-5zj3-7">
+                  <p className="text-sm text-gray-600" data-oid="z5b5wlw">
                     文档素材
                   </p>
-                  <p className="text-xl font-bold" data-oid="uafdy1v">
+                  <p className="text-xl font-bold" data-oid=".:3:jcq">
                     45
                   </p>
                 </div>
@@ -299,23 +299,23 @@ export function MaterialManagePage({
             </CardContent>
           </Card>
 
-          <Card data-oid="bbnfoyd">
-            <CardContent className="p-4" data-oid="kq.5vx5">
-              <div className="flex items-center" data-oid=":yzx21z">
+          <Card data-oid="uarc97r">
+            <CardContent className="p-4" data-oid="qwu2x.3">
+              <div className="flex items-center" data-oid="t9xfhic">
                 <div
                   className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3"
-                  data-oid="b2-rhlr"
+                  data-oid="a44v.wz"
                 >
                   <FolderPlus
                     className="w-4 h-4 text-purple-600"
-                    data-oid="y_.scpz"
+                    data-oid="_ibn6wf"
                   />
                 </div>
-                <div data-oid="lukfukq">
-                  <p className="text-sm text-gray-600" data-oid="vsc71yr">
+                <div data-oid="yi_v_h:">
+                  <p className="text-sm text-gray-600" data-oid=":hjwil.">
                     使用空间
                   </p>
-                  <p className="text-xl font-bold" data-oid="x.c9ujq">
+                  <p className="text-xl font-bold" data-oid="m1.cai9">
                     2.1GB
                   </p>
                 </div>
@@ -325,12 +325,12 @@ export function MaterialManagePage({
         </div>
 
         {/* 搜索和筛选 */}
-        <div className="flex items-center justify-between" data-oid="s2kl26a">
-          <div className="flex items-center space-x-4" data-oid="sojy7jn">
-            <div className="relative" data-oid="yc6z_bl">
+        <div className="flex items-center justify-between" data-oid="g-1p1bt">
+          <div className="flex items-center space-x-4" data-oid="61y93kp">
+            <div className="relative" data-oid="oxk._pm">
               <Search
                 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4"
-                data-oid="2tskmxx"
+                data-oid="1tcuob."
               />
 
               <Input
@@ -338,29 +338,29 @@ export function MaterialManagePage({
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 w-64"
-                data-oid="5-cg5vb"
+                data-oid="yhl37pn"
               />
             </div>
 
             <Select
               value={typeFilter}
               onValueChange={setTypeFilter}
-              data-oid="t5pzizb"
+              data-oid="3d4r1m5"
             >
-              <SelectTrigger className="w-32" data-oid="6iwaq9-">
-                <SelectValue data-oid="mfpylqw" />
+              <SelectTrigger className="w-32" data-oid="-.thc7b">
+                <SelectValue data-oid="f-f4xkp" />
               </SelectTrigger>
-              <SelectContent data-oid="yoxpwo9">
-                <SelectItem value="all" data-oid="ewdy8md">
+              <SelectContent data-oid="zm77jz4">
+                <SelectItem value="all" data-oid="9e66.s3">
                   全部类型
                 </SelectItem>
-                <SelectItem value="image" data-oid="grzdafl">
+                <SelectItem value="image" data-oid="1r7bu4_">
                   图片
                 </SelectItem>
-                <SelectItem value="video" data-oid="f9j4xwy">
+                <SelectItem value="video" data-oid="ejumfft">
                   视频
                 </SelectItem>
-                <SelectItem value="document" data-oid="08y9:q4">
+                <SelectItem value="document" data-oid="1h-rnoi">
                   文档
                 </SelectItem>
               </SelectContent>
@@ -369,17 +369,17 @@ export function MaterialManagePage({
             <Select
               value={folderFilter}
               onValueChange={setFolderFilter}
-              data-oid="ob3.h5d"
+              data-oid="jhr187e"
             >
-              <SelectTrigger className="w-32" data-oid="s7un_:d">
-                <SelectValue data-oid="vahwf0r" />
+              <SelectTrigger className="w-32" data-oid="lj.hz8_">
+                <SelectValue data-oid=".pv-72r" />
               </SelectTrigger>
-              <SelectContent data-oid="xtxwnlu">
-                <SelectItem value="all" data-oid="mtta1:0">
+              <SelectContent data-oid="unru.3m">
+                <SelectItem value="all" data-oid="o9brx5s">
                   全部文件夹
                 </SelectItem>
                 {folders.map((folder) => (
-                  <SelectItem key={folder} value={folder} data-oid="q3o261q">
+                  <SelectItem key={folder} value={folder} data-oid="m2xta75">
                     {folder}
                   </SelectItem>
                 ))}
@@ -387,56 +387,56 @@ export function MaterialManagePage({
             </Select>
           </div>
 
-          <div className="flex items-center space-x-2" data-oid="q02xevq">
+          <div className="flex items-center space-x-2" data-oid="i.twvz_">
             <Button
               variant={viewMode === "grid" ? "default" : "outline"}
               size="sm"
               onClick={() => setViewMode("grid")}
-              data-oid="c62nmtp"
+              data-oid="mi::rvi"
             >
-              <Grid3X3 className="w-4 h-4" data-oid="_ape1gd" />
+              <Grid3X3 className="w-4 h-4" data-oid=".7trmg8" />
             </Button>
             <Button
               variant={viewMode === "list" ? "default" : "outline"}
               size="sm"
               onClick={() => setViewMode("list")}
-              data-oid="2kc8scj"
+              data-oid="tro83os"
             >
-              <List className="w-4 h-4" data-oid="1gjv06q" />
+              <List className="w-4 h-4" data-oid="t4xfkem" />
             </Button>
           </div>
         </div>
       </div>
 
       {/* 内容区域 */}
-      <div className="flex-1 overflow-y-auto bg-gray-50 p-6" data-oid="e:rfbma">
+      <div className="flex-1 overflow-y-auto bg-gray-50 p-6" data-oid="l3ctz8a">
         {viewMode === "grid" ? (
           <div
             className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4"
-            data-oid="g4-n0j_"
+            data-oid="1k.zj67"
           >
             {filteredMaterials.map((material) => (
               <Card
                 key={material.id}
                 className="hover:shadow-md transition-shadow cursor-pointer"
-                data-oid="-yu9dt4"
+                data-oid="2kmgvbv"
               >
-                <CardContent className="p-3" data-oid="pi98ol5">
+                <CardContent className="p-3" data-oid="-o1:xep">
                   <div
                     className="aspect-square mb-3 relative group"
-                    data-oid="-0nnhyd"
+                    data-oid="2e9:786"
                   >
                     {material.type === "image" ? (
                       <ImageWithFallback
                         src={material.url}
                         alt={material.name}
                         className="w-full h-full object-cover rounded-lg"
-                        data-oid="_m:64rx"
+                        data-oid="qmeslat"
                       />
                     ) : (
                       <div
                         className="w-full h-full bg-gray-100 rounded-lg flex items-center justify-center"
-                        data-oid="y4g326m"
+                        data-oid="gry8wuw"
                       >
                         {getTypeIcon(material.type)}
                       </div>
@@ -445,57 +445,57 @@ export function MaterialManagePage({
                     {/* 悬浮操作按钮 */}
                     <div
                       className="absolute inset-0 bg-black bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-2"
-                      data-oid="cn.:zne"
+                      data-oid="-xlx69_"
                     >
                       <Button
                         size="sm"
                         variant="secondary"
                         onClick={() => handleDownload(material.id)}
-                        data-oid="jjsm56w"
+                        data-oid="ilrgrz7"
                       >
-                        <Download className="w-3 h-3" data-oid="jm550fs" />
+                        <Download className="w-3 h-3" data-oid="ea1l7jf" />
                       </Button>
                       <Button
                         size="sm"
                         variant="secondary"
                         onClick={() => handleCopyUrl(material.id)}
-                        data-oid="4.jj:3v"
+                        data-oid="yq:t8n9"
                       >
-                        <Copy className="w-3 h-3" data-oid="h_q3qm4" />
+                        <Copy className="w-3 h-3" data-oid="8pem1hl" />
                       </Button>
                       <Button
                         size="sm"
                         variant="secondary"
                         onClick={() => handleDelete(material.id)}
                         className="text-red-600 hover:text-red-700"
-                        data-oid="cc5_en9"
+                        data-oid=".b7rgu8"
                       >
-                        <Trash2 className="w-3 h-3" data-oid="tahhn.v" />
+                        <Trash2 className="w-3 h-3" data-oid=".0bgbw9" />
                       </Button>
                     </div>
                   </div>
 
-                  <div className="space-y-2" data-oid="j0hj2v_">
+                  <div className="space-y-2" data-oid="6rqja94">
                     <p
                       className="text-sm font-medium truncate"
                       title={material.name}
-                      data-oid="u6zh82u"
+                      data-oid="8zo-.fq"
                     >
                       {material.name}
                     </p>
                     <div
                       className="flex items-center justify-between"
-                      data-oid="qhyge6d"
+                      data-oid="d3g-fbz"
                     >
                       {getTypeBadge(material.type)}
                       <span
                         className="text-xs text-gray-500"
-                        data-oid=".mn-7zn"
+                        data-oid="da-qb7n"
                       >
                         {material.size}
                       </span>
                     </div>
-                    <p className="text-xs text-gray-400" data-oid="toshnd7">
+                    <p className="text-xs text-gray-400" data-oid="3:drb2c">
                       {material.uploadTime}
                     </p>
                   </div>
@@ -504,73 +504,73 @@ export function MaterialManagePage({
             ))}
           </div>
         ) : (
-          <Card data-oid=".44.m96">
-            <CardContent className="p-0" data-oid="6.lb.m_">
-              <div className="divide-y divide-gray-200" data-oid="q6x6z:0">
+          <Card data-oid="a76ztca">
+            <CardContent className="p-0" data-oid=".tax7na">
+              <div className="divide-y divide-gray-200" data-oid="sp81-ju">
                 {filteredMaterials.map((material) => (
                   <div
                     key={material.id}
                     className="p-4 hover:bg-gray-50 transition-colors"
-                    data-oid="_b.-prt"
+                    data-oid="y-a5b7j"
                   >
                     <div
                       className="flex items-center justify-between"
-                      data-oid="uvdvtym"
+                      data-oid="4uu73m4"
                     >
                       <div
                         className="flex items-center space-x-4"
-                        data-oid="lpguwzn"
+                        data-oid="_5w1m6t"
                       >
                         <div
                           className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center"
-                          data-oid="rrwm-lt"
+                          data-oid="2x36bbu"
                         >
                           {material.type === "image" ? (
                             <ImageWithFallback
                               src={material.url}
                               alt={material.name}
                               className="w-12 h-12 object-cover rounded-lg"
-                              data-oid="zzqr.hs"
+                              data-oid="-vkylk_"
                             />
                           ) : (
                             getTypeIcon(material.type)
                           )}
                         </div>
-                        <div className="min-w-0 flex-1" data-oid="cihezr_">
+                        <div className="min-w-0 flex-1" data-oid="ehv3vp-">
                           <p
                             className="font-medium text-gray-900"
-                            data-oid=".02fcef"
+                            data-oid="3kaphir"
                           >
                             {material.name}
                           </p>
                           <div
                             className="flex items-center space-x-2 mt-1"
-                            data-oid="_un6m2a"
+                            data-oid="um793p4"
                           >
                             {getTypeBadge(material.type)}
                             <span
                               className="text-sm text-gray-500"
-                              data-oid="hd2k1p1"
+                              data-oid="fdirvh8"
                             >
                               {material.size}
                             </span>
                             <span
                               className="text-sm text-gray-500"
-                              data-oid=".92kasw"
+                              data-oid="djhkwk-"
                             >
                               {material.folder}
                             </span>
                           </div>
                           <div
                             className="flex flex-wrap gap-1 mt-2"
-                            data-oid="1xsixs."
+                            data-oid="td5be3c"
                           >
                             {material.tags.map((tag, index) => (
                               <Badge
                                 key={index}
                                 variant="outline"
                                 className="text-xs"
-                                data-oid="xpx9z90"
+                                data-oid="l__zrpi"
                               >
                                 {tag}
                               </Badge>
@@ -581,42 +581,42 @@ export function MaterialManagePage({
 
                       <div
                         className="flex items-center space-x-2"
-                        data-oid="s9k-q:c"
+                        data-oid=":nech.z"
                       >
                         <span
                           className="text-sm text-gray-500"
-                          data-oid="3ldm63n"
+                          data-oid="o5utp7i"
                         >
                           {material.uploadTime}
                         </span>
                         <div
                           className="flex items-center space-x-1"
-                          data-oid="h5y31jg"
+                          data-oid="e43vl-g"
                         >
                           <Button
                             variant="ghost"
                             size="sm"
                             onClick={() => handleDownload(material.id)}
-                            data-oid="chqu-0h"
+                            data-oid="4pq:jl_"
                           >
-                            <Download className="w-4 h-4" data-oid="6ta7:ej" />
+                            <Download className="w-4 h-4" data-oid="v7iuutw" />
                           </Button>
                           <Button
                             variant="ghost"
                             size="sm"
                             onClick={() => handleCopyUrl(material.id)}
-                            data-oid="t-6.:kv"
+                            data-oid="vi8h546"
                           >
-                            <Copy className="w-4 h-4" data-oid="scb-b28" />
+                            <Copy className="w-4 h-4" data-oid="rlj:n3p" />
                           </Button>
                           <Button
                             variant="ghost"
                             size="sm"
                             onClick={() => handleDelete(material.id)}
                             className="text-red-600 hover:text-red-700"
-                            data-oid="k51nfid"
+                            data-oid="t6d-l-l"
                           >
-                            <Trash2 className="w-4 h-4" data-oid="lba_61v" />
+                            <Trash2 className="w-4 h-4" data-oid="35:piy4" />
                           </Button>
                         </div>
                       </div>
