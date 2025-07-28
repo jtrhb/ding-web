@@ -11,19 +11,19 @@ export function Header({ onBack, onPublish }: HeaderProps) {
   return (
     <div
       className="flex items-center justify-between p-4 bg-white border-b border-gray-100"
-      data-oid="h0y0jha"
+      data-oid="rvsnrln"
     >
-      <div className="flex items-center space-x-3" data-oid="go-mk_t">
+      <div className="flex items-center space-x-3" data-oid="w203lvu">
         <Button
           variant="ghost"
           size="sm"
           onClick={onBack}
           className="p-2 hover:bg-gray-100 rounded-full"
-          data-oid="3jqrwyc"
+          data-oid="07:6p8x"
         >
-          <ChevronLeft className="w-5 h-5" data-oid="9o8pdly" />
+          <ChevronLeft className="w-5 h-5" data-oid="g1jnx--" />
         </Button>
-        <span className="text-lg" data-oid="zqxk2ij">
+        <span className="text-lg" data-oid="h9td-yt">
           发布图文
         </span>
       </div>
@@ -31,7 +31,7 @@ export function Header({ onBack, onPublish }: HeaderProps) {
       <Button
         onClick={onPublish}
         className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full"
-        data-oid="zrczak_"
+        data-oid="u99enas"
       >
         发布
       </Button>

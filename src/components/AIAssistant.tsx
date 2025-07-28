@@ -108,32 +108,32 @@ export function AIAssistant({
   }, []);
 
   return (
-    <Card className="w-full max-w-2xl mx-auto" data-oid="fsbqse7">
-      <CardHeader data-oid="9rmreao">
+    <Card className="w-full max-w-2xl mx-auto" data-oid="_.wwcj5">
+      <CardHeader data-oid="v48j2ya">
         <CardTitle
           className="flex items-center justify-between"
-          data-oid="5h3pl.-"
+          data-oid="j:4u76p"
         >
-          <div data-oid="xn7emg9">
-            <h3 data-oid="mr06-3e">{getTitle()}</h3>
+          <div data-oid="m76jihd">
+            <h3 data-oid="2_0bd3.">{getTitle()}</h3>
             <p
               className="text-sm text-muted-foreground font-normal"
-              data-oid="k_0dyjk"
+              data-oid="0_tcwzk"
             >
               {getDescription()}
             </p>
           </div>
-          <div className="flex space-x-2" data-oid="tq3r91b">
+          <div className="flex space-x-2" data-oid="q8gi4fo">
             <Button
               onClick={generateSuggestions}
               variant="outline"
               size="sm"
               disabled={isLoading}
-              data-oid="1-fwcuz"
+              data-oid="j1dh2_w"
             >
               <RefreshCw
                 className={`w-4 h-4 mr-2 ${isLoading ? "animate-spin" : ""}`}
-                data-oid="iwv1u53"
+                data-oid="u8uw3ye"
               />
               重新生成
             </Button>
@@ -141,26 +141,26 @@ export function AIAssistant({
               onClick={onClose}
               variant="outline"
               size="sm"
-              data-oid="vavdll3"
+              data-oid="37twust"
             >
-              <X className="w-4 h-4" data-oid="-_80rtx" />
+              <X className="w-4 h-4" data-oid="2myattf" />
             </Button>
           </div>
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4" data-oid="am_jboz">
+      <CardContent className="space-y-4" data-oid="ylvfvee">
         {isLoading ? (
           <div
             className="flex items-center justify-center py-8"
-            data-oid="oja6gea"
+            data-oid=".ghk6.p"
           >
-            <Loader2 className="w-6 h-6 animate-spin mr-2" data-oid="vqau1kb" />
-            <span data-oid="s6_o092">AI正在生成建议...</span>
+            <Loader2 className="w-6 h-6 animate-spin mr-2" data-oid="nm_nmve" />
+            <span data-oid="xjf6gvx">AI正在生成建议...</span>
           </div>
         ) : (
-          <div className="space-y-3" data-oid="gc1ni4d">
+          <div className="space-y-3" data-oid="iza45d7">
             {type === "tags" ? (
-              <div className="flex flex-wrap gap-2" data-oid=".zc7i93">
+              <div className="flex flex-wrap gap-2" data-oid="bjf5fmy">
                 {suggestions.map((tag, index) => (
                   <Badge
                     key={index}
@@ -177,7 +177,7 @@ export function AIAssistant({
                         setSelectedSuggestion(selectedSuggestion + " " + tag);
                       }
                     }}
-                    data-oid="cvp3_6:"
+                    data-oid="q6u0az7"
                   >
                     #{tag}
                   </Badge>
@@ -193,19 +193,19 @@ export function AIAssistant({
                       : "hover:bg-muted"
                   }`}
                   onClick={() => setSelectedSuggestion(suggestion)}
-                  data-oid="qga2udy"
+                  data-oid="t_o.f02"
                 >
                   <div
                     className="flex items-center justify-between"
-                    data-oid="wrspqob"
+                    data-oid="6wt:kib"
                   >
-                    <span className="flex-1" data-oid="6jd07ka">
+                    <span className="flex-1" data-oid="-gxo9j-">
                       {suggestion}
                     </span>
                     {selectedSuggestion === suggestion && (
                       <Check
                         className="w-4 h-4 text-primary"
-                        data-oid="phjqnhx"
+                        data-oid="9b2x_yh"
                       />
                     )}
                   </div>
@@ -216,14 +216,14 @@ export function AIAssistant({
         )}
 
         {suggestions.length > 0 && !isLoading && (
-          <div className="flex justify-end space-x-2 pt-4" data-oid="4fq8v8_">
-            <Button variant="outline" onClick={onClose} data-oid="cxg0zb:">
+          <div className="flex justify-end space-x-2 pt-4" data-oid="u9iyd0d">
+            <Button variant="outline" onClick={onClose} data-oid="clst72k">
               取消
             </Button>
             <Button
               onClick={handleApply}
               disabled={!selectedSuggestion.trim()}
-              data-oid="o_.obzy"
+              data-oid="8:0km-8"
             >
               应用建议
             </Button>

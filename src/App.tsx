@@ -45,7 +45,7 @@ export default function App() {
         return (
           <DesktopPublishNote
             sidebarCollapsed={sidebarCollapsed}
-            data-oid="nrk_zmx"
+            data-oid="6i.vhx4"
           />
         );
 
@@ -53,7 +53,7 @@ export default function App() {
         return (
           <NoteManagePage
             sidebarCollapsed={sidebarCollapsed}
-            data-oid="qi2jpug"
+            data-oid="4vdkaf."
           />
         );
 
@@ -61,7 +61,7 @@ export default function App() {
         return (
           <MaterialManagePage
             sidebarCollapsed={sidebarCollapsed}
-            data-oid="aeia5-e"
+            data-oid="n0s2c.k"
           />
         );
 
@@ -69,16 +69,16 @@ export default function App() {
         return (
           <div
             className="h-full flex items-center justify-center"
-            data-oid="gcul1fe"
+            data-oid="6zf8eic"
           >
-            <div className="text-center" data-oid="m:w0if4">
+            <div className="text-center" data-oid="k56q6z-">
               <h2
                 className="text-2xl font-bold text-gray-900 mb-2"
-                data-oid="h_l09at"
+                data-oid="2sx_6oh"
               >
                 数据总览
               </h2>
-              <p className="text-gray-500" data-oid="iu8x3bj">
+              <p className="text-gray-500" data-oid="c9_pfqm">
                 功能开发中，敬请期待...
               </p>
             </div>
@@ -89,16 +89,16 @@ export default function App() {
         return (
           <div
             className="h-full flex items-center justify-center"
-            data-oid="-oc4aak"
+            data-oid="l0qf.:u"
           >
-            <div className="text-center" data-oid="oa_9.c-">
+            <div className="text-center" data-oid="rk7q68.">
               <h2
                 className="text-2xl font-bold text-gray-900 mb-2"
-                data-oid="3:5l9td"
+                data-oid="90-_3e1"
               >
                 数据分析
               </h2>
-              <p className="text-gray-500" data-oid="5q5_cm3">
+              <p className="text-gray-500" data-oid="_hhjm27">
                 功能开发中，敬请期待...
               </p>
             </div>
@@ -109,16 +109,16 @@ export default function App() {
         return (
           <div
             className="h-full flex items-center justify-center"
-            data-oid="mfzef7e"
+            data-oid="fl_b7du"
           >
-            <div className="text-center" data-oid="jjr-czh">
+            <div className="text-center" data-oid="uydqrjx">
               <h2
                 className="text-2xl font-bold text-gray-900 mb-2"
-                data-oid=":40r2-0"
+                data-oid="4n-m96z"
               >
                 消息通知
               </h2>
-              <p className="text-gray-500" data-oid="pgw1if4">
+              <p className="text-gray-500" data-oid="9:93sz3">
                 功能开发中，敬请期待...
               </p>
             </div>
@@ -129,21 +129,21 @@ export default function App() {
         return (
           <div
             className="h-full flex items-center justify-center p-6"
-            data-oid="p1p8b7v"
+            data-oid="wtx1ck1"
           >
-            <div className="space-y-6" data-oid="5ut3k5y">
-              <div className="text-center" data-oid="c-jppr2">
+            <div className="space-y-6" data-oid="_hzb-ga">
+              <div className="text-center" data-oid="6rsnc14">
                 <h2
                   className="text-2xl font-bold text-gray-900 mb-2"
-                  data-oid="x0pi3n7"
+                  data-oid="t60oba_"
                 >
                   设置
                 </h2>
-                <p className="text-gray-500 mb-6" data-oid="_xgh-:p">
+                <p className="text-gray-500 mb-6" data-oid="0.plnyv">
                   管理您的账户和应用设置
                 </p>
               </div>
-              <UserInfo data-oid="v3s6m7k" />
+              <UserInfo data-oid="-caa3w0" />
             </div>
           </div>
         );
@@ -152,7 +152,7 @@ export default function App() {
         return (
           <DesktopPublishNote
             sidebarCollapsed={sidebarCollapsed}
-            data-oid="rhuc1lm"
+            data-oid="7x7s63r"
           />
         );
     }
@@ -161,14 +161,14 @@ export default function App() {
   if (!isLoggedIn) {
     return (
       <>
-        <LoginPage onLogin={handleLogin} data-oid="8fmy880" />
-        <Toaster data-oid="s9pkwum" />
+        <LoginPage onLogin={handleLogin} data-oid="9uvscx8" />
+        <Toaster data-oid="5h0ml28" />
       </>
     );
   }
 
   return (
-    <div className="h-screen bg-gray-50 flex" data-oid="hlxdwlh">
+    <div className="h-screen bg-gray-50 flex" data-oid="8-:s7tk">
       {/* 左侧导航栏 */}
       <DesktopSidebar
         currentPage={currentPage}
@@ -177,15 +177,15 @@ export default function App() {
         isCollapsed={sidebarCollapsed}
         onToggleCollapse={handleToggleSidebar}
         onLogout={handleLogout}
-        data-oid="y3ipdi5"
+        data-oid="7tm4cbs"
       />
 
       {/* 主内容区域 */}
-      <div className="flex-1 flex flex-col overflow-hidden" data-oid="s:se-xe">
+      <div className="flex-1 flex flex-col overflow-hidden" data-oid="-r4iv8h">
         {renderCurrentPage()}
       </div>
 
-      <Toaster data-oid="n:101x0" />
+      <Toaster data-oid="4o_pp8q" />
     </div>
   );
 }

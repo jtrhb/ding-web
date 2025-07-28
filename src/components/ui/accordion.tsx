@@ -13,7 +13,7 @@ function Accordion({
     <AccordionPrimitive.Root
       data-slot="accordion"
       {...props}
-      data-oid="w98j-8f"
+      data-oid="cufbaap"
     />
   );
 }
@@ -27,7 +27,7 @@ function AccordionItem({
       data-slot="accordion-item"
       className={cn("border-b last:border-b-0", className)}
       {...props}
-      data-oid="5_p8:uc"
+      data-oid="lzqta5f"
     />
   );
 }
@@ -38,7 +38,7 @@ function AccordionTrigger({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Trigger>) {
   return (
-    <AccordionPrimitive.Header className="flex" data-oid="c_597:7">
+    <AccordionPrimitive.Header className="flex" data-oid="422foxy">
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
@@ -46,12 +46,12 @@ function AccordionTrigger({
           className,
         )}
         {...props}
-        data-oid=".dx6ysw"
+        data-oid="2s60ar."
       >
         {children}
         <ChevronDownIcon
           className="text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
-          data-oid="7y-l7.c"
+          data-oid="l__qnvt"
         />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
@@ -68,9 +68,9 @@ function AccordionContent({
       data-slot="accordion-content"
       className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
       {...props}
-      data-oid="b78t850"
+      data-oid="a:3i04a"
     >
-      <div className={cn("pt-0 pb-4", className)} data-oid="3dx_e2h">
+      <div className={cn("pt-0 pb-4", className)} data-oid="mc2a7xh">
         {children}
       </div>
     </AccordionPrimitive.Content>

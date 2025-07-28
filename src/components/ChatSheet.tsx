@@ -123,14 +123,14 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
   };
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange} data-oid="bcbhb8-">
+    <Sheet open={open} onOpenChange={onOpenChange} data-oid="u7l590u">
       <SheetContent
         className="w-[400px] sm:w-[500px] flex flex-col p-0"
-        data-oid="qkt94xr"
+        data-oid="g6:x164"
       >
-        <SheetHeader className="px-6 py-4 border-b" data-oid="xsoo91y">
-          <SheetTitle className="flex items-center gap-2" data-oid="brfpkud">
-            <Bot className="w-5 h-5" data-oid="93ke.0g" />
+        <SheetHeader className="px-6 py-4 border-b" data-oid="o.yenl8">
+          <SheetTitle className="flex items-center gap-2" data-oid="ikjo_wm">
+            <Bot className="w-5 h-5" data-oid="ijji8of" />
             AI 助手
           </SheetTitle>
         </SheetHeader>
@@ -138,15 +138,16 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
         {/* 消息列表 */}
         <div
           className="flex-1 overflow-y-auto px-6 py-4 space-y-4"
-          data-oid="dzremx8"
+          data-oid="k:4837l"
         >
           {messages.length === 0 ? (
-            <div className="text-center text-gray-500 mt-8" data-oid="1wcp535">
+            <div className="text-center text-gray-500 mt-8" data-oid="m4ll5bk">
               <Bot
                 className="w-12 h-12 mx-auto mb-4 text-gray-300"
-                data-oid="19096k8"
+                data-oid="hb9tj.x"
               />
-              <p data-oid="hj047y5">开始与 AI 助手对话吧！</p>
+
+              <p data-oid="zhm.3mx">开始与 AI 助手对话吧！</p>
             </div>
           ) : (
             messages.map((message) => (
@@ -155,14 +156,14 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                 className={`flex gap-3 ${
                   message.type === "user" ? "justify-end" : "justify-start"
                 }`}
-                data-oid="r7nicc4"
+                data-oid="dpp_tk1"
               >
                 {message.type === "assistant" && (
                   <Avatar
                     className="w-8 h-8 bg-blue-100 flex items-center justify-center"
-                    data-oid="-:ke2p_"
+                    data-oid="a_4z9zr"
                   >
-                    <Bot className="w-4 h-4 text-blue-600" data-oid="dgwi_t8" />
+                    <Bot className="w-4 h-4 text-blue-600" data-oid="q579k-5" />
                   </Avatar>
                 )}
 
@@ -172,17 +173,17 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                       ? "bg-blue-500 text-white"
                       : "bg-gray-100 text-gray-900"
                   }`}
-                  data-oid="y3gx0tx"
+                  data-oid="ah43bm5"
                 >
                   <p
                     className="whitespace-pre-wrap break-words"
-                    data-oid="xrdfvyc"
+                    data-oid="k9j7gx1"
                   >
                     {message.content}
                     {message.isStreaming && (
                       <span
                         className="inline-block w-2 h-5 bg-current ml-1 animate-pulse"
-                        data-oid=":7yobae"
+                        data-oid="xsbhd9n"
                       />
                     )}
                   </p>
@@ -191,24 +192,24 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                 {message.type === "user" && (
                   <Avatar
                     className="w-8 h-8 bg-gray-100 flex items-center justify-center"
-                    data-oid="9j3069u"
+                    data-oid="y_5ai8l"
                   >
                     <User
                       className="w-4 h-4 text-gray-600"
-                      data-oid="rcwonl:"
+                      data-oid="ch9o8me"
                     />
                   </Avatar>
                 )}
               </div>
             ))
           )}
-          <div ref={messagesEndRef} data-oid="egt.bqk" />
+          <div ref={messagesEndRef} data-oid="ype.6qc" />
         </div>
 
         {/* 输入区域 */}
-        <div className="border-t px-6 py-4" data-oid="qkcokel">
-          <div className="flex gap-2 items-end" data-oid="10ffjvm">
-            <div className="flex-1 relative" data-oid="x:w8bo:">
+        <div className="border-t px-6 py-4" data-oid="i66tmdc">
+          <div className="flex gap-2 items-end" data-oid="i.a836a">
+            <div className="flex-1 relative" data-oid=".39vau-">
               <Textarea
                 ref={textareaRef}
                 value={input}
@@ -217,7 +218,7 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                 placeholder="输入消息..."
                 className="min-h-[40px] max-h-[120px] resize-none pr-12 py-2"
                 disabled={isLoading}
-                data-oid="wsr:jly"
+                data-oid="hp0zpgz"
               />
             </div>
             <Button
@@ -225,9 +226,9 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
               disabled={!input.trim() || isLoading}
               size="sm"
               className="h-10 px-3"
-              data-oid="wd52d1t"
+              data-oid="-zkjxb."
             >
-              <Send className="w-4 h-4" data-oid="ue6qopr" />
+              <Send className="w-4 h-4" data-oid="7d.txt0" />
             </Button>
           </div>
         </div>

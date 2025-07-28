@@ -5,7 +5,7 @@ import "./index.css";
 import "./styles/global.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode data-oid="6hx7vie">
-    <App data-oid="h41i5.p" />
+  <React.StrictMode data-oid="4r4en3r">
+    <App data-oid="ofpp4c2" />
   </React.StrictMode>,
 );

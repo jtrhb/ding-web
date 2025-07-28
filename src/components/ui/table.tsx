@@ -9,13 +9,13 @@ function Table({ className, ...props }: React.ComponentProps<"table">) {
     <div
       data-slot="table-container"
       className="relative w-full overflow-x-auto"
-      data-oid="c-i2rqe"
+      data-oid=".s:q8lo"
     >
       <table
         data-slot="table"
         className={cn("w-full caption-bottom text-sm", className)}
         {...props}
-        data-oid="._-i1x:"
+        data-oid="j50iil5"
       />
     </div>
   );
@@ -27,7 +27,7 @@ function TableHeader({ className, ...props }: React.ComponentProps<"thead">) {
       data-slot="table-header"
       className={cn("[&_tr]:border-b", className)}
       {...props}
-      data-oid="3lo92ew"
+      data-oid="x6-0yyz"
     />
   );
 }
@@ -38,7 +38,7 @@ function TableBody({ className, ...props }: React.ComponentProps<"tbody">) {
       data-slot="table-body"
       className={cn("[&_tr:last-child]:border-0", className)}
       {...props}
-      data-oid="1hkb0pa"
+      data-oid="m650h7s"
     />
   );
 }
@@ -52,7 +52,7 @@ function TableFooter({ className, ...props }: React.ComponentProps<"tfoot">) {
         className,
       )}
       {...props}
-      data-oid="m9m_8w."
+      data-oid="demx7-8"
     />
   );
 }
@@ -66,7 +66,7 @@ function TableRow({ className, ...props }: React.ComponentProps<"tr">) {
         className,
       )}
       {...props}
-      data-oid="kcsj9bo"
+      data-oid="x5.q2nn"
     />
   );
 }
@@ -80,7 +80,7 @@ function TableHead({ className, ...props }: React.ComponentProps<"th">) {
         className,
       )}
       {...props}
-      data-oid="bmeuimi"
+      data-oid="ev9szrk"
     />
   );
 }
@@ -94,7 +94,7 @@ function TableCell({ className, ...props }: React.ComponentProps<"td">) {
         className,
       )}
       {...props}
-      data-oid="zq.hx5z"
+      data-oid="eejlge3"
     />
   );
 }
@@ -108,7 +108,7 @@ function TableCaption({
       data-slot="table-caption"
       className={cn("text-muted-foreground mt-4 text-sm", className)}
       {...props}
-      data-oid="0ml66a1"
+      data-oid="g34n95m"
     />
   );
 }

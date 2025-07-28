@@ -93,73 +93,75 @@ export function DesktopPublishNote({
   };
 
   return (
-    <div className="h-full flex flex-col" data-oid="1wu0:p9">
+    <div className="h-full flex flex-col" data-oid="nx08ixm">
       {/* 顶部操作栏 - 与侧栏标题对齐 */}
       <div
         className={`${sidebarCollapsed ? "p-2" : "p-6"} border-b border-gray-100 bg-white flex-shrink-0 transition-all duration-300`}
-        data-oid="y.3ae7a"
+        data-oid="zu3zd2:"
       >
-        <div className="flex items-center justify-between" data-oid="riia9rz">
-          <div data-oid="kff7m6r">
+        <div className="flex items-center justify-between" data-oid="m1j:hp7">
+          <div data-oid="sz08093">
             <h1
               className={`${sidebarCollapsed ? "text-lg" : ""} font-bold text-gray-900`}
-              data-oid="7im_-:a"
+              data-oid="dtx9g2q"
             >
               发布笔记
             </h1>
             {!sidebarCollapsed && (
-              <p className="text-xs text-gray-500" data-oid="ywkn3.l">
+              <p className="text-xs text-gray-500" data-oid="d1je1i5">
                 创作并分享你的精彩内容
               </p>
             )}
           </div>
           <div
             className={`flex items-center ${sidebarCollapsed ? "space-x-1" : "space-x-3"}`}
-            data-oid=".8xq9a9"
-          {sidebarCollapsed ? (
+            data-oid="l8f0ulr"
+          >
+            {sidebarCollapsed ? (
               <>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handleSaveDraft}
                   className="px-2"
-                  data-oid="b2awq1g"
+                  data-oid=".l6hj5p"
                 >
-                  <Save className="w-4 h-4" data-oid="bpr50fp" />
+                  <Save className="w-4 h-4" data-oid="pcst4k9" />
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handlePreview}
                   className="px-2"
-                  data-oid="ft6z.p5"
+                  data-oid="63ggu12"
                 >
-                  <Eye className="w-4 h-4" data-oid="owxhz.4" />
+                  <Eye className="w-4 h-4" data-oid="f-pv36b" />
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handleSchedulePublish}
                   className="px-2"
-                  data-oid="g8dhtym"
+                  data-oid="y_g1se9"
                 >
-                  <Clock className="w-4 h-4" data-oid="zs8lwoz" />
+                  <Clock className="w-4 h-4" data-oid="gac9pm-" />
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => setIsChatOpen(true)}
                   className="px-2"
+                  data-oid="tq.9nhh"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <MessageCircle className="w-4 h-4" data-oid=":e3duhn" />
                 </Button>
                 <Button
                   onClick={handlePublish}
                   className="bg-red-500 hover:bg-red-600 text-white px-2"
                   size="sm"
-                  data-oid="5ipjixx"
+                  data-oid="haimyl9"
                 >
-                  <Send className="w-4 h-4" data-oid="xmhsbcp" />
+                  <Send className="w-4 h-4" data-oid="gn0thkv" />
                 </Button>
               </>
             ) : (
@@ -168,43 +170,44 @@ export function DesktopPublishNote({
                   variant="outline"
                   size="sm"
                   onClick={handleSaveDraft}
-                  data-oid="kpk47gr"
+                  data-oid="2vzwbir"
                 >
-                  <Save className="w-4 h-4 mr-2" data-oid="3nafcgc" />
+                  <Save className="w-4 h-4 mr-2" data-oid="wrtjn:i" />
                   保存草稿
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handlePreview}
-                  data-oid="obt9h6x"
+                  data-oid="9fmcabd"
                 >
-                  <Eye className="w-4 h-4 mr-2" data-oid="sle4g-0" />
+                  <Eye className="w-4 h-4 mr-2" data-oid="tl8hw:2" />
                   {isPreviewMode ? "编辑模式" : "预览模式"}
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={handleSchedulePublish}
-                  data-oid="4oueec."
+                  data-oid="430tpr8"
                 >
-                  <Clock className="w-4 h-4 mr-2" data-oid=".d.xd_6" />
+                  <Clock className="w-4 h-4 mr-2" data-oid="qz.c_p3" />
                   定时发布
                 </Button>
                 <Button
                   variant="outline"
                   size="sm"
                   onClick={() => setIsChatOpen(true)}
+                  data-oid="ze5q3q-"
                 >
-                  <MessageCircle className="w-4 h-4 mr-2" />
+                  <MessageCircle className="w-4 h-4 mr-2" data-oid="sdaazj:" />
                   AI 助手
                 </Button>
                 <Button
                   onClick={handlePublish}
                   className="bg-red-500 hover:bg-red-600 text-white"
-                  data-oid="3l_1g-u"
+                  data-oid="voor:wu"
                 >
-                  <Send className="w-4 h-4 mr-2" data-oid="x2x.twa" />
+                  <Send className="w-4 h-4 mr-2" data-oid="esxw-9g" />
                   立即发布
                 </Button>
               </>
@@ -214,22 +217,22 @@ export function DesktopPublishNote({
       </div>
 
       {/* 内容编辑区域 */}
-      <div className="flex-1 overflow-y-auto bg-gray-50" data-oid="qcgkldw">
+      <div className="flex-1 overflow-y-auto bg-gray-50" data-oid="epjo1z.">
         {isPreviewMode ? (
           /* 预览模式 */
-          <div className="max-w-2xl mx-auto p-6" data-oid=":-hoium">
-            <Card data-oid="entkm0k">
-              <CardContent className="p-6" data-oid="e2qolyp">
+          <div className="max-w-2xl mx-auto p-6" data-oid="p4c74i4">
+            <Card data-oid="5yevynu">
+              <CardContent className="p-6" data-oid="j8fp83f">
                 {postData.images.length > 0 && (
-                  <div className="mb-4" data-oid="4x8xv36">
-                    <div className="grid grid-cols-3 gap-2" data-oid="nhk7pp5">
+                  <div className="mb-4" data-oid="7dywyot">
+                    <div className="grid grid-cols-3 gap-2" data-oid="njq0z2_">
                       {postData.images.slice(0, 9).map((image, index) => (
                         <img
                           key={index}
                           src={image}
                           alt={`预览图片 ${index + 1}`}
                           className="w-full aspect-square object-cover rounded-lg"
-                          data-oid="gw:97uu"
+                          data-oid="poh3zjn"
                         />
                       ))}
                     </div>
@@ -237,7 +240,7 @@ export function DesktopPublishNote({
                 )}
 
                 {postData.title && (
-                  <h2 className="text-xl font-bold mb-4" data-oid="pe.em05">
+                  <h2 className="text-xl font-bold mb-4" data-oid="p.kbdxr">
                     {postData.title}
                   </h2>
                 )}
@@ -245,7 +248,7 @@ export function DesktopPublishNote({
                 {postData.content && (
                   <div
                     className="whitespace-pre-wrap text-gray-700 leading-relaxed mb-4"
-                    data-oid="2d0zq9l"
+                    data-oid="nd4hnn_"
                   >
                     {postData.content}
                   </div>
@@ -253,15 +256,15 @@ export function DesktopPublishNote({
 
                 <div
                   className="flex items-center space-x-2 text-sm text-gray-500"
-                  data-oid="2u2_n28"
+                  data-oid="p1aneo6"
                 >
                   {postData.location && (
-                    <Badge variant="outline" data-oid="sw66qs0">
+                    <Badge variant="outline" data-oid=":jpiham">
                       📍 {postData.location}
                     </Badge>
                   )}
                   {postData.collection && (
-                    <Badge variant="outline" data-oid="h8uib_o">
+                    <Badge variant="outline" data-oid="hmx551i">
                       📁 {postData.collection}
                     </Badge>
                   )}
@@ -273,33 +276,33 @@ export function DesktopPublishNote({
           /* 编辑模式 */
           <div
             className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6"
-            data-oid="uzr6d0w"
+            data-oid="ebjzelh"
           >
             {/* 左栏 - 主要内容 (占2/3空间) */}
-            <div className="lg:col-span-2 space-y-6" data-oid="rs75yj:">
-              <Card data-oid="du-aen1">
-                <CardContent className="p-6" data-oid="n1x1oiz">
+            <div className="lg:col-span-2 space-y-6" data-oid="oysv.ro">
+              <Card data-oid=".w8lgkc">
+                <CardContent className="p-6" data-oid="a:8nknf">
                   <ImageUploader
                     onImagesChange={handleImagesChange}
-                    data-oid="8huwcjh"
+                    data-oid="3ml88z6"
                   />
                 </CardContent>
               </Card>
 
-              <Card data-oid="bfu8pdg">
-                <CardContent className="p-0" data-oid="q5::y1y">
+              <Card data-oid="rtskcal">
+                <CardContent className="p-0" data-oid="cqje-7k">
                   <ContentEditor
                     onContentChange={handleContentChange}
-                    data-oid="3vidahs"
+                    data-oid=".ta9fwa"
                   />
 
-                  <Separator data-oid=":0faifm" />
-                  <div className="p-6 pt-4" data-oid="-9:5y6h">
+                  <Separator data-oid="-2mfu85" />
+                  <div className="p-6 pt-4" data-oid="lingy_g">
                     <QuickActions
                       onTopicClick={handleTopicClick}
                       onMentionClick={handleMentionClick}
                       onEmojiClick={handleEmojiClick}
-                      data-oid="zxv8161"
+                      data-oid="o-n9ijv"
                     />
                   </div>
                 </CardContent>
@@ -307,17 +310,17 @@ export function DesktopPublishNote({
             </div>
 
             {/* 右栏 - 设置选项 (占1/3空间) */}
-            <div className="lg:col-span-1" data-oid="xdtk:hb">
-              <Card className="h-fit" data-oid="u-78dwm">
-                <CardHeader data-oid="19o6:1r">
-                  <CardTitle data-oid="y2m4dg-">设置选项</CardTitle>
+            <div className="lg:col-span-1" data-oid=":vdypyx">
+              <Card className="h-fit" data-oid="hh4vozc">
+                <CardHeader data-oid="l:xyuox">
+                  <CardTitle data-oid="q8tvt3f">设置选项</CardTitle>
                 </CardHeader>
-                <CardContent data-oid="_n57w43">
+                <CardContent data-oid="ung.s24">
                   <AdvancedOptions
                     onLocationChange={handleLocationChange}
                     onCollectionChange={handleCollectionChange}
                     onTagsChange={handleTagsChange}
-                    data-oid="alr8m:2"
+                    data-oid="6fd-fga"
                   />
                 </CardContent>
               </Card>
@@ -327,7 +330,11 @@ export function DesktopPublishNote({
       </div>
 
       {/* AI 聊天助手 */}
-      <ChatSheet open={isChatOpen} onOpenChange={setIsChatOpen} />
+      <ChatSheet
+        open={isChatOpen}
+        onOpenChange={setIsChatOpen}
+        data-oid="xsex7nd"
+      />
     </div>
   );
 }

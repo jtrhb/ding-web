@@ -22,10 +22,10 @@ function NavigationMenu({
         className,
       )}
       {...props}
-      data-oid="yqtnrdl"
+      data-oid="ahc-dxr"
     >
       {children}
-      {viewport && <NavigationMenuViewport data-oid="gaoa67." />}
+      {viewport && <NavigationMenuViewport data-oid="it19l9z" />}
     </NavigationMenuPrimitive.Root>
   );
 }
@@ -42,7 +42,7 @@ function NavigationMenuList({
         className,
       )}
       {...props}
-      data-oid="_vmta-f"
+      data-oid="lk-a7ee"
     />
   );
 }
@@ -56,7 +56,7 @@ function NavigationMenuItem({
       data-slot="navigation-menu-item"
       className={cn("relative", className)}
       {...props}
-      data-oid="fuv30.c"
+      data-oid="4l08py1"
     />
   );
 }
@@ -75,13 +75,13 @@ function NavigationMenuTrigger({
       data-slot="navigation-menu-trigger"
       className={cn(navigationMenuTriggerStyle(), "group", className)}
       {...props}
-      data-oid="vdfe_1h"
+      data-oid="hw98img"
     >
       {children}{" "}
       <ChevronDownIcon
         className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
         aria-hidden="true"
-        data-oid="c278rqj"
+        data-oid="0abyi45"
       />
     </NavigationMenuPrimitive.Trigger>
   );
@@ -100,7 +100,7 @@ function NavigationMenuContent({
         className,
       )}
       {...props}
-      data-oid="z6_gxn5"
+      data-oid="lj4b.ad"
     />
   );
 }
@@ -114,7 +114,7 @@ function NavigationMenuViewport({
       className={cn(
         "absolute top-full left-0 isolate z-50 flex justify-center",
       )}
-      data-oid="bv8.rae"
+      data-oid="6c-k6s:"
     >
       <NavigationMenuPrimitive.Viewport
         data-slot="navigation-menu-viewport"
@@ -123,7 +123,7 @@ function NavigationMenuViewport({
           className,
         )}
         {...props}
-        data-oid="f0ch0z3"
+        data-oid="twi5b4c"
       />
     </div>
   );
@@ -141,7 +141,7 @@ function NavigationMenuLink({
         className,
       )}
       {...props}
-      data-oid=":9b5cez"
+      data-oid="5_ffe3f"
     />
   );
 }
@@ -158,11 +158,11 @@ function NavigationMenuIndicator({
         className,
       )}
       {...props}
-      data-oid="trw1xoi"
+      data-oid="z..jlle"
     >
       <div
         className="bg-border relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md"
-        data-oid="cg.2av9"
+        data-oid="9l7:fve"
       />
     </NavigationMenuPrimitive.Indicator>
   );
