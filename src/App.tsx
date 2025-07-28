@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { DesktopSidebar } from "./components/DesktopSidebar";
 import { DesktopPublishNote } from "./components/DesktopPublishNote";
 import { NoteManagePage } from "./components/NoteManagePage";
 import { MaterialManagePage } from "./components/MaterialManagePage";
 import { Toaster } from "./components/ui/sonner";
+import { connectSockets, disconnectSockets, } from "./utils/socket";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("publish");
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+  useEffect(() => {
+    connectSockets();
+
+    return () => {
+      disconnectSockets();
+    };
+  }, []);
 
   const handleToggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
