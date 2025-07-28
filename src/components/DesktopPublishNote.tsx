@@ -3,11 +3,12 @@ import { ImageUploader } from "./ImageUploader";
 import { ContentEditor } from "./ContentEditor";
 import { QuickActions } from "./QuickActions";
 import { AdvancedOptions } from "./AdvancedOptions";
+import { ChatSheet } from "./ChatSheet";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Separator } from "./ui/separator";
 import { Badge } from "./ui/badge";
-import { Save, Eye, Send, Clock } from "lucide-react";
+import { Save, Eye, Send, Clock, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
 interface DesktopPublishNoteProps {
@@ -36,6 +37,7 @@ export function DesktopPublishNote({
   });
 
   const [isPreviewMode, setIsPreviewMode] = useState(false);
+  const [isChatOpen, setIsChatOpen] = useState(false);
 
   const handleSaveDraft = () => {
     toast.success("草稿已保存");
@@ -114,8 +116,7 @@ export function DesktopPublishNote({
           <div
             className={`flex items-center ${sidebarCollapsed ? "space-x-1" : "space-x-3"}`}
             data-oid=".8xq9a9"
-          >
-            {sidebarCollapsed ? (
+          {sidebarCollapsed ? (
               <>
                 <Button
                   variant="outline"
@@ -143,6 +144,14 @@ export function DesktopPublishNote({
                   data-oid="g8dhtym"
                 >
                   <Clock className="w-4 h-4" data-oid="zs8lwoz" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setIsChatOpen(true)}
+                  className="px-2"
+                >
+                  <MessageCircle className="w-4 h-4" />
                 </Button>
                 <Button
                   onClick={handlePublish}
@@ -181,6 +190,14 @@ export function DesktopPublishNote({
                 >
                   <Clock className="w-4 h-4 mr-2" data-oid=".d.xd_6" />
                   定时发布
+                </Button>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setIsChatOpen(true)}
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  AI 助手
                 </Button>
                 <Button
                   onClick={handlePublish}
@@ -308,6 +325,9 @@ export function DesktopPublishNote({
           </div>
         )}
       </div>
+
+      {/* AI 聊天助手 */}
+      <ChatSheet open={isChatOpen} onOpenChange={setIsChatOpen} />
     </div>
   );
 }
