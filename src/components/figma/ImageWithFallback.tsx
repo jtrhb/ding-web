@@ -18,18 +18,13 @@ export function ImageWithFallback(
     <div
       className={`inline-block bg-gray-100 text-center align-middle ${className ?? ""}`}
       style={style}
-      data-oid="7h4k_2g"
     >
-      <div
-        className="flex items-center justify-center w-full h-full"
-        data-oid="0rvham-"
-      >
+      <div className="flex items-center justify-center w-full h-full">
         <img
           src={ERROR_IMG_SRC}
           alt="Error loading image"
           {...rest}
           data-original-url={src}
-          data-oid="fr6h3qi"
         />
       </div>
     </div>
@@ -41,7 +36,6 @@ export function ImageWithFallback(
       style={style}
       {...rest}
       onError={handleError}
-      data-oid="loumfc:"
     />
   );
 }

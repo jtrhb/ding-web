@@ -18,7 +18,6 @@ function Menubar({
         className,
       )}
       {...props}
-      data-oid="lk7-qbh"
     />
   );
 }
@@ -26,48 +25,26 @@ function Menubar({
 function MenubarMenu({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Menu>) {
-  return (
-    <MenubarPrimitive.Menu
-      data-slot="menubar-menu"
-      {...props}
-      data-oid="wx94yj:"
-    />
-  );
+  return <MenubarPrimitive.Menu data-slot="menubar-menu" {...props} />;
 }
 
 function MenubarGroup({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Group>) {
-  return (
-    <MenubarPrimitive.Group
-      data-slot="menubar-group"
-      {...props}
-      data-oid="hip_8nu"
-    />
-  );
+  return <MenubarPrimitive.Group data-slot="menubar-group" {...props} />;
 }
 
 function MenubarPortal({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Portal>) {
-  return (
-    <MenubarPrimitive.Portal
-      data-slot="menubar-portal"
-      {...props}
-      data-oid="mk3hule"
-    />
-  );
+  return <MenubarPrimitive.Portal data-slot="menubar-portal" {...props} />;
 }
 
 function MenubarRadioGroup({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.RadioGroup>) {
   return (
-    <MenubarPrimitive.RadioGroup
-      data-slot="menubar-radio-group"
-      {...props}
-      data-oid="0oo79ll"
-    />
+    <MenubarPrimitive.RadioGroup data-slot="menubar-radio-group" {...props} />
   );
 }
 
@@ -83,7 +60,6 @@ function MenubarTrigger({
         className,
       )}
       {...props}
-      data-oid="9keuccm"
     />
   );
 }
@@ -96,7 +72,7 @@ function MenubarContent({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Content>) {
   return (
-    <MenubarPortal data-oid="to7j061">
+    <MenubarPortal>
       <MenubarPrimitive.Content
         data-slot="menubar-content"
         align={align}
@@ -107,7 +83,6 @@ function MenubarContent({
           className,
         )}
         {...props}
-        data-oid="x.0xksp"
       />
     </MenubarPortal>
   );
@@ -132,7 +107,6 @@ function MenubarItem({
         className,
       )}
       {...props}
-      data-oid="076q7id"
     />
   );
 }
@@ -152,14 +126,10 @@ function MenubarCheckboxItem({
       )}
       checked={checked}
       {...props}
-      data-oid="8slot9o"
     >
-      <span
-        className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center"
-        data-oid="-f_s39k"
-      >
-        <MenubarPrimitive.ItemIndicator data-oid="9inf1fv">
-          <CheckIcon className="size-4" data-oid=".1y2kc1" />
+      <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
+        <MenubarPrimitive.ItemIndicator>
+          <CheckIcon className="size-4" />
         </MenubarPrimitive.ItemIndicator>
       </span>
       {children}
@@ -180,14 +150,10 @@ function MenubarRadioItem({
         className,
       )}
       {...props}
-      data-oid="dte2fo7"
     >
-      <span
-        className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center"
-        data-oid="o.l2tod"
-      >
-        <MenubarPrimitive.ItemIndicator data-oid="-_fvegv">
-          <CircleIcon className="size-2 fill-current" data-oid="81t8tjs" />
+      <span className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center">
+        <MenubarPrimitive.ItemIndicator>
+          <CircleIcon className="size-2 fill-current" />
         </MenubarPrimitive.ItemIndicator>
       </span>
       {children}
@@ -209,7 +175,6 @@ function MenubarLabel({
         className,
       )}
       {...props}
-      data-oid="etxiz9q"
     />
   );
 }
@@ -223,7 +188,6 @@ function MenubarSeparator({
       data-slot="menubar-separator"
       className={cn("bg-border -mx-1 my-1 h-px", className)}
       {...props}
-      data-oid="ojv00yd"
     />
   );
 }
@@ -240,7 +204,6 @@ function MenubarShortcut({
         className,
       )}
       {...props}
-      data-oid="76x-tq7"
     />
   );
 }
@@ -248,13 +211,7 @@ function MenubarShortcut({
 function MenubarSub({
   ...props
 }: React.ComponentProps<typeof MenubarPrimitive.Sub>) {
-  return (
-    <MenubarPrimitive.Sub
-      data-slot="menubar-sub"
-      {...props}
-      data-oid="ox2:yx_"
-    />
-  );
+  return <MenubarPrimitive.Sub data-slot="menubar-sub" {...props} />;
 }
 
 function MenubarSubTrigger({
@@ -274,10 +231,9 @@ function MenubarSubTrigger({
         className,
       )}
       {...props}
-      data-oid="lqdc-sm"
     >
       {children}
-      <ChevronRightIcon className="ml-auto h-4 w-4" data-oid=".3r.7r2" />
+      <ChevronRightIcon className="ml-auto h-4 w-4" />
     </MenubarPrimitive.SubTrigger>
   );
 }
@@ -294,7 +250,6 @@ function MenubarSubContent({
         className,
       )}
       {...props}
-      data-oid="0e0pphs"
     />
   );
 }

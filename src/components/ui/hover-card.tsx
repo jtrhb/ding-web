@@ -8,24 +8,14 @@ import { cn } from "./utils";
 function HoverCard({
   ...props
 }: React.ComponentProps<typeof HoverCardPrimitive.Root>) {
-  return (
-    <HoverCardPrimitive.Root
-      data-slot="hover-card"
-      {...props}
-      data-oid="p.b9tvr"
-    />
-  );
+  return <HoverCardPrimitive.Root data-slot="hover-card" {...props} />;
 }
 
 function HoverCardTrigger({
   ...props
 }: React.ComponentProps<typeof HoverCardPrimitive.Trigger>) {
   return (
-    <HoverCardPrimitive.Trigger
-      data-slot="hover-card-trigger"
-      {...props}
-      data-oid="hlqpzi6"
-    />
+    <HoverCardPrimitive.Trigger data-slot="hover-card-trigger" {...props} />
   );
 }
 
@@ -36,7 +26,7 @@ function HoverCardContent({
   ...props
 }: React.ComponentProps<typeof HoverCardPrimitive.Content>) {
   return (
-    <HoverCardPrimitive.Portal data-slot="hover-card-portal" data-oid="vjyh0w7">
+    <HoverCardPrimitive.Portal data-slot="hover-card-portal">
       <HoverCardPrimitive.Content
         data-slot="hover-card-content"
         align={align}
@@ -46,7 +36,6 @@ function HoverCardContent({
           className,
         )}
         {...props}
-        data-oid="w.0i_30"
       />
     </HoverCardPrimitive.Portal>
   );

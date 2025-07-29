@@ -8,21 +8,13 @@ import { cn } from "./utils";
 function Popover({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Root>) {
-  return (
-    <PopoverPrimitive.Root data-slot="popover" {...props} data-oid="uyr50qe" />
-  );
+  return <PopoverPrimitive.Root data-slot="popover" {...props} />;
 }
 
 function PopoverTrigger({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Trigger>) {
-  return (
-    <PopoverPrimitive.Trigger
-      data-slot="popover-trigger"
-      {...props}
-      data-oid="_z5cz12"
-    />
-  );
+  return <PopoverPrimitive.Trigger data-slot="popover-trigger" {...props} />;
 }
 
 function PopoverContent({
@@ -32,7 +24,7 @@ function PopoverContent({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Content>) {
   return (
-    <PopoverPrimitive.Portal data-oid="e.e:20w">
+    <PopoverPrimitive.Portal>
       <PopoverPrimitive.Content
         data-slot="popover-content"
         align={align}
@@ -42,7 +34,6 @@ function PopoverContent({
           className,
         )}
         {...props}
-        data-oid=":tgiisj"
       />
     </PopoverPrimitive.Portal>
   );
@@ -51,13 +42,7 @@ function PopoverContent({
 function PopoverAnchor({
   ...props
 }: React.ComponentProps<typeof PopoverPrimitive.Anchor>) {
-  return (
-    <PopoverPrimitive.Anchor
-      data-slot="popover-anchor"
-      {...props}
-      data-oid="u-m3-1n"
-    />
-  );
+  return <PopoverPrimitive.Anchor data-slot="popover-anchor" {...props} />;
 }
 
 export { Popover, PopoverTrigger, PopoverContent, PopoverAnchor };

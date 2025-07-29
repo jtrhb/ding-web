@@ -15,17 +15,15 @@ function ScrollArea({
       data-slot="scroll-area"
       className={cn("relative", className)}
       {...props}
-      data-oid="09owj4:"
     >
       <ScrollAreaPrimitive.Viewport
         data-slot="scroll-area-viewport"
         className="focus-visible:ring-ring/50 size-full rounded-[inherit] transition-[color,box-shadow] outline-none focus-visible:ring-[3px] focus-visible:outline-1"
-        data-oid="agtdp1_"
       >
         {children}
       </ScrollAreaPrimitive.Viewport>
-      <ScrollBar data-oid="guh2tya" />
-      <ScrollAreaPrimitive.Corner data-oid="d9_iru9" />
+      <ScrollBar />
+      <ScrollAreaPrimitive.Corner />
     </ScrollAreaPrimitive.Root>
   );
 }
@@ -48,12 +46,10 @@ function ScrollBar({
         className,
       )}
       {...props}
-      data-oid="lj-lk9z"
     >
       <ScrollAreaPrimitive.ScrollAreaThumb
         data-slot="scroll-area-thumb"
         className="bg-border relative flex-1 rounded-full"
-        data-oid="z0-h8u0"
       />
     </ScrollAreaPrimitive.ScrollAreaScrollbar>
   );

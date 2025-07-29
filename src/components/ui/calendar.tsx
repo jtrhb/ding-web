@@ -64,26 +64,17 @@ function Calendar({
           className,
           ...props
         }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
-          <ChevronLeft
-            className={cn("size-4", className)}
-            {...props}
-            data-oid="37kwph8"
-          />
+          <ChevronLeft className={cn("size-4", className)} {...props} />
         ),
 
         IconRight: ({
           className,
           ...props
         }: { className?: string } & React.SVGProps<SVGSVGElement>) => (
-          <ChevronRight
-            className={cn("size-4", className)}
-            {...props}
-            data-oid="1lp.gob"
-          />
+          <ChevronRight className={cn("size-4", className)} {...props} />
         ),
       }}
       {...props}
-      data-oid="vuy9pza"
     />
   );
 }

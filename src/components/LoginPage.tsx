@@ -55,61 +55,37 @@ export function LoginPage({ onLogin }: LoginPageProps) {
   };
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 flex items-center justify-center p-4"
-      data-oid="s59hnqj"
-    >
-      <div className="w-full max-w-md" data-oid="hdn8bmb">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50 flex items-center justify-center p-4">
+      <div className="w-full max-w-md">
         {/* Logo和品牌标识 */}
-        <div className="text-center mb-8" data-oid="ife5w2-">
-          <div
-            className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4"
-            data-oid="-tjsfld"
-          >
-            <Heart
-              className="w-8 h-8 text-white fill-current"
-              data-oid="e1thrgp"
-            />
+        <div className="text-center mb-8">
+          <div className="w-16 h-16 bg-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <Heart className="w-8 h-8 text-white fill-current" />
           </div>
-          <h1
-            className="text-3xl font-bold text-gray-900 mb-2"
-            data-oid="vgsouy."
-          >
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">
             小红书创作工具
           </h1>
-          <p className="text-gray-600" data-oid=":g851ki">
-            让创作更简单，让分享更精彩
-          </p>
+          <p className="text-gray-600">让创作更简单，让分享更精彩</p>
         </div>
 
         {/* 登录表单 */}
-        <Card className="shadow-lg border-0" data-oid="o-yq_ck">
-          <CardHeader className="space-y-1 text-center" data-oid="6at_s78">
-            <CardTitle className="text-2xl" data-oid="h52-xat">
-              欢迎回来
-            </CardTitle>
-            <p className="text-gray-600" data-oid="0w1.ov4">
-              请登录您的账户继续使用
-            </p>
+        <Card className="shadow-lg border-0">
+          <CardHeader className="space-y-1 text-center">
+            <CardTitle className="text-2xl">欢迎回来</CardTitle>
+            <p className="text-gray-600">请登录您的账户继续使用</p>
           </CardHeader>
-          <CardContent data-oid="lq2ft3p">
-            <form
-              onSubmit={handleSubmit}
-              className="space-y-4"
-              data-oid="2vk78vx"
-            >
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4">
               {error && (
-                <Alert className="border-red-200 bg-red-50" data-oid="7y8-mt7">
-                  <AlertDescription className="text-red-600" data-oid="ibdac8:">
+                <Alert className="border-red-200 bg-red-50">
+                  <AlertDescription className="text-red-600">
                     {error}
                   </AlertDescription>
                 </Alert>
               )}
 
-              <div className="space-y-2" data-oid="65z_0_.">
-                <Label htmlFor="username" data-oid="paw9r:d">
-                  用户名
-                </Label>
+              <div className="space-y-2">
+                <Label htmlFor="username">用户名</Label>
                 <Input
                   id="username"
                   type="text"
@@ -118,15 +94,12 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                   onChange={(e) => setUsername(e.target.value)}
                   className="h-12"
                   disabled={isLoading}
-                  data-oid="i9m11ll"
                 />
               </div>
 
-              <div className="space-y-2" data-oid="iy57s06">
-                <Label htmlFor="password" data-oid="f.vwl2t">
-                  密码
-                </Label>
-                <div className="relative" data-oid="b_cv5nw">
+              <div className="space-y-2">
+                <Label htmlFor="password">密码</Label>
+                <div className="relative">
                   <Input
                     id="password"
                     type={showPassword ? "text" : "password"}
@@ -135,7 +108,6 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                     onChange={(e) => setPassword(e.target.value)}
                     className="h-12 pr-10"
                     disabled={isLoading}
-                    data-oid="w3xwxnb"
                   />
 
                   <button
@@ -143,40 +115,29 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                     onClick={() => setShowPassword(!showPassword)}
                     className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
                     disabled={isLoading}
-                    data-oid="0mdlqe5"
                   >
                     {showPassword ? (
-                      <EyeOff className="w-4 h-4" data-oid="dvt598s" />
+                      <EyeOff className="w-4 h-4" />
                     ) : (
-                      <Eye className="w-4 h-4" data-oid="hqbzfl7" />
+                      <Eye className="w-4 h-4" />
                     )}
                   </button>
                 </div>
               </div>
 
-              <div
-                className="flex items-center justify-between"
-                data-oid="--x3wnc"
-              >
-                <label
-                  className="flex items-center space-x-2 text-sm"
-                  data-oid="1cde05q"
-                >
+              <div className="flex items-center justify-between">
+                <label className="flex items-center space-x-2 text-sm">
                   <input
                     type="checkbox"
                     className="w-4 h-4 rounded border-2 border-gray-300 bg-white checked:bg-red-500 checked:border-red-500 focus:ring-2 focus:ring-red-200 transition-colors"
-                    data-oid="5y24gcw"
                   />
 
-                  <span className="text-gray-600" data-oid="ayu67m9">
-                    记住我
-                  </span>
+                  <span className="text-gray-600">记住我</span>
                 </label>
                 <button
                   type="button"
                   className="text-sm text-red-500 hover:text-red-600 transition-colors"
                   disabled={isLoading}
-                  data-oid="gbwf0jn"
                 >
                   忘记密码？
                 </button>
@@ -186,46 +147,34 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                 type="submit"
                 className="w-full h-12 bg-red-500 hover:bg-red-600 text-white"
                 disabled={isLoading}
-                data-oid="c8xzf_l"
               >
                 {isLoading ? "登录中..." : "登录"}
               </Button>
             </form>
 
-            <div className="mt-6 text-center" data-oid="x0gbwq9">
-              <p className="text-sm text-gray-600" data-oid="qfsmzms">
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-600">
                 还没有账户？
-                <button
-                  className="text-red-500 hover:text-red-600 transition-colors ml-1"
-                  data-oid="utt8i80"
-                >
+                <button className="text-red-500 hover:text-red-600 transition-colors ml-1">
                   立即注册
                 </button>
               </p>
             </div>
 
             {/* 演示账户信息 */}
-            <div className="mt-6 p-4 bg-gray-50 rounded-lg" data-oid="iu9s:jx">
-              <p
-                className="text-sm text-gray-600 text-center mb-2"
-                data-oid="f8i1_s3"
-              >
-                演示账户
-              </p>
-              <div
-                className="text-xs text-gray-500 space-y-1"
-                data-oid=":lt0jzo"
-              >
-                <div data-oid="cmz6b4n">用户名: admin</div>
-                <div data-oid="kxpzju1">密码: password</div>
+            <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+              <p className="text-sm text-gray-600 text-center mb-2">演示账户</p>
+              <div className="text-xs text-gray-500 space-y-1">
+                <div>用户名: admin</div>
+                <div>密码: password</div>
               </div>
             </div>
           </CardContent>
         </Card>
 
         {/* 底部信息 */}
-        <div className="text-center mt-8" data-oid="8ylau1t">
-          <p className="text-xs text-gray-500" data-oid="065:f3e">
+        <div className="text-center mt-8">
+          <p className="text-xs text-gray-500">
             © 2025 小红书创作工具. 保留所有权利.
           </p>
         </div>

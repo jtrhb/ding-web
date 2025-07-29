@@ -118,6 +118,9 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* 禁用深色模式 */
+  --dark-mode: disabled;
 }
 
 @layer base {
@@ -187,4 +190,18 @@
 
 html {
   font-size: var(--font-size);
+  color-scheme: light;
+}
+
+/* ChatSheet 自定义宽度 */
+.chat-sheet-content {
+  width: 33vw !important;
+  min-width: 400px !important;
+  max-width: none !important;
+}
+
+@media (max-width: 640px) {
+  .chat-sheet-content {
+    min-width: 300px !important;
+  }
 }
