@@ -108,16 +108,16 @@ export function DesktopSidebar({
             : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
         }`}
         onClick={() => handleItemClick(item.id)}
-        data-oid="y.9uqow"
+        data-oid="bk.a63n"
       >
         <Icon
           className={`w-4 h-4 ${isCollapsed ? "" : "mr-3"}`}
-          data-oid="iy1vzx_"
+          data-oid="46nlb.t"
         />
 
         {!isCollapsed && (
           <>
-            <span className="flex-1 text-left" data-oid="eap_my1">
+            <span className="flex-1 text-left" data-oid="pt84add">
               {item.label}
             </span>
             {item.badge && (
@@ -128,7 +128,7 @@ export function DesktopSidebar({
                     ? "bg-white/20 text-white border-white/30"
                     : "bg-red-50 text-red-600 border-red-200"
                 }`}
-                data-oid="0h9lbw."
+                data-oid="9yxzz7e"
               >
                 {item.badge}
               </Badge>
@@ -140,15 +140,15 @@ export function DesktopSidebar({
 
     if (isCollapsed) {
       return (
-        <TooltipProvider data-oid="3x3ofvt">
-          <Tooltip data-oid="hy:j9p1">
-            <TooltipTrigger asChild data-oid="r6oaz0n">
+        <TooltipProvider data-oid="11zzjw.">
+          <Tooltip data-oid="svg7nmw">
+            <TooltipTrigger asChild data-oid="nr2q6sj">
               {button}
             </TooltipTrigger>
-            <TooltipContent side="right" data-oid=":399ou4">
-              <p data-oid="gb8sluj">{item.label}</p>
+            <TooltipContent side="right" data-oid="nxyliqv">
+              <p data-oid="b72w85y">{item.label}</p>
               {item.badge && (
-                <p className="text-xs" data-oid="cn02mgt">
+                <p className="text-xs" data-oid="co3cmey">
                   ({item.badge})
                 </p>
               )}
@@ -164,7 +164,7 @@ export function DesktopSidebar({
   return (
     <div
       className={`${isCollapsed ? "w-16" : "w-64"} h-full bg-white border-r border-gray-200 flex flex-col transition-all duration-300 ease-in-out relative`}
-      data-oid="5r9r068"
+      data-oid=":xaf39d"
     >
       {/* 折叠按钮 - 位于右边缘 */}
       <Button
@@ -172,46 +172,46 @@ export function DesktopSidebar({
         size="sm"
         onClick={onToggleCollapse}
         className="absolute top-1/2 -translate-y-1/2 -right-3 z-10 w-6 h-6 p-0 bg-white border border-gray-200 rounded-full shadow-sm hover:shadow-md transition-shadow text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-        data-oid="y.tsfm7"
+        data-oid="uqlqhlb"
       >
         {isCollapsed ? (
-          <ChevronRight className="w-3 h-3" data-oid="fz4a7to" />
+          <ChevronRight className="w-3 h-3" data-oid="78u53:n" />
         ) : (
-          <ChevronLeft className="w-3 h-3" data-oid="9_9fnt2" />
+          <ChevronLeft className="w-3 h-3" data-oid="64o5978" />
         )}
       </Button>
 
       {/* Logo 区域 */}
       <div
         className={`${isCollapsed ? "p-2" : "p-6"} border-b border-gray-100 transition-all duration-300`}
-        data-oid="46ktl_g"
+        data-oid="h92ghej"
       >
         {isCollapsed ? (
-          <div className="flex justify-center" data-oid="w22nf8l">
+          <div className="flex justify-center" data-oid="p_j3599">
             <div
               className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center"
-              data-oid="jbzewhm"
+              data-oid="vegyd53"
             >
-              <span className="text-white font-bold text-sm" data-oid="zqdkryi">
+              <span className="text-white font-bold text-sm" data-oid="me12xdo">
                 小
               </span>
             </div>
           </div>
         ) : (
-          <div className="flex items-center space-x-3" data-oid="h-na1zy">
+          <div className="flex items-center space-x-3" data-oid="8.y7z8.">
             <div
               className="w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center"
-              data-oid="bvz4.ra"
+              data-oid="xx.gaw4"
             >
-              <span className="text-white font-bold text-sm" data-oid="x29-gle">
+              <span className="text-white font-bold text-sm" data-oid="pb-t696">
                 小
               </span>
             </div>
-            <div data-oid="9a_egp3">
-              <h1 className="font-bold text-gray-900" data-oid="xf.ns72">
+            <div data-oid="js.hkr4">
+              <h1 className="font-bold text-gray-900" data-oid="8ptyd6k">
                 小红书创作工具
               </h1>
-              <p className="text-xs text-gray-500" data-oid="16q8r_c">
+              <p className="text-xs text-gray-500" data-oid="bva1pod">
                 内容创作助手
               </p>
             </div>
@@ -221,49 +221,49 @@ export function DesktopSidebar({
 
       {/* 用户信息 */}
       {!isCollapsed && (
-        <div className="p-4" data-oid="pi1.bfy">
-          <Card className="p-3" data-oid="vwqv4ef">
+        <div className="p-4" data-oid="rg.8wd1">
+          <Card className="p-3" data-oid="rmege:t">
             <div
               className="flex items-center justify-between"
-              data-oid="uwdjfjv"
+              data-oid="wk0lp83"
             >
               <div
                 className="flex items-center space-x-3 flex-1 min-w-0"
-                data-oid="yxr95ip"
+                data-oid="jcsouts"
               >
                 <div
                   className="w-10 h-10 bg-gradient-to-r from-red-400 to-pink-400 rounded-full flex items-center justify-center"
-                  data-oid="3cf-qsi"
+                  data-oid="pvbp:hx"
                 >
-                  <User className="w-5 h-5 text-white" data-oid="oyqux:x" />
+                  <User className="w-5 h-5 text-white" data-oid="f4lwszq" />
                 </div>
-                <div className="flex-1 min-w-0" data-oid="q43didt">
+                <div className="flex-1 min-w-0" data-oid="w8.nzta">
                   <p
                     className="font-medium text-gray-900 truncate"
-                    data-oid="k5:8g:n"
+                    data-oid="qwefehs"
                   >
                     {currentUser || "创作者账号"}
                   </p>
-                  <p className="text-xs text-gray-500" data-oid="q7d76ze">
+                  <p className="text-xs text-gray-500" data-oid="oo23teg">
                     粉丝 1.2万
                   </p>
                 </div>
               </div>
-              <TooltipProvider data-oid="vt_c3m:">
-                <Tooltip data-oid="rky7a-j">
-                  <TooltipTrigger asChild data-oid="-7-otwp">
+              <TooltipProvider data-oid="er6_scu">
+                <Tooltip data-oid="13m9.qa">
+                  <TooltipTrigger asChild data-oid="r0woqke">
                     <Button
                       variant="ghost"
                       size="sm"
                       onClick={onLogout}
                       className="p-1 h-8 w-8 text-gray-400 hover:text-red-500"
-                      data-oid="1b6o6df"
+                      data-oid="fz5vvlj"
                     >
-                      <LogOut className="w-4 h-4" data-oid="52bq4z7" />
+                      <LogOut className="w-4 h-4" data-oid="1rky_gz" />
                     </Button>
                   </TooltipTrigger>
-                  <TooltipContent data-oid="3bwnc:n">
-                    <p data-oid="twqu64r">退出登录</p>
+                  <TooltipContent data-oid="xr8-mm3">
+                    <p data-oid="tal7z5b">退出登录</p>
                   </TooltipContent>
                 </Tooltip>
               </TooltipProvider>
@@ -273,41 +273,41 @@ export function DesktopSidebar({
       )}
 
       {isCollapsed && (
-        <div className="p-2 space-y-2" data-oid="e35z83b">
-          <TooltipProvider data-oid="fd7saor">
-            <Tooltip data-oid="w96udym">
-              <TooltipTrigger asChild data-oid="n7du.ot">
+        <div className="p-2 space-y-2" data-oid="q:bo9e7">
+          <TooltipProvider data-oid="8fllks8">
+            <Tooltip data-oid="skn-q_r">
+              <TooltipTrigger asChild data-oid="agp_mfz">
                 <div
                   className="w-10 h-10 bg-gradient-to-r from-red-400 to-pink-400 rounded-full flex items-center justify-center mx-auto"
-                  data-oid="pgvke-c"
+                  data-oid="_uozgsf"
                 >
-                  <User className="w-5 h-5 text-white" data-oid="396h2ft" />
+                  <User className="w-5 h-5 text-white" data-oid="a_-7kpv" />
                 </div>
               </TooltipTrigger>
-              <TooltipContent side="right" data-oid="8ldjy69">
-                <p data-oid="r1_lb2f">{currentUser || "创作者账号"}</p>
-                <p className="text-xs" data-oid="q7ueuol">
+              <TooltipContent side="right" data-oid="e0ixjhb">
+                <p data-oid="bqpyej1">{currentUser || "创作者账号"}</p>
+                <p className="text-xs" data-oid="mcrg62a">
                   粉丝 1.2万
                 </p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
 
-          <TooltipProvider data-oid="ffnj9g6">
-            <Tooltip data-oid="tk:wtw.">
-              <TooltipTrigger asChild data-oid="7b4kziu">
+          <TooltipProvider data-oid="r0xu8_m">
+            <Tooltip data-oid=".1llsu3">
+              <TooltipTrigger asChild data-oid="o9nol-u">
                 <Button
                   variant="ghost"
                   size="sm"
                   onClick={onLogout}
                   className="w-full p-2 text-gray-400 hover:text-red-500"
-                  data-oid="vvk7_:h"
+                  data-oid="pbs9znl"
                 >
-                  <LogOut className="w-4 h-4" data-oid="xpngsz6" />
+                  <LogOut className="w-4 h-4" data-oid="rq4d-9z" />
                 </Button>
               </TooltipTrigger>
-              <TooltipContent side="right" data-oid="rg--1nq">
-                <p data-oid="nd.dhha">退出登录</p>
+              <TooltipContent side="right" data-oid="mx0jw9i">
+                <p data-oid="__p95tk">退出登录</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -317,13 +317,13 @@ export function DesktopSidebar({
       {/* 主要功能导航 */}
       <div
         className={`flex-1 ${isCollapsed ? "px-2" : "px-4"} space-y-1`}
-        data-oid="sa.3um:"
+        data-oid="l1ktr.e"
       >
-        <div className="mb-4" data-oid="ufgftdf">
+        <div className="mb-4" data-oid="-ltxc3z">
           {!isCollapsed && (
             <h3
               className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2"
-              data-oid="6em-tgt"
+              data-oid="e2kb9o5"
             >
               内容管理
             </h3>
@@ -335,17 +335,17 @@ export function DesktopSidebar({
                 key={item.id}
                 item={item}
                 isActive={isActive}
-                data-oid="oe2th5-"
+                data-oid="5sspm:t"
               />
             );
           })}
         </div>
 
-        <div className="mb-4" data-oid="75k:g0d">
+        <div className="mb-4" data-oid="ozne6ui">
           {!isCollapsed && (
             <h3
               className="text-xs font-medium text-gray-500 uppercase tracking-wider mb-2"
-              data-oid="z0..94k"
+              data-oid="m7-foak"
             >
               其他功能
             </h3>
@@ -357,7 +357,7 @@ export function DesktopSidebar({
                 key={item.id}
                 item={item}
                 isActive={isActive}
-                data-oid="4qjjdgz"
+                data-oid="1.d_2ba"
               />
             );
           })}
@@ -366,10 +366,10 @@ export function DesktopSidebar({
 
       {/* 底部信息 */}
       {!isCollapsed && (
-        <div className="p-4 border-t border-gray-100" data-oid="v-8y6ge">
-          <div className="text-xs text-center text-gray-400" data-oid="ydyfhjj">
-            <p data-oid="pd1t-xq">© 2025 小红书创作工具</p>
-            <p className="mt-1" data-oid="v36af:o">
+        <div className="p-4 border-t border-gray-100" data-oid="l3gq_6j">
+          <div className="text-xs text-center text-gray-400" data-oid="0q37hvl">
+            <p data-oid="6xbvqog">© 2025 小红书创作工具</p>
+            <p className="mt-1" data-oid="hhi2jn6">
               v1.0.0
             </p>
           </div>

@@ -13,7 +13,7 @@ function DropdownMenu({
     <DropdownMenuPrimitive.Root
       data-slot="dropdown-menu"
       {...props}
-      data-oid="u:z-swt"
+      data-oid="zj7o_1:"
     />
   );
 }
@@ -25,7 +25,7 @@ function DropdownMenuPortal({
     <DropdownMenuPrimitive.Portal
       data-slot="dropdown-menu-portal"
       {...props}
-      data-oid="tc6yx.n"
+      data-oid="7jy:olt"
     />
   );
 }
@@ -37,7 +37,7 @@ function DropdownMenuTrigger({
     <DropdownMenuPrimitive.Trigger
       data-slot="dropdown-menu-trigger"
       {...props}
-      data-oid="2rkba3r"
+      data-oid="oqerfwz"
     />
   );
 }
@@ -48,7 +48,7 @@ function DropdownMenuContent({
   ...props
 }: React.ComponentProps<typeof DropdownMenuPrimitive.Content>) {
   return (
-    <DropdownMenuPrimitive.Portal data-oid="d4qdrxr">
+    <DropdownMenuPrimitive.Portal data-oid="lw28mt7">
       <DropdownMenuPrimitive.Content
         data-slot="dropdown-menu-content"
         sideOffset={sideOffset}
@@ -57,7 +57,7 @@ function DropdownMenuContent({
           className,
         )}
         {...props}
-        data-oid="hnw8kz-"
+        data-oid="j.43q3s"
       />
     </DropdownMenuPrimitive.Portal>
   );
@@ -70,7 +70,7 @@ function DropdownMenuGroup({
     <DropdownMenuPrimitive.Group
       data-slot="dropdown-menu-group"
       {...props}
-      data-oid="u-tflve"
+      data-oid="tk0ofs0"
     />
   );
 }
@@ -94,7 +94,7 @@ function DropdownMenuItem({
         className,
       )}
       {...props}
-      data-oid="5rx.lky"
+      data-oid="-:at.z4"
     />
   );
 }
@@ -114,14 +114,14 @@ function DropdownMenuCheckboxItem({
       )}
       checked={checked}
       {...props}
-      data-oid="g-5ip91"
+      data-oid="atqwsr0"
     >
       <span
         className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center"
-        data-oid="nsbo7eb"
+        data-oid="ilhuzlg"
       >
-        <DropdownMenuPrimitive.ItemIndicator data-oid="awwce71">
-          <CheckIcon className="size-4" data-oid=".tv3r6p" />
+        <DropdownMenuPrimitive.ItemIndicator data-oid="h7u4p-0">
+          <CheckIcon className="size-4" data-oid="4oouqrf" />
         </DropdownMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -136,7 +136,7 @@ function DropdownMenuRadioGroup({
     <DropdownMenuPrimitive.RadioGroup
       data-slot="dropdown-menu-radio-group"
       {...props}
-      data-oid="santfe5"
+      data-oid="0ow8f1o"
     />
   );
 }
@@ -154,14 +154,14 @@ function DropdownMenuRadioItem({
         className,
       )}
       {...props}
-      data-oid="zxht8c5"
+      data-oid="a:tlv6v"
     >
       <span
         className="pointer-events-none absolute left-2 flex size-3.5 items-center justify-center"
-        data-oid="j.8.op:"
+        data-oid="zx6wfh5"
       >
-        <DropdownMenuPrimitive.ItemIndicator data-oid="2mpiq4d">
-          <CircleIcon className="size-2 fill-current" data-oid="3t00csz" />
+        <DropdownMenuPrimitive.ItemIndicator data-oid="i.8d8t_">
+          <CircleIcon className="size-2 fill-current" data-oid="6_j90w7" />
         </DropdownMenuPrimitive.ItemIndicator>
       </span>
       {children}
@@ -185,7 +185,7 @@ function DropdownMenuLabel({
         className,
       )}
       {...props}
-      data-oid="76-no1p"
+      data-oid="hz:gnr."
     />
   );
 }
@@ -199,7 +199,7 @@ function DropdownMenuSeparator({
       data-slot="dropdown-menu-separator"
       className={cn("bg-border -mx-1 my-1 h-px", className)}
       {...props}
-      data-oid=":jxwq4s"
+      data-oid="hi2zctr"
     />
   );
 }
@@ -216,7 +216,7 @@ function DropdownMenuShortcut({
         className,
       )}
       {...props}
-      data-oid="nfvrk_0"
+      data-oid="34im1ih"
     />
   );
 }
@@ -228,7 +228,7 @@ function DropdownMenuSub({
     <DropdownMenuPrimitive.Sub
       data-slot="dropdown-menu-sub"
       {...props}
-      data-oid="zhv3me4"
+      data-oid="up6j717"
     />
   );
 }
@@ -250,10 +250,10 @@ function DropdownMenuSubTrigger({
         className,
       )}
       {...props}
-      data-oid="1b0y1:i"
+      data-oid="3em1a35"
     >
       {children}
-      <ChevronRightIcon className="ml-auto size-4" data-oid="7wqthjl" />
+      <ChevronRightIcon className="ml-auto size-4" data-oid="zahwj5i" />
     </DropdownMenuPrimitive.SubTrigger>
   );
 }
@@ -270,7 +270,7 @@ function DropdownMenuSubContent({
         className,
       )}
       {...props}
-      data-oid="cwtkmfr"
+      data-oid="i6pmpx2"
     />
   );
 }

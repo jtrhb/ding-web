@@ -18,7 +18,7 @@ function ResizablePanelGroup({
         className,
       )}
       {...props}
-      data-oid="49not2x"
+      data-oid="moxi:r_"
     />
   );
 }
@@ -30,7 +30,7 @@ function ResizablePanel({
     <ResizablePrimitive.Panel
       data-slot="resizable-panel"
       {...props}
-      data-oid="1qgoi76"
+      data-oid="7ddfhxc"
     />
   );
 }
@@ -50,14 +50,14 @@ function ResizableHandle({
         className,
       )}
       {...props}
-      data-oid="4vedhqq"
+      data-oid="33avpa8"
     >
       {withHandle && (
         <div
           className="bg-border z-10 flex h-4 w-3 items-center justify-center rounded-xs border"
-          data-oid="koe:j5j"
+          data-oid=":ztkzvw"
         >
-          <GripVerticalIcon className="size-2.5" data-oid="2kfex_u" />
+          <GripVerticalIcon className="size-2.5" data-oid="f021fxb" />
         </div>
       )}
     </ResizablePrimitive.PanelResizeHandle>

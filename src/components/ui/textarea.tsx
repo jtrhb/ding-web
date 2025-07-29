@@ -11,7 +11,7 @@ function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
         className,
       )}
       {...props}
-      data-oid="ggu04x_"
+      data-oid="3dy6bqr"
     />
   );
 }

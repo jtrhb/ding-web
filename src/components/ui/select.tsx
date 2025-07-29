@@ -9,7 +9,7 @@ function Select({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Root>) {
   return (
-    <SelectPrimitive.Root data-slot="select" {...props} data-oid="vzshd_h" />
+    <SelectPrimitive.Root data-slot="select" {...props} data-oid="5a7ozcd" />
   );
 }
 
@@ -20,7 +20,7 @@ function SelectGroup({
     <SelectPrimitive.Group
       data-slot="select-group"
       {...props}
-      data-oid="6--sgqk"
+      data-oid=":rtpbhs"
     />
   );
 }
@@ -32,7 +32,7 @@ function SelectValue({
     <SelectPrimitive.Value
       data-slot="select-value"
       {...props}
-      data-oid="71p3e:r"
+      data-oid="2ar_kn-"
     />
   );
 }
@@ -54,11 +54,11 @@ function SelectTrigger({
         className,
       )}
       {...props}
-      data-oid="595edj_"
+      data-oid="asn131c"
     >
       {children}
-      <SelectPrimitive.Icon asChild data-oid="vypg5_l">
-        <ChevronDownIcon className="size-4 opacity-50" data-oid="xs4gg-m" />
+      <SelectPrimitive.Icon asChild data-oid="srqwbfk">
+        <ChevronDownIcon className="size-4 opacity-50" data-oid="ee0i563" />
       </SelectPrimitive.Icon>
     </SelectPrimitive.Trigger>
   );
@@ -71,7 +71,7 @@ function SelectContent({
   ...props
 }: React.ComponentProps<typeof SelectPrimitive.Content>) {
   return (
-    <SelectPrimitive.Portal data-oid="hm9r8r8">
+    <SelectPrimitive.Portal data-oid="h43.v_.">
       <SelectPrimitive.Content
         data-slot="select-content"
         className={cn(
@@ -82,20 +82,20 @@ function SelectContent({
         )}
         position={position}
         {...props}
-        data-oid="ou979gp"
+        data-oid="l4x5q67"
       >
-        <SelectScrollUpButton data-oid="ng3l2j_" />
+        <SelectScrollUpButton data-oid="h9pxx2_" />
         <SelectPrimitive.Viewport
           className={cn(
             "p-1",
             position === "popper" &&
               "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)] scroll-my-1",
           )}
-          data-oid="f.ul5r0"
+          data-oid="5phwhw1"
         >
           {children}
         </SelectPrimitive.Viewport>
-        <SelectScrollDownButton data-oid="9rwysj4" />
+        <SelectScrollDownButton data-oid="zllz8_i" />
       </SelectPrimitive.Content>
     </SelectPrimitive.Portal>
   );
@@ -110,7 +110,7 @@ function SelectLabel({
       data-slot="select-label"
       className={cn("text-muted-foreground px-2 py-1.5 text-xs", className)}
       {...props}
-      data-oid="pzrstjd"
+      data-oid="4o:ib3a"
     />
   );
 }
@@ -128,17 +128,17 @@ function SelectItem({
         className,
       )}
       {...props}
-      data-oid="f-rqlhf"
+      data-oid="1_07kjx"
     >
       <span
         className="absolute right-2 flex size-3.5 items-center justify-center"
-        data-oid="3kixqab"
+        data-oid="44grfp-"
       >
-        <SelectPrimitive.ItemIndicator data-oid="p6w6mmo">
-          <CheckIcon className="size-4" data-oid="e-b5huu" />
+        <SelectPrimitive.ItemIndicator data-oid="a49n:eb">
+          <CheckIcon className="size-4" data-oid="z9r5tdr" />
         </SelectPrimitive.ItemIndicator>
       </span>
-      <SelectPrimitive.ItemText data-oid="xr:vvey">
+      <SelectPrimitive.ItemText data-oid="64urbr-">
         {children}
       </SelectPrimitive.ItemText>
     </SelectPrimitive.Item>
@@ -154,7 +154,7 @@ function SelectSeparator({
       data-slot="select-separator"
       className={cn("bg-border pointer-events-none -mx-1 my-1 h-px", className)}
       {...props}
-      data-oid="p0esnut"
+      data-oid="sw16qgy"
     />
   );
 }
@@ -171,9 +171,9 @@ function SelectScrollUpButton({
         className,
       )}
       {...props}
-      data-oid="x4wabt1"
+      data-oid="9q13:8s"
     >
-      <ChevronUpIcon className="size-4" data-oid="i6k8j7f" />
+      <ChevronUpIcon className="size-4" data-oid="sxg_.g0" />
     </SelectPrimitive.ScrollUpButton>
   );
 }
@@ -190,9 +190,9 @@ function SelectScrollDownButton({
         className,
       )}
       {...props}
-      data-oid="bd_kr9g"
+      data-oid=".5wumiu"
     >
-      <ChevronDownIcon className="size-4" data-oid="47_hwks" />
+      <ChevronDownIcon className="size-4" data-oid="ylt4_uj" />
     </SelectPrimitive.ScrollDownButton>
   );
 }

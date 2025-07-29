@@ -21,7 +21,7 @@ function Separator({
         className,
       )}
       {...props}
-      data-oid="4p9ugg7"
+      data-oid=":ulkzan"
     />
   );
 }
