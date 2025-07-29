@@ -118,7 +118,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  
+
   /* 禁用深色模式 */
   --dark-mode: disabled;
 }
@@ -190,7 +190,34 @@
 
 html {
   font-size: var(--font-size);
-  color-scheme: light;
+  color-scheme: light only;
+}
+
+/* 强制禁用深色模式 */
+html,
+html[data-theme="dark"],
+html.dark,
+body,
+body[data-theme="dark"],
+body.dark {
+  color-scheme: light only !important;
+}
+
+/* 移除深色模式样式 */
+.dark {
+  display: none !important;
+}
+
+/* 确保所有元素都使用浅色模式 */
+* {
+  color-scheme: light only !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    color-scheme: light only !important;
+  }
 }
 
 /* ChatSheet 自定义宽度 */
