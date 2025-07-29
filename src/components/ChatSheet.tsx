@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet";
 import { Avatar } from "./ui/avatar";
-import { Bot, User } from "lucide-react";
+import { Bot, User, MoreHorizontal, Share, Bookmark, X } from "lucide-react";
 import { PromptBox } from "./ChatInput";
+import { Button } from "./ui/button";
 
 interface Message {
   id: string;
@@ -193,10 +194,58 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
           style={{ borderTopLeftRadius: "28px", borderTopRightRadius: "28px" }}
           data-oid="ueo-y39"
         >
-          <SheetTitle className="flex items-center gap-2" data-oid="jertf0e">
-            <Bot className="w-5 h-5" data-oid="n0hsg:v" />
-            AI 助手
-          </SheetTitle>
+          <div className="flex items-center justify-between" data-oid="hizkrb5">
+            <div className="flex items-center gap-2" data-oid="dc.tey2">
+              <Bot className="w-5 h-5 text-gray-600" data-oid="fv:pu2_" />
+              <SheetTitle
+                className="text-sm font-medium text-gray-900"
+                data-oid="o:cy757"
+              >
+                我在开发一个辅助用户写小红书笔记的工具类app，是w...
+              </SheetTitle>
+            </div>
+            <div className="flex items-center gap-1" data-oid="indtq0f">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 w-8 p-0"
+                data-oid="xntx7_s"
+              >
+                <Share className="w-4 h-4 text-gray-500" data-oid="y96mrk2" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 w-8 p-0"
+                data-oid="9l1oes."
+              >
+                <Bookmark
+                  className="w-4 h-4 text-gray-500"
+                  data-oid="6no.td8"
+                />
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 w-8 p-0"
+                data-oid="7thxng4"
+              >
+                <MoreHorizontal
+                  className="w-4 h-4 text-gray-500"
+                  data-oid="zuh_ly0"
+                />
+              </Button>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-8 w-8 p-0"
+                onClick={() => onOpenChange(false)}
+                data-oid="1-1kcyj"
+              >
+                <X className="w-4 h-4 text-gray-500" data-oid="4qdt3n_" />
+              </Button>
+            </div>
+          </div>
         </SheetHeader>
 
         {/* 消息列表 */}
