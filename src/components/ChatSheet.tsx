@@ -166,13 +166,14 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
     <Sheet open={open} onOpenChange={onOpenChange} data-oid="ma.._if">
       <SheetContent
         ref={sheetRef}
-        className="flex flex-col p-0 rounded-2xl border shadow-lg"
+        className="flex flex-col p-0 border shadow-lg"
         style={{
           width: `${sheetWidth}vw`,
           minWidth: "400px",
           maxWidth: "60vw",
           margin: "1rem",
           height: "calc(100vh - 2rem)",
+          borderRadius: "28px",
         }}
         data-oid=".:1lba8"
       >
@@ -187,7 +188,8 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
         />
 
         <SheetHeader
-          className="px-6 py-4 border-b rounded-t-2xl bg-white"
+          className="px-6 py-4 border-b bg-white"
+          style={{ borderTopLeftRadius: "28px", borderTopRightRadius: "28px" }}
           data-oid="ueo-y39"
         >
           <SheetTitle className="flex items-center gap-2" data-oid="jertf0e">
@@ -268,7 +270,14 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
         </div>
 
         {/* 输入区域 */}
-        <div className="p-4 border-t bg-white rounded-b-2xl" data-oid="hz7x_sq">
+        <div
+          className="p-4 border-t bg-white"
+          style={{
+            borderBottomLeftRadius: "28px",
+            borderBottomRightRadius: "28px",
+          }}
+          data-oid="hz7x_sq"
+        >
           <PromptBox data-oid=".cr3m:w" />
         </div>
       </SheetContent>
