@@ -52,7 +52,7 @@ const PopoverContent = React.forwardRef<
       align={align}
       sideOffset={sideOffset}
       className={cn(
-        "z-50 w-64 rounded-xl bg-popover dark:bg-[#303030] p-2 text-popover-foreground dark:text-white shadow-md outline-none animate-in data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0 data-[state=open]:zoom-in-95 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+        "z-50 w-64 rounded-xl bg-popover p-2 text-popover-foreground shadow-md outline-none animate-in data-[state=open]:fade-in-0 data-[state=closed]:fade-out-0 data-[state=open]:zoom-in-95 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
         className,
       )}
       {...props}
@@ -95,18 +95,19 @@ const DialogContent = React.forwardRef<
       data-oid="b_w1jgn"
     >
       <div
-        className="relative bg-card dark:bg-[#303030] rounded-[28px] overflow-hidden shadow-2xl p-1"
+        className="relative bg-card rounded-[28px] overflow-hidden shadow-2xl p-1"
         data-oid="auspofu"
       >
         {children}
         <DialogPrimitive.Close
-          className="absolute right-3 top-3 z-10 rounded-full bg-background/50 dark:bg-[#303030] p-1 hover:bg-accent dark:hover:bg-[#515151] transition-all"
+          className="absolute right-3 top-3 z-10 rounded-full bg-background/50 p-1 hover:bg-accent transition-all"
           data-oid="0f.z.40"
         >
           <XIcon
-            className="h-5 w-5 text-muted-foreground dark:text-gray-200 hover:text-foreground dark:hover:text-white"
+            className="h-5 w-5 text-muted-foreground hover:text-foreground"
             data-oid="vwq53pw"
           />
+
           <span className="sr-only" data-oid="ruui_hm">
             Close
           </span>
@@ -147,6 +148,7 @@ const PlusIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />{" "}
   </svg>
 );
+
 const Settings2Icon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="24"
@@ -167,6 +169,7 @@ const Settings2Icon = (props: React.SVGProps<SVGSVGElement>) => (
     <circle cx="7" cy="7" r="3" data-oid="b5svbma" />{" "}
   </svg>
 );
+
 const SendIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="24"
@@ -196,6 +199,7 @@ const SendIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />{" "}
   </svg>
 );
+
 const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="24"
@@ -214,6 +218,7 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <line x1="6" y1="6" x2="18" y2="18" data-oid="irul3b_" />{" "}
   </svg>
 );
+
 const GlobeIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="24"
@@ -235,6 +240,7 @@ const GlobeIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
+
 const PencilIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     width="24"
@@ -252,9 +258,11 @@ const PencilIcon = (props: React.SVGProps<SVGSVGElement>) => (
       d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"
       data-oid="zftrsez"
     />
+
     <path d="m15 5 4 4" data-oid="owodhuo" />
   </svg>
 );
+
 const PaintBrushIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 512 512" fill="currentColor" {...props} data-oid="mz95f42">
     {" "}
@@ -287,6 +295,7 @@ const PaintBrushIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </g>{" "}
   </svg>
 );
+
 const TelescopeIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 512 512" fill="currentColor" {...props} data-oid="hugq-0_">
     {" "}
@@ -307,6 +316,7 @@ const TelescopeIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </g>{" "}
   </svg>
 );
+
 const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" {...props} data-oid="r-.qz3z">
     {" "}
@@ -366,6 +376,7 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />{" "}
   </svg>
 );
+
 // NEW: MicIcon
 const MicIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -480,7 +491,7 @@ export const PromptBox = React.forwardRef<
   return (
     <div
       className={cn(
-        "flex flex-col rounded-[28px] p-2 shadow-sm transition-colors bg-white border dark:bg-[#303030] dark:border-transparent cursor-text",
+        "flex flex-col rounded-[28px] p-2 shadow-sm transition-colors bg-white border cursor-text",
         className,
       )}
       data-oid="wvhcgb7"
@@ -522,7 +533,7 @@ export const PromptBox = React.forwardRef<
             </button>{" "}
             <button
               onClick={handleRemoveImage}
-              className="absolute right-2 top-2 z-10 flex h-4 w-4 items-center justify-center rounded-full bg-white/50 dark:bg-[#303030] text-black dark:text-white transition-colors hover:bg-accent dark:hover:bg-[#515151]"
+              className="absolute right-2 top-2 z-10 flex h-4 w-4 items-center justify-center rounded-full bg-white/50 text-black transition-colors hover:bg-accent"
               aria-label="Remove image"
               data-oid="e4gdhb6"
             >
@@ -548,7 +559,7 @@ export const PromptBox = React.forwardRef<
         value={value}
         onChange={handleInputChange}
         placeholder="Message..."
-        className="custom-scrollbar w-full resize-none border-0 bg-transparent p-3 text-foreground dark:text-white placeholder:text-muted-foreground dark:placeholder:text-gray-300 focus:ring-0 focus-visible:outline-none min-h-12"
+        className="custom-scrollbar w-full resize-none border-0 bg-transparent p-3 text-foreground placeholder:text-muted-foreground focus:ring-0 focus-visible:outline-none min-h-12"
         {...props}
         data-oid="2q0dfj3"
       />
@@ -562,7 +573,7 @@ export const PromptBox = React.forwardRef<
                 <button
                   type="button"
                   onClick={handlePlusClick}
-                  className="flex h-8 w-8 items-center justify-center rounded-full text-foreground dark:text-white transition-colors hover:bg-accent dark:hover:bg-[#515151] focus-visible:outline-none"
+                  className="flex h-8 w-8 items-center justify-center rounded-full text-foreground transition-colors hover:bg-accent focus-visible:outline-none"
                   data-oid="75wb51-"
                 >
                   <PlusIcon className="h-6 w-6" data-oid="r21-zm9" />
@@ -586,7 +597,7 @@ export const PromptBox = React.forwardRef<
                   <PopoverTrigger asChild data-oid="vh2.5i1">
                     <button
                       type="button"
-                      className="flex h-8 items-center gap-2 rounded-full p-2 text-sm text-foreground dark:text-white transition-colors hover:bg-accent dark:hover:bg-[#515151] focus-visible:outline-none focus-visible:ring-ring"
+                      className="flex h-8 items-center gap-2 rounded-full p-2 text-sm text-foreground transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-ring"
                       data-oid="r-2zch7"
                     >
                       <Settings2Icon className="h-4 w-4" data-oid="w3x8chf" />
@@ -607,7 +618,7 @@ export const PromptBox = React.forwardRef<
                         setSelectedTool(tool.id);
                         setIsPopoverOpen(false);
                       }}
-                      className="flex w-full items-center gap-2 rounded-md p-2 text-left text-sm hover:bg-accent dark:hover:bg-[#515151]"
+                      className="flex w-full items-center gap-2 rounded-md p-2 text-left text-sm hover:bg-accent"
                       data-oid="x7t_qcf"
                     >
                       {" "}
@@ -615,7 +626,7 @@ export const PromptBox = React.forwardRef<
                       <span data-oid="u-b_4fz">{tool.name}</span>{" "}
                       {tool.extra && (
                         <span
-                          className="ml-auto text-xs text-muted-foreground dark:text-gray-400"
+                          className="ml-auto text-xs text-muted-foreground"
                           data-oid="fpbrh5-"
                         >
                           {tool.extra}
@@ -629,13 +640,10 @@ export const PromptBox = React.forwardRef<
 
             {activeTool && (
               <>
-                <div
-                  className="h-4 w-px bg-border dark:bg-gray-600"
-                  data-oid="i1g97i6"
-                />
+                <div className="h-4 w-px bg-border" data-oid="i1g97i6" />
                 <button
                   onClick={() => setSelectedTool(null)}
-                  className="flex h-8 items-center gap-2 rounded-full px-2 text-sm dark:hover:bg-[#3b4045] hover:bg-accent cursor-pointer dark:text-[#99ceff] text-[#2294ff] transition-colors flex-row items-center justify-center"
+                  className="flex h-8 items-center gap-2 rounded-full px-2 text-sm hover:bg-accent cursor-pointer text-[#2294ff] transition-colors flex-row items-center justify-center"
                   data-oid="kguali2"
                 >
                   {ActiveToolIcon && (
@@ -653,7 +661,7 @@ export const PromptBox = React.forwardRef<
                 <TooltipTrigger asChild data-oid="8tmg03s">
                   <button
                     type="button"
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-foreground dark:text-white transition-colors hover:bg-accent dark:hover:bg-[#515151] focus-visible:outline-none"
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-foreground transition-colors hover:bg-accent focus-visible:outline-none"
                     data-oid="74284u5"
                   >
                     <MicIcon className="h-5 w-5" data-oid="q8jhaco" />
@@ -672,13 +680,14 @@ export const PromptBox = React.forwardRef<
                   <button
                     type="submit"
                     disabled={!hasValue}
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none bg-black text-white hover:bg-black/80 dark:bg-white dark:text-black dark:hover:bg-white/80 disabled:bg-black/40 dark:disabled:bg-[#515151]"
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none bg-black text-white hover:bg-black/80 disabled:bg-black/40"
                     data-oid="ql6b72:"
                   >
                     <SendIcon
                       className="h-6 w-6 text-bold"
                       data-oid="gi2f:ic"
                     />
+
                     <span className="sr-only" data-oid=":vhi2yu">
                       Send message
                     </span>
