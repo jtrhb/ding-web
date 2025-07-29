@@ -166,7 +166,7 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
     <Sheet open={open} onOpenChange={onOpenChange} data-oid="ma.._if">
       <SheetContent
         ref={sheetRef}
-        className="flex flex-col p-0 border shadow-lg"
+        className="flex flex-col p-0 shadow-lg"
         style={{
           width: `${sheetWidth}vw`,
           minWidth: "400px",
@@ -174,6 +174,7 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
           margin: "1rem",
           height: "calc(100vh - 2rem)",
           borderRadius: "28px",
+          border: "1px solid #e5e7eb",
         }}
         data-oid=".:1lba8"
       >
