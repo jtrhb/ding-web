@@ -266,7 +266,9 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
         </div>
 
         {/* 输入区域 */}
-        <PromptBox data-oid=".cr3m:w" />
+        <div className="p-4 border-t bg-white rounded-b-2xl" data-oid="hz7x_sq">
+          <PromptBox data-oid=".cr3m:w" />
+        </div>
       </SheetContent>
     </Sheet>
   );
