@@ -166,11 +166,13 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
     <Sheet open={open} onOpenChange={onOpenChange} data-oid="ma.._if">
       <SheetContent
         ref={sheetRef}
-        className="flex flex-col p-0 rounded-l-2xl border-l-4 border-l-gray-200"
+        className="flex flex-col p-0 rounded-2xl border shadow-lg"
         style={{
           width: `${sheetWidth}vw`,
           minWidth: "400px",
           maxWidth: "60vw",
+          margin: "1rem",
+          height: "calc(100vh - 2rem)",
         }}
         data-oid=".:1lba8"
       >
@@ -185,7 +187,7 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
         />
 
         <SheetHeader
-          className="px-6 py-4 border-b rounded-tl-2xl bg-white"
+          className="px-6 py-4 border-b rounded-t-2xl bg-white"
           data-oid="ueo-y39"
         >
           <SheetTitle className="flex items-center gap-2" data-oid="jertf0e">
