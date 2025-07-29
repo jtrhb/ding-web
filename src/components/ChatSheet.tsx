@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet";
 import { Avatar } from "./ui/avatar";
 import { Bot, User } from "lucide-react";
@@ -21,7 +21,10 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [sheetWidth, setSheetWidth] = useState(33); // 宽度百分比
+  const [isResizing, setIsResizing] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+  const sheetRef = useRef<HTMLDivElement>(null);
 
   // 滚动到底部
   const scrollToBottom = () => {
@@ -117,13 +120,74 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
     console.log("更多选项");
   };
 
+  // 处理拖拽调整宽度
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizing(true);
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!sheetRef.current) return;
+
+      const windowWidth = window.innerWidth;
+      const mouseX = e.clientX;
+      const newWidth = ((windowWidth - mouseX) / windowWidth) * 100;
+
+      // 限制宽度在 20% 到 60% 之间
+      const clampedWidth = Math.max(20, Math.min(60, newWidth));
+      setSheetWidth(clampedWidth);
+    };
+
+    const handleMouseUp = () => {
+      setIsResizing(false);
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
+  }, []);
+
+  useEffect(() => {
+    if (isResizing) {
+      document.body.style.cursor = "ew-resize";
+      document.body.style.userSelect = "none";
+    } else {
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    }
+
+    return () => {
+      document.body.style.cursor = "";
+      document.body.style.userSelect = "";
+    };
+  }, [isResizing]);
+
   return (
     <Sheet open={open} onOpenChange={onOpenChange} data-oid="ma.._if">
       <SheetContent
-        className="chat-sheet-content flex flex-col p-0"
+        ref={sheetRef}
+        className="flex flex-col p-0 rounded-l-2xl border-l-4 border-l-gray-200"
+        style={{
+          width: `${sheetWidth}vw`,
+          minWidth: "400px",
+          maxWidth: "60vw",
+        }}
         data-oid=".:1lba8"
       >
-        <SheetHeader className="px-6 py-4 border-b" data-oid="ueo-y39">
+        {/* 左侧拖拽调整条 */}
+        <div
+          className="absolute left-0 top-0 bottom-0 w-1 bg-transparent hover:bg-blue-400 cursor-ew-resize transition-colors duration-200 z-10"
+          onMouseDown={handleMouseDown}
+          style={{
+            background: isResizing ? "#60a5fa" : "transparent",
+          }}
+          data-oid=":gxum_8"
+        />
+
+        <SheetHeader
+          className="px-6 py-4 border-b rounded-tl-2xl bg-white"
+          data-oid="ueo-y39"
+        >
           <SheetTitle className="flex items-center gap-2" data-oid="jertf0e">
             <Bot className="w-5 h-5" data-oid="n0hsg:v" />
             AI 助手
@@ -132,7 +196,7 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
 
         {/* 消息列表 */}
         <div
-          className="flex-1 overflow-y-auto px-6 py-4 space-y-4"
+          className="flex-1 overflow-y-auto px-6 py-4 space-y-4 bg-gray-50"
           data-oid="u7y5ry6"
         >
           {messages.length === 0 ? (
