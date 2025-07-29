@@ -5,7 +5,14 @@ import { ChevronRight, MoreHorizontal } from "lucide-react";
 import { cn } from "./utils";
 
 function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
-  return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />;
+  return (
+    <nav
+      aria-label="breadcrumb"
+      data-slot="breadcrumb"
+      {...props}
+      data-oid="p681a:n"
+    />
+  );
 }
 
 function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
@@ -17,6 +24,7 @@ function BreadcrumbList({ className, ...props }: React.ComponentProps<"ol">) {
         className,
       )}
       {...props}
+      data-oid="gu3bxkb"
     />
   );
 }
@@ -27,6 +35,7 @@ function BreadcrumbItem({ className, ...props }: React.ComponentProps<"li">) {
       data-slot="breadcrumb-item"
       className={cn("inline-flex items-center gap-1.5", className)}
       {...props}
+      data-oid="a9h.52_"
     />
   );
 }
@@ -43,6 +52,7 @@ function BreadcrumbLink({
       data-slot="breadcrumb-link"
       className={cn("hover:text-foreground transition-colors", className)}
       {...props}
+      data-oid="e0srjz8"
     />
   );
 }
@@ -56,6 +66,7 @@ function BreadcrumbPage({ className, ...props }: React.ComponentProps<"span">) {
       aria-current="page"
       className={cn("text-foreground font-normal", className)}
       {...props}
+      data-oid="c32o2_a"
     />
   );
 }
@@ -72,8 +83,9 @@ function BreadcrumbSeparator({
       aria-hidden="true"
       className={cn("[&>svg]:size-3.5", className)}
       {...props}
+      data-oid=".db.nwe"
     >
-      {children ?? <ChevronRight />}
+      {children ?? <ChevronRight data-oid="ifjoqhl" />}
     </li>
   );
 }
@@ -89,9 +101,12 @@ function BreadcrumbEllipsis({
       aria-hidden="true"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
+      data-oid="cd9.6uc"
     >
-      <MoreHorizontal className="size-4" />
-      <span className="sr-only">More</span>
+      <MoreHorizontal className="size-4" data-oid="12y-94j" />
+      <span className="sr-only" data-oid="gdnsord">
+        More
+      </span>
     </span>
   );
 }

@@ -16,6 +16,7 @@ function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
       data-slot="pagination"
       className={cn("mx-auto flex w-full justify-center", className)}
       {...props}
+      data-oid="gf.e4cx"
     />
   );
 }
@@ -29,12 +30,13 @@ function PaginationContent({
       data-slot="pagination-content"
       className={cn("flex flex-row items-center gap-1", className)}
       {...props}
+      data-oid="ifl88zy"
     />
   );
 }
 
 function PaginationItem({ ...props }: React.ComponentProps<"li">) {
-  return <li data-slot="pagination-item" {...props} />;
+  return <li data-slot="pagination-item" {...props} data-oid="vq7:s6w" />;
 }
 
 type PaginationLinkProps = {
@@ -61,6 +63,7 @@ function PaginationLink({
         className,
       )}
       {...props}
+      data-oid="-957-1."
     />
   );
 }
@@ -75,9 +78,12 @@ function PaginationPrevious({
       size="default"
       className={cn("gap-1 px-2.5 sm:pl-2.5", className)}
       {...props}
+      data-oid="yxw66fi"
     >
-      <ChevronLeftIcon />
-      <span className="hidden sm:block">Previous</span>
+      <ChevronLeftIcon data-oid="5e76hcl" />
+      <span className="hidden sm:block" data-oid="4by_r:f">
+        Previous
+      </span>
     </PaginationLink>
   );
 }
@@ -92,9 +98,12 @@ function PaginationNext({
       size="default"
       className={cn("gap-1 px-2.5 sm:pr-2.5", className)}
       {...props}
+      data-oid="dun1co3"
     >
-      <span className="hidden sm:block">Next</span>
-      <ChevronRightIcon />
+      <span className="hidden sm:block" data-oid="-b.gkgl">
+        Next
+      </span>
+      <ChevronRightIcon data-oid="t4jy6kg" />
     </PaginationLink>
   );
 }
@@ -109,9 +118,12 @@ function PaginationEllipsis({
       data-slot="pagination-ellipsis"
       className={cn("flex size-9 items-center justify-center", className)}
       {...props}
+      data-oid="1sifpyj"
     >
-      <MoreHorizontalIcon className="size-4" />
-      <span className="sr-only">More pages</span>
+      <MoreHorizontalIcon className="size-4" data-oid="xi7880o" />
+      <span className="sr-only" data-oid="n9.jxmr">
+        More pages
+      </span>
     </span>
   );
 }

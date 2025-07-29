@@ -118,22 +118,31 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
   };
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent className="chat-sheet-content flex flex-col p-0">
-        <SheetHeader className="px-6 py-4 border-b">
-          <SheetTitle className="flex items-center gap-2">
-            <Bot className="w-5 h-5" />
+    <Sheet open={open} onOpenChange={onOpenChange} data-oid="ma.._if">
+      <SheetContent
+        className="chat-sheet-content flex flex-col p-0"
+        data-oid=".:1lba8"
+      >
+        <SheetHeader className="px-6 py-4 border-b" data-oid="ueo-y39">
+          <SheetTitle className="flex items-center gap-2" data-oid="jertf0e">
+            <Bot className="w-5 h-5" data-oid="n0hsg:v" />
             AI 助手
           </SheetTitle>
         </SheetHeader>
 
         {/* 消息列表 */}
-        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4">
+        <div
+          className="flex-1 overflow-y-auto px-6 py-4 space-y-4"
+          data-oid="u7y5ry6"
+        >
           {messages.length === 0 ? (
-            <div className="text-center text-gray-500 mt-8">
-              <Bot className="w-12 h-12 mx-auto mb-4 text-gray-300" />
+            <div className="text-center text-gray-500 mt-8" data-oid="vstrv05">
+              <Bot
+                className="w-12 h-12 mx-auto mb-4 text-gray-300"
+                data-oid="dm9e0h-"
+              />
 
-              <p>开始与 AI 助手对话吧！</p>
+              <p data-oid="11hs3w:">开始与 AI 助手对话吧！</p>
             </div>
           ) : (
             messages.map((message) => (
@@ -142,10 +151,14 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                 className={`flex gap-3 ${
                   message.type === "user" ? "justify-end" : "justify-start"
                 }`}
+                data-oid="d2e_-vv"
               >
                 {message.type === "assistant" && (
-                  <Avatar className="w-8 h-8 bg-blue-100 flex items-center justify-center">
-                    <Bot className="w-4 h-4 text-blue-600" />
+                  <Avatar
+                    className="w-8 h-8 bg-blue-100 flex items-center justify-center"
+                    data-oid="wt_kn7i"
+                  >
+                    <Bot className="w-4 h-4 text-blue-600" data-oid="x09iclk" />
                   </Avatar>
                 )}
 
@@ -155,28 +168,41 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                       ? "bg-blue-500 text-white"
                       : "bg-gray-100 text-gray-900"
                   }`}
+                  data-oid="2to_hrr"
                 >
-                  <p className="whitespace-pre-wrap break-words">
+                  <p
+                    className="whitespace-pre-wrap break-words"
+                    data-oid="2fcv8au"
+                  >
                     {message.content}
                     {message.isStreaming && (
-                      <span className="inline-block w-2 h-5 bg-current ml-1 animate-pulse" />
+                      <span
+                        className="inline-block w-2 h-5 bg-current ml-1 animate-pulse"
+                        data-oid="sk9.z4d"
+                      />
                     )}
                   </p>
                 </div>
 
                 {message.type === "user" && (
-                  <Avatar className="w-8 h-8 bg-gray-100 flex items-center justify-center">
-                    <User className="w-4 h-4 text-gray-600" />
+                  <Avatar
+                    className="w-8 h-8 bg-gray-100 flex items-center justify-center"
+                    data-oid="fa4jda-"
+                  >
+                    <User
+                      className="w-4 h-4 text-gray-600"
+                      data-oid="5lh5dfs"
+                    />
                   </Avatar>
                 )}
               </div>
             ))
           )}
-          <div ref={messagesEndRef} />
+          <div ref={messagesEndRef} data-oid="m86fwh9" />
         </div>
 
         {/* 输入区域 */}
-        <PromptBox />
+        <PromptBox data-oid=".cr3m:w" />
       </SheetContent>
     </Sheet>
   );

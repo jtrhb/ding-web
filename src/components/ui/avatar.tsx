@@ -17,6 +17,7 @@ function Avatar({
         className,
       )}
       {...props}
+      data-oid="i9gz5jj"
     />
   );
 }
@@ -30,6 +31,7 @@ function AvatarImage({
       data-slot="avatar-image"
       className={cn("aspect-square size-full", className)}
       {...props}
+      data-oid="j:9v_sz"
     />
   );
 }
@@ -46,6 +48,7 @@ function AvatarFallback({
         className,
       )}
       {...props}
+      data-oid="pv66_h9"
     />
   );
 }

@@ -7,25 +7,45 @@ import { XIcon } from "lucide-react";
 import { cn } from "./utils";
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
-  return <SheetPrimitive.Root data-slot="sheet" {...props} />;
+  return (
+    <SheetPrimitive.Root data-slot="sheet" {...props} data-oid="1zq:ffm" />
+  );
 }
 
 function SheetTrigger({
   ...props
 }: React.ComponentProps<typeof SheetPrimitive.Trigger>) {
-  return <SheetPrimitive.Trigger data-slot="sheet-trigger" {...props} />;
+  return (
+    <SheetPrimitive.Trigger
+      data-slot="sheet-trigger"
+      {...props}
+      data-oid="0ifb5v4"
+    />
+  );
 }
 
 function SheetClose({
   ...props
 }: React.ComponentProps<typeof SheetPrimitive.Close>) {
-  return <SheetPrimitive.Close data-slot="sheet-close" {...props} />;
+  return (
+    <SheetPrimitive.Close
+      data-slot="sheet-close"
+      {...props}
+      data-oid=".4di:3r"
+    />
+  );
 }
 
 function SheetPortal({
   ...props
 }: React.ComponentProps<typeof SheetPrimitive.Portal>) {
-  return <SheetPrimitive.Portal data-slot="sheet-portal" {...props} />;
+  return (
+    <SheetPrimitive.Portal
+      data-slot="sheet-portal"
+      {...props}
+      data-oid="fuyj7:a"
+    />
+  );
 }
 
 function SheetOverlay({
@@ -40,6 +60,7 @@ function SheetOverlay({
         className,
       )}
       {...props}
+      data-oid="_xxuosk"
     />
   );
 }
@@ -53,8 +74,8 @@ function SheetContent({
   side?: "top" | "right" | "bottom" | "left";
 }) {
   return (
-    <SheetPortal>
-      <SheetOverlay />
+    <SheetPortal data-oid="-eb:1za">
+      <SheetOverlay data-oid="c1rikil" />
       <SheetPrimitive.Content
         data-slot="sheet-content"
         className={cn(
@@ -70,11 +91,17 @@ function SheetContent({
           className,
         )}
         {...props}
+        data-oid="prhipj2"
       >
         {children}
-        <SheetPrimitive.Close className="ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none">
-          <XIcon className="size-4" />
-          <span className="sr-only">Close</span>
+        <SheetPrimitive.Close
+          className="ring-offset-background focus:ring-ring data-[state=open]:bg-secondary absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none"
+          data-oid="zsx:y4u"
+        >
+          <XIcon className="size-4" data-oid="5ieyko1" />
+          <span className="sr-only" data-oid="pu.u79m">
+            Close
+          </span>
         </SheetPrimitive.Close>
       </SheetPrimitive.Content>
     </SheetPortal>
@@ -87,6 +114,7 @@ function SheetHeader({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="sheet-header"
       className={cn("flex flex-col gap-1.5 p-4", className)}
       {...props}
+      data-oid="15r_264"
     />
   );
 }
@@ -97,6 +125,7 @@ function SheetFooter({ className, ...props }: React.ComponentProps<"div">) {
       data-slot="sheet-footer"
       className={cn("mt-auto flex flex-col gap-2 p-4", className)}
       {...props}
+      data-oid="xsbav:1"
     />
   );
 }
@@ -110,6 +139,7 @@ function SheetTitle({
       data-slot="sheet-title"
       className={cn("text-foreground font-semibold", className)}
       {...props}
+      data-oid="ee6l20o"
     />
   );
 }
@@ -123,6 +153,7 @@ function SheetDescription({
       data-slot="sheet-description"
       className={cn("text-muted-foreground text-sm", className)}
       {...props}
+      data-oid="wc828k8"
     />
   );
 }
