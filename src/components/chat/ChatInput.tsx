@@ -18,7 +18,7 @@ const TooltipContent = React.forwardRef<
     showArrow?: boolean;
   }
 >(({ className, sideOffset = 4, showArrow = false, ...props }, ref) => (
-  <TooltipPrimitive.Portal data-oid="7wjrh7a">
+  <TooltipPrimitive.Portal>
     <TooltipPrimitive.Content
       ref={ref}
       sideOffset={sideOffset}
@@ -27,15 +27,9 @@ const TooltipContent = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="v7o9vz5"
     >
       {props.children}
-      {showArrow && (
-        <TooltipPrimitive.Arrow
-          className="-my-px fill-popover"
-          data-oid="i22w7wq"
-        />
-      )}
+      {showArrow && <TooltipPrimitive.Arrow className="-my-px fill-popover" />}
     </TooltipPrimitive.Content>
   </TooltipPrimitive.Portal>
 ));
@@ -46,7 +40,7 @@ const PopoverContent = React.forwardRef<
   React.ElementRef<typeof PopoverPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content>
 >(({ className, align = "center", sideOffset = 4, ...props }, ref) => (
-  <PopoverPrimitive.Portal data-oid="jwczlyz">
+  <PopoverPrimitive.Portal>
     <PopoverPrimitive.Content
       ref={ref}
       align={align}
@@ -56,7 +50,6 @@ const PopoverContent = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid=":o9upk8"
     />
   </PopoverPrimitive.Portal>
 ));
@@ -75,7 +68,6 @@ const DialogOverlay = React.forwardRef<
       className,
     )}
     {...props}
-    data-oid="hafgjo8"
   />
 ));
 DialogOverlay.displayName = DialogPrimitive.Overlay.displayName;
@@ -83,8 +75,8 @@ const DialogContent = React.forwardRef<
   React.ElementRef<typeof DialogPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content>
 >(({ className, children, ...props }, ref) => (
-  <DialogPortal data-oid="lcb07bt">
-    <DialogOverlay data-oid="a_gjoc6" />
+  <DialogPortal>
+    <DialogOverlay />
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
@@ -92,25 +84,13 @@ const DialogContent = React.forwardRef<
         className,
       )}
       {...props}
-      data-oid="b_w1jgn"
     >
-      <div
-        className="relative bg-card rounded-[28px] overflow-hidden shadow-2xl p-1"
-        data-oid="auspofu"
-      >
+      <div className="relative bg-card rounded-[28px] overflow-hidden shadow-2xl p-1">
         {children}
-        <DialogPrimitive.Close
-          className="absolute right-3 top-3 z-10 rounded-full bg-background/50 p-1 hover:bg-accent transition-all"
-          data-oid="0f.z.40"
-        >
-          <XIcon
-            className="h-5 w-5 text-muted-foreground hover:text-foreground"
-            data-oid="vwq53pw"
-          />
+        <DialogPrimitive.Close className="absolute right-3 top-3 z-10 rounded-full bg-background/50 p-1 hover:bg-accent transition-all">
+          <XIcon className="h-5 w-5 text-muted-foreground hover:text-foreground" />
 
-          <span className="sr-only" data-oid="ruui_hm">
-            Close
-          </span>
+          <span className="sr-only">Close</span>
         </DialogPrimitive.Close>
       </div>
     </DialogPrimitive.Content>
@@ -127,7 +107,6 @@ const PlusIcon = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
-    data-oid="czx2_x7"
   >
     {" "}
     <path
@@ -136,7 +115,6 @@ const PlusIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="89ifojs"
     />{" "}
     <path
       d="M5 12H19"
@@ -144,7 +122,6 @@ const PlusIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="9tu1v7f"
     />{" "}
   </svg>
 );
@@ -160,13 +137,10 @@ const Settings2Icon = (props: React.SVGProps<SVGSVGElement>) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
-    data-oid="qdsh_6_"
   >
     {" "}
-    <path d="M20 7h-9" data-oid="ehtxfvw" />{" "}
-    <path d="M14 17H5" data-oid="zqq7b5y" />{" "}
-    <circle cx="17" cy="17" r="3" data-oid="unlp7np" />{" "}
-    <circle cx="7" cy="7" r="3" data-oid="b5svbma" />{" "}
+    <path d="M20 7h-9" /> <path d="M14 17H5" /> <circle cx="17" cy="17" r="3" />{" "}
+    <circle cx="7" cy="7" r="3" />{" "}
   </svg>
 );
 
@@ -178,7 +152,6 @@ const SendIcon = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
-    data-oid="9:u7e.2"
   >
     {" "}
     <path
@@ -187,7 +160,6 @@ const SendIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="22eoki3"
     />{" "}
     <path
       d="M18.75 12L12 5.25L5.25 12"
@@ -195,7 +167,6 @@ const SendIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="5kes458"
     />{" "}
   </svg>
 );
@@ -211,11 +182,10 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
-    data-oid="y-jk5-b"
   >
     {" "}
-    <line x1="18" y1="6" x2="6" y2="18" data-oid="g-q4vxu" />{" "}
-    <line x1="6" y1="6" x2="18" y2="18" data-oid="irul3b_" />{" "}
+    <line x1="18" y1="6" x2="6" y2="18" />{" "}
+    <line x1="6" y1="6" x2="18" y2="18" />{" "}
   </svg>
 );
 
@@ -230,14 +200,10 @@ const GlobeIcon = (props: React.SVGProps<SVGSVGElement>) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
-    data-oid="ysgyn.l"
   >
-    <circle cx="12" cy="12" r="10" data-oid="8c_8tlt" />
-    <path d="M2 12h20" data-oid="q5yrra0" />
-    <path
-      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-      data-oid=".okh8:_"
-    />
+    <circle cx="12" cy="12" r="10" />
+    <path d="M2 12h20" />
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
   </svg>
 );
 
@@ -252,79 +218,47 @@ const PencilIcon = (props: React.SVGProps<SVGSVGElement>) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
-    data-oid="-384f6w"
   >
-    <path
-      d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"
-      data-oid="zftrsez"
-    />
+    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
 
-    <path d="m15 5 4 4" data-oid="owodhuo" />
+    <path d="m15 5 4 4" />
   </svg>
 );
 
 const PaintBrushIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 512 512" fill="currentColor" {...props} data-oid="mz95f42">
+  <svg viewBox="0 0 512 512" fill="currentColor" {...props}>
     {" "}
-    <g data-oid="8gah7.s">
+    <g>
       {" "}
-      <path
-        d="M141.176,324.641l25.323,17.833c7.788,5.492,17.501,7.537,26.85,5.67c9.35-1.877,17.518-7.514,22.597-15.569l22.985-36.556l-78.377-55.222l-26.681,33.96c-5.887,7.489-8.443,17.081-7.076,26.511C128.188,310.69,133.388,319.158,141.176,324.641z"
-        data-oid="ka3gmjm"
-      />{" "}
-      <path
-        d="M384.289,64.9c9.527-15.14,5.524-35.06-9.083-45.355l-0.194-0.129c-14.615-10.296-34.728-7.344-45.776,6.705L170.041,228.722l77.067,54.292L384.289,64.9z"
-        data-oid="2aa4rkc"
-      />{" "}
-      <path
-        d="M504.745,445.939c-4.011,0-7.254,3.251-7.254,7.262s3.243,7.246,7.254,7.246c4.012,0,7.255-3.235,7.255-7.246S508.757,445.939,504.745,445.939z"
-        data-oid="fy-4427"
-      />{" "}
-      <path
-        d="M457.425,432.594c3.914,0,7.092-3.179,7.092-7.101c0-3.898-3.178-7.077-7.092-7.077c-3.915,0-7.093,3.178-7.093,7.077C450.332,429.415,453.51,432.594,457.425,432.594z"
-        data-oid="mpws:d1"
-      />{" "}
-      <path
-        d="M164.493,440.972c14.671-20.817,16.951-48.064,5.969-71.089l-0.462-0.97l-54.898-38.675l-1.059-0.105c-25.379-2.596-50.256,8.726-64.928,29.552c-13.91,19.742-18.965,41.288-23.858,62.113c-3.333,14.218-6.778,28.929-13.037,43.05c-5.168,11.695-8.63,15.868-8.654,15.884L0,484.759l4.852,2.346c22.613,10.902,53.152,12.406,83.779,4.156C120.812,482.584,147.76,464.717,164.493,440.972z M136.146,446.504c-0.849,0.567-1.714,1.19-2.629,1.892c-10.06,7.91-23.17,4.505-15.188-11.54c7.966-16.054-6.09-21.198-17.502-10.652c-14.323,13.232-21.044,2.669-18.391-4.634c2.636-7.304,12.155-17.267,4.189-23.704c-4.788-3.882-10.967,1.795-20.833,9.486c-5.645,4.392-18.666,2.968-13.393-16.563c2.863-7.271,6.389-14.275,11.104-20.971c10.24-14.542,27.603-23.083,45.404-22.403l47.021,33.11c6.632,16.548,4.416,35.764-5.823,50.305C146.167,436.411,141.476,441.676,136.146,446.504z"
-        data-oid="ml3w6jj"
-      />{" "}
-      <path
-        d="M471.764,441.992H339.549c-0.227-0.477-0.38-1.003-0.38-1.57c0-0.913,0.372-1.73,0.93-2.378h81.531c5.848,0,10.578-4.723,10.578-10.578c0-5.84-4.73-10.571-10.578-10.571H197.765c0.308,15.399-4.116,30.79-13.271,43.786c-11.218,15.925-27.214,28.913-46.196,38.036h303.802c6.551,0,11.864-5.314,11.864-11.872c0-6.559-5.314-11.873-11.864-11.873h-55.392c-3.299,0-5.977-2.668-5.977-5.968c0-1.246,0.47-2.313,1.1-3.267h89.934c6.559,0,11.881-5.305,11.881-11.873C483.645,447.306,478.323,441.992,471.764,441.992z"
-        data-oid="60resrv"
-      />{" "}
+      <path d="M141.176,324.641l25.323,17.833c7.788,5.492,17.501,7.537,26.85,5.67c9.35-1.877,17.518-7.514,22.597-15.569l22.985-36.556l-78.377-55.222l-26.681,33.96c-5.887,7.489-8.443,17.081-7.076,26.511C128.188,310.69,133.388,319.158,141.176,324.641z" />{" "}
+      <path d="M384.289,64.9c9.527-15.14,5.524-35.06-9.083-45.355l-0.194-0.129c-14.615-10.296-34.728-7.344-45.776,6.705L170.041,228.722l77.067,54.292L384.289,64.9z" />{" "}
+      <path d="M504.745,445.939c-4.011,0-7.254,3.251-7.254,7.262s3.243,7.246,7.254,7.246c4.012,0,7.255-3.235,7.255-7.246S508.757,445.939,504.745,445.939z" />{" "}
+      <path d="M457.425,432.594c3.914,0,7.092-3.179,7.092-7.101c0-3.898-3.178-7.077-7.092-7.077c-3.915,0-7.093,3.178-7.093,7.077C450.332,429.415,453.51,432.594,457.425,432.594z" />{" "}
+      <path d="M164.493,440.972c14.671-20.817,16.951-48.064,5.969-71.089l-0.462-0.97l-54.898-38.675l-1.059-0.105c-25.379-2.596-50.256,8.726-64.928,29.552c-13.91,19.742-18.965,41.288-23.858,62.113c-3.333,14.218-6.778,28.929-13.037,43.05c-5.168,11.695-8.63,15.868-8.654,15.884L0,484.759l4.852,2.346c22.613,10.902,53.152,12.406,83.779,4.156C120.812,482.584,147.76,464.717,164.493,440.972z M136.146,446.504c-0.849,0.567-1.714,1.19-2.629,1.892c-10.06,7.91-23.17,4.505-15.188-11.54c7.966-16.054-6.09-21.198-17.502-10.652c-14.323,13.232-21.044,2.669-18.391-4.634c2.636-7.304,12.155-17.267,4.189-23.704c-4.788-3.882-10.967,1.795-20.833,9.486c-5.645,4.392-18.666,2.968-13.393-16.563c2.863-7.271,6.389-14.275,11.104-20.971c10.24-14.542,27.603-23.083,45.404-22.403l47.021,33.11c6.632,16.548,4.416,35.764-5.823,50.305C146.167,436.411,141.476,441.676,136.146,446.504z" />{" "}
+      <path d="M471.764,441.992H339.549c-0.227-0.477-0.38-1.003-0.38-1.57c0-0.913,0.372-1.73,0.93-2.378h81.531c5.848,0,10.578-4.723,10.578-10.578c0-5.84-4.73-10.571-10.578-10.571H197.765c0.308,15.399-4.116,30.79-13.271,43.786c-11.218,15.925-27.214,28.913-46.196,38.036h303.802c6.551,0,11.864-5.314,11.864-11.872c0-6.559-5.314-11.873-11.864-11.873h-55.392c-3.299,0-5.977-2.668-5.977-5.968c0-1.246,0.47-2.313,1.1-3.267h89.934c6.559,0,11.881-5.305,11.881-11.873C483.645,447.306,478.323,441.992,471.764,441.992z" />{" "}
     </g>{" "}
   </svg>
 );
 
 const TelescopeIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 512 512" fill="currentColor" {...props} data-oid="hugq-0_">
+  <svg viewBox="0 0 512 512" fill="currentColor" {...props}>
     {" "}
-    <g data-oid="7c38twq">
+    <g>
       {" "}
-      <path
-        d="M452.425,202.575l-38.269-23.11c-1.266-10.321-5.924-18.596-13.711-21.947l-86.843-52.444l-0.275,0.598c-3.571-7.653-9.014-13.553-16.212-16.668L166.929,10.412l-0.236,0.543v-0.016c-3.453-2.856-7.347-5.239-11.594-7.08C82.569-10.435,40.76,14.5,21.516,59.203C2.275,103.827,12.82,151.417,45.142,165.36c4.256,1.826,8.669,3.005,13.106,3.556l-0.19,0.464l146.548,40.669c7.19,3.107,15.206,3.004,23.229,0.37l-0.236,0.566L365.55,238.5c7.819,3.366,17.094,1.125,25.502-5.082l42.957,11.909c7.67,3.312,18.014-3.548,23.104-15.362C462.202,218.158,460.11,205.894,452.425,202.575z M154.516,99.56c-11.792,27.374-31.402,43.783-47.19,49.132c-6.962,2.281-13.176,2.556-17.605,0.637c-14.536-6.254-25.235-41.856-8.252-81.243c16.976-39.378,50.186-56.055,64.723-49.785c4.429,1.904,8.519,6.592,11.626,13.246C164.774,46.699,166.3,72.216,154.516,99.56z"
-        data-oid="_xcoci3"
-      />{" "}
-      <path
-        d="M297.068,325.878c-1.959-2.706-2.25-6.269-0.724-9.25c1.518-2.981,4.562-4.846,7.913-4.846h4.468c4.909,0,8.889-3.972,8.889-8.897v-7.74c0-4.909-3.98-8.897-8.889-8.897h-85.789c-4.908,0-8.897,3.988-8.897,8.897v7.74c0,4.925,3.989,8.897,8.897,8.897h4.492c3.344,0,6.388,1.865,7.914,4.846c1.518,2.981,1.235,6.544-0.732,9.25L128.715,459.116c-3.225,4.287-2.352,10.36,1.927,13.569c4.295,3.225,10.368,2.344,13.578-1.943l107.884-122.17l4.036,153.738c0,5.333,4.342,9.691,9.691,9.691c5.358,0,9.692-4.358,9.692-9.691l4.043-153.738l107.885,122.17c3.209,4.287,9.282,5.168,13.568,1.943c4.288-3.209,5.145-9.282,1.951-13.569L297.068,325.878z"
-        data-oid=":kyl5sv"
-      />{" "}
-      <path
-        d="M287.227,250.81c0-11.807-9.573-21.388-21.396-21.388c-11.807,0-21.38,9.582-21.38,21.388c0,11.831,9.574,21.428,21.38,21.428C277.654,272.238,287.227,262.642,287.227,250.81z"
-        data-oid="_x:nup9"
-      />{" "}
+      <path d="M452.425,202.575l-38.269-23.11c-1.266-10.321-5.924-18.596-13.711-21.947l-86.843-52.444l-0.275,0.598c-3.571-7.653-9.014-13.553-16.212-16.668L166.929,10.412l-0.236,0.543v-0.016c-3.453-2.856-7.347-5.239-11.594-7.08C82.569-10.435,40.76,14.5,21.516,59.203C2.275,103.827,12.82,151.417,45.142,165.36c4.256,1.826,8.669,3.005,13.106,3.556l-0.19,0.464l146.548,40.669c7.19,3.107,15.206,3.004,23.229,0.37l-0.236,0.566L365.55,238.5c7.819,3.366,17.094,1.125,25.502-5.082l42.957,11.909c7.67,3.312,18.014-3.548,23.104-15.362C462.202,218.158,460.11,205.894,452.425,202.575z M154.516,99.56c-11.792,27.374-31.402,43.783-47.19,49.132c-6.962,2.281-13.176,2.556-17.605,0.637c-14.536-6.254-25.235-41.856-8.252-81.243c16.976-39.378,50.186-56.055,64.723-49.785c4.429,1.904,8.519,6.592,11.626,13.246C164.774,46.699,166.3,72.216,154.516,99.56z" />{" "}
+      <path d="M297.068,325.878c-1.959-2.706-2.25-6.269-0.724-9.25c1.518-2.981,4.562-4.846,7.913-4.846h4.468c4.909,0,8.889-3.972,8.889-8.897v-7.74c0-4.909-3.98-8.897-8.889-8.897h-85.789c-4.908,0-8.897,3.988-8.897,8.897v7.74c0,4.925,3.989,8.897,8.897,8.897h4.492c3.344,0,6.388,1.865,7.914,4.846c1.518,2.981,1.235,6.544-0.732,9.25L128.715,459.116c-3.225,4.287-2.352,10.36,1.927,13.569c4.295,3.225,10.368,2.344,13.578-1.943l107.884-122.17l4.036,153.738c0,5.333,4.342,9.691,9.691,9.691c5.358,0,9.692-4.358,9.692-9.691l4.043-153.738l107.885,122.17c3.209,4.287,9.282,5.168,13.568,1.943c4.288-3.209,5.145-9.282,1.951-13.569L297.068,325.878z" />{" "}
+      <path d="M287.227,250.81c0-11.807-9.573-21.388-21.396-21.388c-11.807,0-21.38,9.582-21.38,21.388c0,11.831,9.574,21.428,21.38,21.428C277.654,272.238,287.227,262.642,287.227,250.81z" />{" "}
     </g>{" "}
   </svg>
 );
 
 const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" {...props} data-oid="r-.qz3z">
+  <svg viewBox="0 0 24 24" fill="none" {...props}>
     {" "}
     <path
       d="M12 7C9.23858 7 7 9.23858 7 12C7 13.3613 7.54402 14.5955 8.42651 15.4972C8.77025 15.8484 9.05281 16.2663 9.14923 16.7482L9.67833 19.3924C9.86537 20.3272 10.6862 21 11.6395 21H12.3605C13.3138 21 14.1346 20.3272 14.3217 19.3924L14.8508 16.7482C14.9472 16.2663 15.2297 15.8484 15.5735 15.4972C16.456 14.5955 17 13.3613 17 12C17 9.23858 14.7614 7 12 7Z"
       stroke="currentColor"
       strokeWidth="2"
-      data-oid="y1filwq"
     />{" "}
     <path
       d="M12 4V3"
@@ -332,7 +266,6 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="12zemft"
     />{" "}
     <path
       d="M18 6L19 5"
@@ -340,7 +273,6 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="zb:n4e-"
     />{" "}
     <path
       d="M20 12H21"
@@ -348,7 +280,6 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="gzuzl57"
     />{" "}
     <path
       d="M4 12H3"
@@ -356,7 +287,6 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="4oacnsq"
     />{" "}
     <path
       d="M5 5L6 6"
@@ -364,7 +294,6 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="rnm72yu"
     />{" "}
     <path
       d="M10 17H14"
@@ -372,7 +301,6 @@ const LightbulbIcon = (props: React.SVGProps<SVGSVGElement>) => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      data-oid="8kkjimm"
     />{" "}
   </svg>
 );
@@ -389,15 +317,11 @@ const MicIcon = (props: React.SVGProps<SVGSVGElement>) => (
     strokeLinecap="round"
     strokeLinejoin="round"
     {...props}
-    data-oid="_ydiuea"
   >
     {" "}
-    <path
-      d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
-      data-oid="td9-xio"
-    ></path>{" "}
-    <path d="M19 10v2a7 7 0 0 1-14 0v-2" data-oid="79jen1l"></path>{" "}
-    <line x1="12" y1="19" x2="12" y2="23" data-oid="xj0w8ax"></line>{" "}
+    <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path>{" "}
+    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>{" "}
+    <line x1="12" y1="19" x2="12" y2="23"></line>{" "}
   </svg>
 );
 
@@ -494,7 +418,6 @@ export const PromptBox = React.forwardRef<
         "flex flex-col rounded-[28px] p-2 shadow-sm transition-colors bg-white border cursor-text",
         className,
       )}
-      data-oid="wvhcgb7"
     >
       <input
         type="file"
@@ -502,52 +425,40 @@ export const PromptBox = React.forwardRef<
         onChange={handleFileChange}
         className="hidden"
         accept="image/*"
-        data-oid=":z2g1e7"
       />
 
       {imagePreview && (
-        <Dialog
-          open={isImageDialogOpen}
-          onOpenChange={setIsImageDialogOpen}
-          data-oid="h5exh:d"
-        >
+        <Dialog open={isImageDialogOpen} onOpenChange={setIsImageDialogOpen}>
           {" "}
-          <div
-            className="relative mb-1 w-fit rounded-[1rem] px-1 pt-1"
-            data-oid="3fd2pjf"
-          >
+          <div className="relative mb-1 w-fit rounded-[1rem] px-1 pt-1">
             {" "}
             <button
               type="button"
               className="transition-transform"
               onClick={() => setIsImageDialogOpen(true)}
-              data-oid="hy545gg"
             >
               {" "}
               <img
                 src={imagePreview}
                 alt="Image preview"
                 className="h-14.5 w-14.5 rounded-[1rem]"
-                data-oid="c48kobi"
               />{" "}
             </button>{" "}
             <button
               onClick={handleRemoveImage}
               className="absolute right-2 top-2 z-10 flex h-4 w-4 items-center justify-center rounded-full bg-white/50 text-black transition-colors hover:bg-accent"
               aria-label="Remove image"
-              data-oid="e4gdhb6"
             >
               {" "}
-              <XIcon className="h-4 w-4" data-oid="gct192p" />{" "}
+              <XIcon className="h-4 w-4" />{" "}
             </button>{" "}
           </div>{" "}
-          <DialogContent data-oid="54opsjl">
+          <DialogContent>
             {" "}
             <img
               src={imagePreview}
               alt="Full size preview"
               className="w-full max-h-[95vh] object-contain rounded-[24px]"
-              data-oid="d4e3loi"
             />{" "}
           </DialogContent>{" "}
         </Dialog>
@@ -561,56 +472,47 @@ export const PromptBox = React.forwardRef<
         placeholder="Message..."
         className="custom-scrollbar w-full resize-none border-0 bg-transparent p-3 text-foreground placeholder:text-muted-foreground focus:ring-0 focus-visible:outline-none min-h-12"
         {...props}
-        data-oid="2q0dfj3"
       />
 
-      <div className="mt-0.5 p-1 pt-0" data-oid="yjvqfv5">
-        <TooltipProvider delayDuration={100} data-oid="av88:fs">
-          <div className="flex items-center gap-2" data-oid="rawinjq">
-            <Tooltip data-oid="5qauqcm">
+      <div className="mt-0.5 p-1 pt-0">
+        <TooltipProvider delayDuration={100}>
+          <div className="flex items-center gap-2">
+            <Tooltip>
               {" "}
-              <TooltipTrigger asChild data-oid="22db0by">
+              <TooltipTrigger asChild>
                 <button
                   type="button"
                   onClick={handlePlusClick}
                   className="flex h-8 w-8 items-center justify-center rounded-full text-foreground transition-colors hover:bg-accent focus-visible:outline-none"
-                  data-oid="75wb51-"
                 >
-                  <PlusIcon className="h-6 w-6" data-oid="r21-zm9" />
-                  <span className="sr-only" data-oid="-t:b38i">
-                    Attach image
-                  </span>
+                  <PlusIcon className="h-6 w-6" />
+                  <span className="sr-only">Attach image</span>
                 </button>
               </TooltipTrigger>{" "}
-              <TooltipContent side="top" showArrow={true} data-oid="fa:6p72">
-                <p data-oid="sp5473v">Attach image</p>
+              <TooltipContent side="top" showArrow={true}>
+                <p>Attach image</p>
               </TooltipContent>{" "}
             </Tooltip>
 
-            <Popover
-              open={isPopoverOpen}
-              onOpenChange={setIsPopoverOpen}
-              data-oid="81borml"
-            >
-              <Tooltip data-oid="lm-17oo">
-                <TooltipTrigger asChild data-oid="-5w9tby">
-                  <PopoverTrigger asChild data-oid="vh2.5i1">
+            <Popover open={isPopoverOpen} onOpenChange={setIsPopoverOpen}>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <PopoverTrigger asChild>
                     <button
                       type="button"
                       className="flex h-8 items-center gap-2 rounded-full p-2 text-sm text-foreground transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-ring"
-                      data-oid="r-2zch7"
                     >
-                      <Settings2Icon className="h-4 w-4" data-oid="w3x8chf" />
+                      <Settings2Icon className="h-4 w-4" />
                       {!selectedTool && "Tools"}
                     </button>
                   </PopoverTrigger>
                 </TooltipTrigger>
-                <TooltipContent side="top" showArrow={true} data-oid="s.e.-r6">
-                  <p data-oid="e-488sj">Explore Tools</p>
+                <TooltipContent side="top" showArrow={true}>
+                  <p>Explore Tools</p>
                 </TooltipContent>
               </Tooltip>
-              <PopoverContent side="top" align="start" data-oid="eepih_p">
-                <div className="flex flex-col gap-1" data-oid="g6vl4x9">
+              <PopoverContent side="top" align="start">
+                <div className="flex flex-col gap-1">
                   {toolsList.map((tool) => (
                     <button
                       key={tool.id}
@@ -619,16 +521,11 @@ export const PromptBox = React.forwardRef<
                         setIsPopoverOpen(false);
                       }}
                       className="flex w-full items-center gap-2 rounded-md p-2 text-left text-sm hover:bg-accent"
-                      data-oid="x7t_qcf"
                     >
                       {" "}
-                      <tool.icon className="h-4 w-4" data-oid="lsyohiu" />{" "}
-                      <span data-oid="u-b_4fz">{tool.name}</span>{" "}
+                      <tool.icon className="h-4 w-4" /> <span>{tool.name}</span>{" "}
                       {tool.extra && (
-                        <span
-                          className="ml-auto text-xs text-muted-foreground"
-                          data-oid="fpbrh5-"
-                        >
+                        <span className="ml-auto text-xs text-muted-foreground">
                           {tool.extra}
                         </span>
                       )}{" "}
@@ -640,61 +537,49 @@ export const PromptBox = React.forwardRef<
 
             {activeTool && (
               <>
-                <div className="h-4 w-px bg-border" data-oid="i1g97i6" />
+                <div className="h-4 w-px bg-border" />
                 <button
                   onClick={() => setSelectedTool(null)}
                   className="flex h-8 items-center gap-2 rounded-full px-2 text-sm hover:bg-accent cursor-pointer text-[#2294ff] transition-colors flex-row items-center justify-center"
-                  data-oid="kguali2"
                 >
-                  {ActiveToolIcon && (
-                    <ActiveToolIcon className="h-4 w-4" data-oid="6nl4b_." />
-                  )}
+                  {ActiveToolIcon && <ActiveToolIcon className="h-4 w-4" />}
                   {activeTool.shortName}
-                  <XIcon className="h-4 w-4" data-oid="t5pt:z7" />
+                  <XIcon className="h-4 w-4" />
                 </button>
               </>
             )}
 
             {/* MODIFIED: Right-aligned buttons container */}
-            <div className="ml-auto flex items-center gap-2" data-oid="h9ay5yj">
-              <Tooltip data-oid="6aak7:o">
-                <TooltipTrigger asChild data-oid="8tmg03s">
+            <div className="ml-auto flex items-center gap-2">
+              <Tooltip>
+                <TooltipTrigger asChild>
                   <button
                     type="button"
                     className="flex h-8 w-8 items-center justify-center rounded-full text-foreground transition-colors hover:bg-accent focus-visible:outline-none"
-                    data-oid="74284u5"
                   >
-                    <MicIcon className="h-5 w-5" data-oid="q8jhaco" />
-                    <span className="sr-only" data-oid="-j6_0lw">
-                      Record voice
-                    </span>
+                    <MicIcon className="h-5 w-5" />
+                    <span className="sr-only">Record voice</span>
                   </button>
                 </TooltipTrigger>
-                <TooltipContent side="top" showArrow={true} data-oid="9jw22uj">
-                  <p data-oid="n2:0fp9">Record voice</p>
+                <TooltipContent side="top" showArrow={true}>
+                  <p>Record voice</p>
                 </TooltipContent>
               </Tooltip>
 
-              <Tooltip data-oid="3td:91t">
-                <TooltipTrigger asChild data-oid="3axlzh7">
+              <Tooltip>
+                <TooltipTrigger asChild>
                   <button
                     type="submit"
                     disabled={!hasValue}
                     className="flex h-8 w-8 items-center justify-center rounded-full text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none bg-black text-white hover:bg-black/80 disabled:bg-black/40"
-                    data-oid="ql6b72:"
                   >
-                    <SendIcon
-                      className="h-6 w-6 text-bold"
-                      data-oid="gi2f:ic"
-                    />
+                    <SendIcon className="h-6 w-6 text-bold" />
 
-                    <span className="sr-only" data-oid=":vhi2yu">
-                      Send message
-                    </span>
+                    <span className="sr-only">Send message</span>
                   </button>
                 </TooltipTrigger>
-                <TooltipContent side="top" showArrow={true} data-oid="zzet:5r">
-                  <p data-oid="al-y1f0">Send</p>
+                <TooltipContent side="top" showArrow={true}>
+                  <p>Send</p>
                 </TooltipContent>
               </Tooltip>
             </div>

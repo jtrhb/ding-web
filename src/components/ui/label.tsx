@@ -17,7 +17,6 @@ function Label({
         className,
       )}
       {...props}
-      data-oid="6tvs25s"
     />
   );
 }

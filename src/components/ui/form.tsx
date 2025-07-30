@@ -36,8 +36,8 @@ const FormField = <
   ...props
 }: ControllerProps<TFieldValues, TName>) => {
   return (
-    <FormFieldContext.Provider value={{ name: props.name }} data-oid="tht4ejm">
-      <Controller {...props} data-oid="m52d7vk" />
+    <FormFieldContext.Provider value={{ name: props.name }}>
+      <Controller {...props} />
     </FormFieldContext.Provider>
   );
 };
@@ -77,12 +77,11 @@ function FormItem({ className, ...props }: React.ComponentProps<"div">) {
   const id = React.useId();
 
   return (
-    <FormItemContext.Provider value={{ id }} data-oid="nh9hdm5">
+    <FormItemContext.Provider value={{ id }}>
       <div
         data-slot="form-item"
         className={cn("grid gap-2", className)}
         {...props}
-        data-oid="pdqgt3i"
       />
     </FormItemContext.Provider>
   );
@@ -101,7 +100,6 @@ function FormLabel({
       className={cn("data-[error=true]:text-destructive", className)}
       htmlFor={formItemId}
       {...props}
-      data-oid=".gg1gyu"
     />
   );
 }
@@ -121,7 +119,6 @@ function FormControl({ ...props }: React.ComponentProps<typeof Slot>) {
       }
       aria-invalid={!!error}
       {...props}
-      data-oid="d.zeyue"
     />
   );
 }
@@ -135,7 +132,6 @@ function FormDescription({ className, ...props }: React.ComponentProps<"p">) {
       id={formDescriptionId}
       className={cn("text-muted-foreground text-sm", className)}
       {...props}
-      data-oid="44-1rcn"
     />
   );
 }
@@ -154,7 +150,6 @@ function FormMessage({ className, ...props }: React.ComponentProps<"p">) {
       id={formMessageId}
       className={cn("text-destructive text-sm", className)}
       {...props}
-      data-oid="4mjnink"
     >
       {body}
     </p>

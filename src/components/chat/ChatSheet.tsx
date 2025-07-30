@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect, useCallback } from "react";
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "./ui/sheet";
-import { Avatar } from "./ui/avatar";
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from "../ui/sheet";
+import { Avatar } from "../ui/avatar";
 import { Bot, User, MoreHorizontal, Share, Bookmark, X } from "lucide-react";
 import { PromptBox } from "./ChatInput";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 interface Message {
   id: string;
@@ -164,10 +164,10 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
   }, [isResizing]);
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange} data-oid="ma.._if">
+    <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent
         ref={sheetRef}
-        className="flex flex-col p-0 shadow-lg"
+        className="flex flex-col p-0 shadow-lg [&>button]:hidden"
         style={{
           width: `${sheetWidth}vw`,
           minWidth: "400px",
@@ -177,7 +177,6 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
           borderRadius: "28px",
           border: "1px solid #e5e7eb",
         }}
-        data-oid=".:1lba8"
       >
         {/* 左侧拖拽调整条 */}
         <div
@@ -186,81 +185,48 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
           style={{
             background: isResizing ? "#60a5fa" : "transparent",
           }}
-          data-oid=":gxum_8"
         />
 
         <SheetHeader
           className="px-6 py-4 border-b bg-white"
           style={{ borderTopLeftRadius: "28px", borderTopRightRadius: "28px" }}
-          data-oid="ueo-y39"
         >
-          <div className="flex items-center justify-between" data-oid="hizkrb5">
-            <div className="flex items-center gap-2" data-oid="dc.tey2">
-              <Bot className="w-5 h-5 text-gray-600" data-oid="fv:pu2_" />
-              <SheetTitle
-                className="text-sm font-medium text-gray-900"
-                data-oid="o:cy757"
-              >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Bot className="w-5 h-5 text-gray-600" />
+              <SheetTitle className="text-sm font-medium text-gray-900">
                 我在开发一个辅助用户写小红书笔记的工具类app，是w...
               </SheetTitle>
             </div>
-            <div className="flex items-center gap-1" data-oid="indtq0f">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="h-8 w-8 p-0"
-                data-oid="xntx7_s"
-              >
-                <Share className="w-4 h-4 text-gray-500" data-oid="y96mrk2" />
+            <div className="flex items-center gap-1">
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <Share className="w-4 h-4 text-gray-500" />
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="h-8 w-8 p-0"
-                data-oid="9l1oes."
-              >
-                <Bookmark
-                  className="w-4 h-4 text-gray-500"
-                  data-oid="6no.td8"
-                />
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <Bookmark className="w-4 h-4 text-gray-500" />
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="h-8 w-8 p-0"
-                data-oid="7thxng4"
-              >
-                <MoreHorizontal
-                  className="w-4 h-4 text-gray-500"
-                  data-oid="zuh_ly0"
-                />
+              <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+                <MoreHorizontal className="w-4 h-4 text-gray-500" />
               </Button>
               <Button
                 variant="ghost"
                 size="sm"
                 className="h-8 w-8 p-0"
                 onClick={() => onOpenChange(false)}
-                data-oid="1-1kcyj"
               >
-                <X className="w-4 h-4 text-gray-500" data-oid="4qdt3n_" />
+                <X className="w-4 h-4 text-gray-500" />
               </Button>
             </div>
           </div>
         </SheetHeader>
 
         {/* 消息列表 */}
-        <div
-          className="flex-1 overflow-y-auto px-6 py-4 space-y-4 bg-gray-50"
-          data-oid="u7y5ry6"
-        >
+        <div className="flex-1 overflow-y-auto px-6 py-4 space-y-4 bg-gray-50">
           {messages.length === 0 ? (
-            <div className="text-center text-gray-500 mt-8" data-oid="vstrv05">
-              <Bot
-                className="w-12 h-12 mx-auto mb-4 text-gray-300"
-                data-oid="dm9e0h-"
-              />
+            <div className="text-center text-gray-500 mt-8">
+              <Bot className="w-12 h-12 mx-auto mb-4 text-gray-300" />
 
-              <p data-oid="11hs3w:">开始与 AI 助手对话吧！</p>
+              <p>开始与 AI 助手对话吧！</p>
             </div>
           ) : (
             messages.map((message) => (
@@ -269,14 +235,10 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                 className={`flex gap-3 ${
                   message.type === "user" ? "justify-end" : "justify-start"
                 }`}
-                data-oid="d2e_-vv"
               >
                 {message.type === "assistant" && (
-                  <Avatar
-                    className="w-8 h-8 bg-blue-100 flex items-center justify-center"
-                    data-oid="wt_kn7i"
-                  >
-                    <Bot className="w-4 h-4 text-blue-600" data-oid="x09iclk" />
+                  <Avatar className="w-8 h-8 bg-blue-100 flex items-center justify-center">
+                    <Bot className="w-4 h-4 text-blue-600" />
                   </Avatar>
                 )}
 
@@ -286,37 +248,24 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
                       ? "bg-blue-500 text-white"
                       : "bg-gray-100 text-gray-900"
                   }`}
-                  data-oid="2to_hrr"
                 >
-                  <p
-                    className="whitespace-pre-wrap break-words"
-                    data-oid="2fcv8au"
-                  >
+                  <p className="whitespace-pre-wrap break-words">
                     {message.content}
                     {message.isStreaming && (
-                      <span
-                        className="inline-block w-2 h-5 bg-current ml-1 animate-pulse"
-                        data-oid="sk9.z4d"
-                      />
+                      <span className="inline-block w-2 h-5 bg-current ml-1 animate-pulse" />
                     )}
                   </p>
                 </div>
 
                 {message.type === "user" && (
-                  <Avatar
-                    className="w-8 h-8 bg-gray-100 flex items-center justify-center"
-                    data-oid="fa4jda-"
-                  >
-                    <User
-                      className="w-4 h-4 text-gray-600"
-                      data-oid="5lh5dfs"
-                    />
+                  <Avatar className="w-8 h-8 bg-gray-100 flex items-center justify-center">
+                    <User className="w-4 h-4 text-gray-600" />
                   </Avatar>
                 )}
               </div>
             ))
           )}
-          <div ref={messagesEndRef} data-oid="m86fwh9" />
+          <div ref={messagesEndRef} />
         </div>
 
         {/* 输入区域 */}
@@ -326,9 +275,8 @@ export function ChatSheet({ open, onOpenChange }: ChatSheetProps) {
             borderBottomLeftRadius: "28px",
             borderBottomRightRadius: "28px",
           }}
-          data-oid="hz7x_sq"
         >
-          <PromptBox data-oid=".cr3m:w" />
+          <PromptBox />
         </div>
       </SheetContent>
     </Sheet>

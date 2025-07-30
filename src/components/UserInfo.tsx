@@ -8,47 +8,32 @@ export function UserInfo() {
 
   if (!isLoggedIn || !user) {
     return (
-      <Card className="w-full max-w-md" data-oid="cecxmrj">
-        <CardHeader data-oid="ihcb8vp">
-          <CardTitle data-oid="xohn.1p">用户状态</CardTitle>
+      <Card className="w-full max-w-md">
+        <CardHeader>
+          <CardTitle>用户状态</CardTitle>
         </CardHeader>
-        <CardContent data-oid="hp1o4gk">
-          <p className="text-gray-500" data-oid="1q9mxpk">
-            未登录
-          </p>
+        <CardContent>
+          <p className="text-gray-500">未登录</p>
         </CardContent>
       </Card>
     );
   }
 
   return (
-    <Card className="w-full max-w-md" data-oid="bbv-d8l">
-      <CardHeader data-oid="_-_-bw4">
-        <CardTitle data-oid="p_te-.s">用户信息</CardTitle>
+    <Card className="w-full max-w-md">
+      <CardHeader>
+        <CardTitle>用户信息</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4" data-oid="_p0um3i">
-        <div data-oid="lkhc:x4">
-          <p className="text-sm text-gray-600" data-oid="qk_ium3">
-            用户名
-          </p>
-          <p className="font-medium" data-oid="qlcnn-t">
-            {user.name}
-          </p>
+      <CardContent className="space-y-4">
+        <div>
+          <p className="text-sm text-gray-600">用户名</p>
+          <p className="font-medium">{user.name}</p>
         </div>
-        <div data-oid="m7zi5p5">
-          <p className="text-sm text-gray-600" data-oid="zo:_fuv">
-            登录状态
-          </p>
-          <p className="font-medium text-green-600" data-oid="rba3a0.">
-            已登录
-          </p>
+        <div>
+          <p className="text-sm text-gray-600">登录状态</p>
+          <p className="font-medium text-green-600">已登录</p>
         </div>
-        <Button
-          onClick={logout}
-          variant="outline"
-          className="w-full"
-          data-oid="r_q87-7"
-        >
+        <Button onClick={logout} variant="outline" className="w-full">
           退出登录
         </Button>
       </CardContent>
